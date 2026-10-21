@@ -98,7 +98,8 @@ header {
     align-items: center;
 
     /* Estilos */
-    border-radius: 5px;
+    border-radius: 3px;
+    transition: background-color 0.5s ease;
 }
 
 .menu-de-navegacao a {
@@ -142,7 +143,246 @@ header {
     font-weight: 500;
 
     /* Estilos */
-    border-radius: 5px;
+    border-radius: 3px;
 
     background-color: #E50914;
+    transition: background-color 0.5s ease;
 }
+
+.entrar a:hover {
+    background-color: #B80710;
+}
+
+/* ===== Main ===== */
+
+/* hero-section */
+
+.hero-section {
+    /* Dimensões */
+    width: 80%;
+    height: 85vh;
+    margin: 0 10%;
+    padding-top: 5%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.hero-section h1 {
+    /* Textos */
+    font-size: 3em;
+    text-align: justify;
+    color: #F5F5F5;
+    font-weight: 800;
+}
+
+.hero-section p {
+    /* Textos */
+    font-size: 1.5em;
+    text-align: justify;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.hero-section h3 {
+    /* Textos */
+    font-size: 1.25em;
+    text-align: justify;
+    color: #F5F5F5;
+    font-weight: 300;
+}
+
+.login {
+    /* Dimensões */
+    width: 100%;
+    height: 15%;
+    margin: 0 10%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+
+}
+
+.campo-email {
+    /* Dimensões*/
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #F5F5F5;
+
+
+    /* Estilos */
+    background-color: rgba(23, 23, 23, 0.811);
+    border-radius: 3px;
+    border: solid 2px rgb(37, 37, 37); 
+}
+
+.campo-botao {
+    /* Dimensões*/
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.75em;
+    font-weight: 500;
+    color: #F5F5F5;
+
+    /* Estilos */
+    background-color: #E50914;
+    border-radius: 3px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.campo-botao:hover {
+    background-color: #B80710;
+}
+
+/* em-alta */
+#em-alta {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15%;
+
+    /* Estilos */
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 50% 50% 0 0 / 12% 12% 0 0;
+    border-top: 3px solid #E50914;
+}
+
+.promocao {
+    /* Dimensões */
+    width: 80%;
+    height: 20%;
+    margin-bottom: 50px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    /* Estilos */
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    border: none;
+}
+
+.promocao:hover {
+    /* Estilos */
+    transform: scale(1.10);
+}
+
+.promocao:hover .promocao__preco{
+    background-color: #B80710;
+}
+
+.promocao__icon {
+    /* Dimesnões */
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+}
+
+.promocao__preco {
+    /* Dimensões */
+    width: 70%;
+    height: 100%;
+    padding: 15px 30px;
+
+    /* Textos */
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #F5F5F5;
+
+    /* Estilos */
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+    background-color: #E50914;
+}
+
+.filmes {
+    /* Dimensões */
+    width: 80%;
+    height: 70%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.filmes h2 {
+    /* Dimensões */
+    padding: 10px 15px;
+
+    /* Textos */
+    font-size: 2em;
+    font-weight: 600;
+    color: #F5F5F5;
+}
+
+.lista-filmes {
+    /* Dimensões */
+    width: 100%;
+    height: 75%;
+
+    /* Posicionamento*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-filmes__filme {
+    /* Dimensões */
+    width: 18%;
+    height: 100%;
+
+    /* Estilos */
+    border-radius: 3px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.lista-filmes__filme img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Estilos*/
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.lista-filmes__filme:hover {
+    /* Estilos */
+    transform: scale(1.10);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Dimensões */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Estilos */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/imagem-fundo-principal.jpg);
+    
+    
+}
+
+.fonte-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    /* Dimensões */
+    width: 100%;
+    height: 15vh;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos */
+    background-color: transparent
+
+}
+
+.logo-netflix {
+    /* Dimensões */
+    width: 15%;
+    height: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos */
+    background-color: transparent
+}
+
+.logo-netflix img {
+    /* Dimensões */
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== Main ===== */
+main {
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    /* Dimensões */
+    width: 40%;
+    height: 100%;
+    padding: 2.5% 5%;
+    margin-bottom: 15px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Estilos */
+    background-color: rgba(23, 23, 23, 0.811);
+}
+
+
+.login h1 {
+    /* Posicionamento */
+    margin-bottom: 20px;
+
+    /* Textos */
+    font-size: 2.0em;
+    text-align: justify;
+    color: #F5F5F5;
+    font-weight: 700;
+}
+
+.campo-email {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #F5F5F5;
+
+
+    /* Estilos */
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 2px rgb(37, 37, 37); 
+}
+
+.campo-senha {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #F5F5F5;
+
+
+    /* Estilos */
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 2px rgb(37, 37, 37); 
+}
+
+.botao-entrar {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #F5F5F5;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+
+    /* Estilos */
+    transition: background-color 0.5s ease;
+    background-color: #E50914;
+    border-radius: 5px;
+    border: none;
+}
+
+.botao-entrar:hover {
+    background-color: #B80710;
+}
+
+span {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1em;
+    color: #F5F5F5;
+    font-weight: 500;
+
+}
+
+.botao-codigo {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #F5F5F5;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+    /* Estilos */
+    transition: background-color 0.5s ease;
+    background-color: rgba(113, 113, 113, 0.596);
+    border-radius: 5px;
+    border: none;
+}
+
+.botao-codigo:hover {
+    background-color: rgba(198, 197, 197, 0.596);
+}
+
+.login span:last-of-type {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.login__lembrar {
+    /* Dimensões */
+    width: 100%;
+    height: 25px;
+    margin-bottom: 30px;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.checkbox-personalizado {
+    /* Dimensões */
+    width: 25px;
+    height: 25px;
+    
+    /* Estilos e Transições */
+    accent-color: #E50914; /* Mantém a cor vermelha da Netflix se usar o checkbox padrão */
+    cursor: pointer;
+}
+
+.label-lembrar {
+    /* Textos */
+    font-size: 1em;
+    color: #F5F5F5;
+
+    /* Estilos */
+    cursor: pointer;
+    user-select: none;
+}
+
+.login p {
+    /* Textos */
+    font-size: 1em;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+

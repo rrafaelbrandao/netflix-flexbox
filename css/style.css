@@ -351,6 +351,7 @@ header {
     /* Dimensões */
     width: 100%;
     height: 75%;
+    margin-bottom: 20px;
 
     /* Posicionamento*/
     display: flex;

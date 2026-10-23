@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Netflix - Filmes e séries online</title>
 </head>
 <body>
     <header>
 
             <!-- Logo da Netflix-->
-            <a class="logo-netflix" href="">
-                <img src="/assets/icons/logo-netflix.svg" alt="">
+            <a class="logo-netflix" href="/index.html">
+                <img src="/assets/icons/logo-netflix.svg" alt="Netflix">
             </a>
 
             <!-- Seções da página -->
             <nav class="menu-de-navegacao">
                 <ul>
                     <li>
-                        <a class="fonte-inter" href="">
-                            Catálogo
+                        <a class="fonte-inter" href="#em-alta">
+                            Em alta
                         </a>
                     </li>
                     <li>
-                        <a class="fonte-inter" href="">
-                            Motivos para assinar
+                        <a class="fonte-inter" href="#novidades">
+                            Novidades
                         </a>
                     </li>
                     <li>
-                        <a class="fonte-inter" href="">
-                            Perguntas frequentes
+                        <a class="fonte-inter" href="#beneficios">
+                            Benefícios
                         </a>
                     </li>
                 </ul>
@@ -52,18 +52,18 @@
                 Filmes, séries e muito mais, sem limites
             </h1>
 
-            <p class="fonte-inter">
+            <p class="fonte-inter hero-section__preco">
                 A partir de R$ 25,90. Cancele quando quiser.
             </p>
 
-            <h3 class="fonte-inter">
-                Quer assitir ? Informe seu email para criar ou reiniciar sua assinatura.
-            </h3>
+            <p class="fonte-inter hero-section__chamada">
+                Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+            </p>
 
-            <div class="login">
-                <input class="campo-email" type="text" placeholder="Email">
-                <input class="campo-botao" type="submit" value="Vamos lá >">
-            </div>
+            <form class="login">
+                <input class="campo-email" type="email" aria-label="Email" placeholder="Email">
+                <button class="campo-botao" type="submit">Vamos lá &gt;</button>
+            </form>
 
         </section>
 
@@ -75,101 +75,73 @@
                 <div class="promocao__preco">
                     <p class="fonte-inter">
                         A Netflix que você adora por apenas R$25,90.
-                        <br>
+                    </p>
+                    <p class="fonte-inter">
                         Aproveite nossa opção mais acessível, o plano com anúncios.
                     </p>
                 </div>
 
             </div>
 
-            <article class="filmes">
+            <div class="filmes">
 
                 <h2 class="fonte-inter"> 
                     Em alta
                 </h2>
 
-                <div class="lista-filmes">
+                <ul class="lista-filmes">
 
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/nas-profundezas.jpg" alt="">
-                    </div>
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/nas-profundezas.jpg" alt="Nas Profundezas">
+                    </li>
 
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/noiva-cadaver.webp" alt="">
-                    </div>
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/noiva-cadaver.webp" alt="A Noiva Cadáver">
+                    </li>
 
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/o-protetor.jpg" alt="">
-                    </div>
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/o-protetor.jpg" alt="O Protetor">
+                    </li>
 
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/sobrevivencia.jpeg" alt="">
-                    </div>
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/sobrevivencia.jpeg" alt="Sobrevivência">
+                    </li>
 
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/thrash.jpg" alt="">
-                    </div>
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/thrash.jpg" alt="Thrash">
+                    </li>
                     
-                </div>
+                </ul>
 
-                <h2 class="fonte-inter"> 
-                    Ação
-                </h2>
-
-                <div class="lista-filmes">
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/nas-profundezas.jpg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/noiva-cadaver.webp" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/o-protetor.jpg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/sobrevivencia.jpeg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/thrash.jpg" alt="">
-                    </div>
-                    
-                </div>
-
-                <h2 class="fonte-inter"> 
-                    Terror
-                </h2>
-
-                <div class="lista-filmes">
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/nas-profundezas.jpg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/noiva-cadaver.webp" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/o-protetor.jpg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/sobrevivencia.jpeg" alt="">
-                    </div>
-
-                    <div class="lista-filmes__filme">
-                        <img src="/assets/images/thrash.jpg" alt="">
-                    </div>
-                    
-                </div>
-
-            </article>
+            </div>
         </section>
     </main>
+
+    <footer class="rodape">
+
+        <p class="fonte-inter rodape__contato">
+            Dúvidas? Entre em contato.
+        </p>
+
+        <ul class="rodape__links">
+            <li><a class="fonte-inter" href="">Perguntas frequentes</a></li>
+            <li><a class="fonte-inter" href="">Central de Ajuda</a></li>
+            <li><a class="fonte-inter" href="">Conta</a></li>
+            <li><a class="fonte-inter" href="">Imprensa</a></li>
+            <li><a class="fonte-inter" href="">Relações com investidores</a></li>
+            <li><a class="fonte-inter" href="">Carreiras</a></li>
+            <li><a class="fonte-inter" href="">Resgatar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="">Comprar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="">Formas de assistir</a></li>
+            <li><a class="fonte-inter" href="">Termos de uso</a></li>
+            <li><a class="fonte-inter" href="">Privacidade</a></li>
+            <li><a class="fonte-inter" href="">Preferências de cookies</a></li>
+            <li><a class="fonte-inter" href="">Informações corporativas</a></li>
+            <li><a class="fonte-inter" href="">Entre em contato</a></li>
+            <li><a class="fonte-inter" href="">Teste de velocidade</a></li>
+            <li><a class="fonte-inter" href="">Avisos legais</a></li>
+        </ul>
+
+    </footer>
 </body>
 </html>

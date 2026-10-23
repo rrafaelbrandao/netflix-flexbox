@@ -153,6 +153,10 @@ header {
 .card:hover h2 {
     color: #F5F5F5;
 }
+.card a {
+    margin-top: 10px;
+    text-decoration: none;
+}
 
 .perfis__gerenciar {
     /* Dimensões */

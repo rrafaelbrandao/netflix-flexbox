@@ -83,7 +83,7 @@ header
 
     /* Estilos */
     border-radius: 5px;
-    background-color: #E50914;
+    
     transition: background-color 0.5s ease;
 }
 
@@ -149,9 +149,9 @@ header
 
 .hero-banner {
     /* Dimensões */
-    width: 80%;
+    width: 92%;
     height: 90vh;
-    margin: 20px 10%;
+    margin: 20px 4%;
     padding-top: 10%;
     padding-left: 5%;
 
@@ -163,7 +163,7 @@ header
 
     /* Estilos */
     background-color: rgba(20, 20, 20, 1);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/stranger-things.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/poster-horizontal/stranger-things.jpg);
     background-size: 100% 100vh;
     background-position: top;
     background-repeat: no-repeat;
@@ -187,3 +187,150 @@ header
     color: #F5F5F5;
     font-weight: 500;
 }
+
+.hero-banner div {
+    /* Dimensões*/
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+
+}
+
+.hero-banner button {
+    /* Dimensões */
+    padding: 10px;
+    
+    /* Estilos */
+    background-color: #f5f5f565;
+    border: none;
+    border-radius: 10px;
+}
+
+.hero-banner a {
+    /* Dimensões */
+    padding: 15px;
+
+    /* Textos */
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.categoria-filmes {
+    /* Dimensões */
+    margin: 20px 4%;
+    width: 92%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.categoria-filmes h2 {
+    /* Textos */
+    font-size: 1.5em;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.filmes {
+    /* Dimensões */
+    width: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    /* Textos */
+    list-style: none;
+}
+
+.filmes li {
+    /* Dimensões */
+    flex: 1; /* Faz com que cada item ocupe o mesmo espaço disponível */
+    min-width: 0; /* Garante que os itens não ultrapassem o tamanho do contêiner */
+
+    /* Posicionamento */
+    position: relative; /* Permite que o elemento seja posicionado em relação ao seu contêiner pai */
+
+    /* Estilos */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.filmes img {
+    /* Dimensões */
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém a proporção da imagem em 16:9 */
+    object-fit: cover;
+
+    /* Estilos */
+    border-radius: 10px;
+}
+
+.filmes li:hover {
+    /* Estilos */
+    transform: scale(1.1); /* Aumenta o tamanho do item em 10% ao passar o mouse */
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Footer ===== */
+
+.rodape {
+    /* Dimensões */
+    width: 100%;
+    padding: 80px 10% 40px 10%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    /* Estilos */
+    background-color: rgba(20, 20, 20, 1);
+}
+
+.rodape__contato {
+    /* Textos */
+    font-size: 1em;
+    color: #B3B3B3;
+}
+
+.rodape__links {
+    /* Dimensões */
+    width: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    /* Estilos */
+    list-style: none;
+}
+
+.rodape__links li {
+    /* Dimensões */
+    width: 25%;
+}
+
+.rodape__links a {
+    /* Textos */
+    font-size: 0.9em;
+    text-decoration: underline;
+    color: #B3B3B3;
+    transition: color 0.5s ease;
+}
+
+.rodape__links a:hover {
+    /* Estilos */
+    color: #F5F5F5;
+}
+

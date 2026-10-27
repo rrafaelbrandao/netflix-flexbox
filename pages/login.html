@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Netflix | Login</title>
 </head>
 <body>
     <header>
 
             <!-- Logo da Netflix-->
-            <a class="logo-netflix" href="">
-                <img src="/assets/icons/logo-netflix.svg" alt="">
+            <a class="logo-netflix" href="/index.html">
+                <img src="/assets/icons/logo-netflix.svg" alt="Netflix">
             </a>
 
     </header>
 
     <main>
-        <section class="login">
+        <form class="login" action="perfis.html">
+
             <h1 class="fonte-inter">
                 Entrar
             </h1>
 
-            <input class="campo-email" type="text" placeholder="Email ou número de celular">
+            <input class="campo" type="email" aria-label="Email" placeholder="Email ou número de celular" required>
             
-            <input class="campo-senha" type="password" placeholder="Senha">
+            <input class="campo" type="password" aria-label="Senha" placeholder="Senha" required>
 
-            <a class="botao-entrar" href="/pages/perfis.html">Entrar</a>
+            <button class="botao-entrar" type="submit">Entrar</button>
 
-            <span>OU</span>
+            <p class="login__separador">OU</p>
 
-            <a class="botao-codigo" href="/pages/perfis.html">Use um código de login</a>
+            <a class="botao-codigo" href="perfis.html">
+                Use um código de login
+            </a>
 
-            <span>Esqueceu sua senha ?</span>
+            <a class="login__link" href="#">
+                Esqueceu sua senha?
+            </a>
 
             <div class="login__lembrar">
                 <input class="checkbox-personalizado" type="checkbox" id="lembrar-me">
-                <label class="fonte-inter label-lembrar" for="lembrar-me">Lembre de mim</label>
+                <label class="fonte-inter label-lembrar" for="lembrar-me">Lembrar de mim</label>
             </div>
 
-            <p class="fonte-inter">
-                É sua primiera vez na Netflix ? Inscreva-se agora.  
+            <p class="login__texto">
+                É sua primeira vez na Netflix? 
+                <a class="login__link" href="#">
+                    Inscreva-se agora.
+                </a>
             </p>
 
-        </section>
+        </form>
     </main>
+
+    <footer class="rodape" id="duvidas">
+
+        <p class="fonte-inter rodape__contato">
+            Dúvidas? Entre em contato.
+        </p>
+
+        <ul class="rodape__links">
+            <li><a class="fonte-inter" href="#">Perguntas frequentes</a></li>
+            <li><a class="fonte-inter" href="#">Central de Ajuda</a></li>
+            <li><a class="fonte-inter" href="#">Conta</a></li>
+            <li><a class="fonte-inter" href="#">Imprensa</a></li>
+            <li><a class="fonte-inter" href="#">Relações com investidores</a></li>
+            <li><a class="fonte-inter" href="#">Carreiras</a></li>
+            <li><a class="fonte-inter" href="#">Resgatar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="#">Comprar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="#">Formas de assistir</a></li>
+            <li><a class="fonte-inter" href="#">Termos de uso</a></li>
+            <li><a class="fonte-inter" href="#">Privacidade</a></li>
+            <li><a class="fonte-inter" href="#">Preferências de cookies</a></li>
+            <li><a class="fonte-inter" href="#">Informações corporativas</a></li>
+            <li><a class="fonte-inter" href="#">Entre em contato</a></li>
+            <li><a class="fonte-inter" href="#">Teste de velocidade</a></li>
+            <li><a class="fonte-inter" href="#">Avisos legais</a></li>
+        </ul>
+
+        <p class="fonte-inter rodape__copyright">© 2026 Netflix | Todos os direitos reservados</p>
+
+    </footer>
 </body>
 </html>

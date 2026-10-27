@@ -1,241 +1,146 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===== Página de login (depende do base.css) ===== */
 
 body {
     /* Dimensões */
     min-height: 100vh;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+
+    /* Estilos */
+    /* Overlay escuro (gradiente) por cima da imagem de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/imagem-fundo-principal.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* Estilos */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/images/imagem-fundo-principal.jpg);
-    
-    
 }
-
-.fonte-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 
 /* ===== Header ===== */
 
 header {
     /* Dimensões */
-    width: 100%;
     height: 15vh;
 
     /* Posicionamento */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    /* Estilos */
-    background-color: transparent
-
-}
-
-.logo-netflix {
-    /* Dimensões */
-    width: 15%;
-    height: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 80%;
-    height: 100%;
-    object-fit: contain;
 }
 
 /* ===== Main ===== */
+
 main {
+    /* Dimensões */
+    flex: 1;
+    padding: 20px;
+
     /* Posicionamento */
+    /* Centraliza o formulário na horizontal e na vertical */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+/* ===== Formulário ===== */
 
 .login {
     /* Dimensões */
-    width: 40%;
-    height: 100%;
-    padding: 2.5% 5%;
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 50px;
 
     /* Posicionamento */
+    /* O gap cuida do espaço entre todos os itens do formulário */
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     /* Estilos */
-    background-color: rgba(23, 23, 23, 0.811);
+    background-color: rgba(23, 23, 23, 0.8);
+    border-radius: 5px;
 }
-
 
 .login h1 {
-    /* Posicionamento */
-    margin-bottom: 20px;
-
     /* Textos */
-    font-size: 2.0em;
-    text-align: justify;
-    color: #F5F5F5;
+    font-size: 2rem;
     font-weight: 700;
+    color: #F5F5F5;
 }
 
-.campo-email {
-    /* Dimensões*/
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+/* ===== Botões ===== */
+
+.botao-entrar,
+.botao-codigo {
+    /* Dimensões */
+    padding: 12px 20px;
 
     /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.25em;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
     color: #F5F5F5;
 
-
     /* Estilos */
-    background-color: transparent;
+    border: none;
     border-radius: 5px;
-    border: solid 2px rgb(37, 37, 37); 
-}
-
-.campo-senha {
-    /* Dimensões*/
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.25em;
-    color: #F5F5F5;
-
-
-    /* Estilos */
-    background-color: transparent;
-    border-radius: 5px;
-    border: solid 2px rgb(37, 37, 37); 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .botao-entrar {
-    /* Dimensões*/
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.25em;
-    color: #F5F5F5;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-
-
     /* Estilos */
-    transition: background-color 0.5s ease;
     background-color: #E50914;
-    border-radius: 5px;
-    border: none;
 }
 
 .botao-entrar:hover {
+    /* Estilos */
     background-color: #B80710;
 }
 
-span {
-    /* Dimensões*/
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1em;
-    color: #F5F5F5;
-    font-weight: 500;
-
-}
-
 .botao-codigo {
-    /* Dimensões*/
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.25em;
-    color: #F5F5F5;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-
     /* Estilos */
-    transition: background-color 0.5s ease;
-    background-color: rgba(113, 113, 113, 0.596);
-    border-radius: 5px;
-    border: none;
+    background-color: rgba(113, 113, 113, 0.6);
 }
 
 .botao-codigo:hover {
-    background-color: rgba(198, 197, 197, 0.596);
+    /* Estilos */
+    background-color: rgba(198, 197, 197, 0.6);
 }
 
-.login span:last-of-type {
-    text-decoration: underline;
-    margin-bottom: 20px;
+/* ===== Separador e links ===== */
+
+.login__separador {
+    /* Textos */
+    text-align: center;
+    font-weight: 500;
+    color: #F5F5F5;
 }
+
+.login__link {
+    /* Posicionamento */
+    align-self: center;
+
+    /* Textos */
+    font-weight: 500;
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.login__link:hover,
+.login__link:focus-visible {
+    /* Textos */
+    text-decoration: underline;
+}
+
+/* ===== Lembrar de mim ===== */
 
 .login__lembrar {
-    /* Dimensões */
-    width: 100%;
-    height: 25px;
-    margin-bottom: 30px;
-
     /* Posicionamento */
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
     gap: 10px;
 }
 
@@ -243,15 +148,15 @@ span {
     /* Dimensões */
     width: 25px;
     height: 25px;
-    
-    /* Estilos e Transições */
-    accent-color: #E50914; /* Mantém a cor vermelha da Netflix se usar o checkbox padrão */
+
+    /* Estilos */
+    accent-color: #E50914;
     cursor: pointer;
 }
 
 .label-lembrar {
     /* Textos */
-    font-size: 1em;
+    font-size: 1rem;
     color: #F5F5F5;
 
     /* Estilos */
@@ -259,11 +164,10 @@ span {
     user-select: none;
 }
 
-.login p {
+/* ===== Texto final ===== */
+
+.login__texto {
     /* Textos */
-    font-size: 1em;
-    color: #F5F5F5;
     font-weight: 500;
+    color: #B3B3B3;
 }
-
-

@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Netflix - Filmes e séries online</title>
+    <title>Netflix | Filmes e séries online</title>
 </head>
 <body>
     <header>
 
             <!-- Logo da Netflix-->
-            <a class="logo-netflix" href="/index.html">
-                <img src="/assets/icons/logo-netflix.svg" alt="Netflix">
+            <a class="logo-netflix" href="index.html">
+                <img src="assets/icons/logo-netflix.svg" alt="Netflix">
             </a>
 
             <!-- Seções da página -->
             <nav class="menu-de-navegacao">
                 <ul>
                     <li>
+                        <a class="fonte-inter" href="#promocao">
+                            Promoção
+                        </a>
+                    </li>
+                    <li>
                         <a class="fonte-inter" href="#em-alta">
                             Em alta
                         </a>
                     </li>
                     <li>
-                        <a class="fonte-inter" href="#novidades">
-                            Novidades
-                        </a>
-                    </li>
-                    <li>
-                        <a class="fonte-inter" href="#beneficios">
-                            Benefícios
+                        <a class="fonte-inter" href="#duvidas">
+                            Dúvidas
                         </a>
                     </li>
                 </ul>
@@ -40,7 +41,7 @@
 
             <!-- Botão entrar-->
             <div class="entrar">
-                <a class="fonte-inter" href="/pages/login.html">Entrar</a>
+                <a class="fonte-inter" href="pages/login.html">Entrar</a>
             </div>
 
     </header>
@@ -67,9 +68,9 @@
 
         </section>
 
-        <section id="em-alta">
+        <section class="catalogo">
 
-            <div class="promocao">
+            <div class="promocao" id="promocao">
                 <img class="promocao__icon" src="/assets/images/pipoca.png" alt="">
                 
                 <div class="promocao__preco">
@@ -83,7 +84,7 @@
 
             </div>
 
-            <div class="filmes">
+            <div class="filmes" id="em-alta">
 
                 <h2 class="fonte-inter"> 
                     Em alta
@@ -92,23 +93,27 @@
                 <ul class="lista-filmes">
 
                     <li class="lista-filmes__filme">
-                        <img src="/assets/images/nas-profundezas.jpg" alt="Nas Profundezas">
+                        <img src="/assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas Profundezas">
                     </li>
 
                     <li class="lista-filmes__filme">
-                        <img src="/assets/images/noiva-cadaver.webp" alt="A Noiva Cadáver">
+                        <img src="/assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva Cadáver">
                     </li>
 
                     <li class="lista-filmes__filme">
-                        <img src="/assets/images/o-protetor.jpg" alt="O Protetor">
+                        <img src="/assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor">
                     </li>
 
                     <li class="lista-filmes__filme">
-                        <img src="/assets/images/sobrevivencia.jpeg" alt="Sobrevivência">
+                        <img src="/assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência">
                     </li>
 
                     <li class="lista-filmes__filme">
-                        <img src="/assets/images/thrash.jpg" alt="Thrash">
+                        <img src="/assets/images/poster-vertical/thrash.jpg" alt="Thrash">
+                    </li>
+
+                    <li class="lista-filmes__filme">
+                        <img src="/assets/images/poster-vertical/duna.jpeg" alt="Duna">
                     </li>
                     
                 </ul>
@@ -117,30 +122,32 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape" id="duvidas">
 
         <p class="fonte-inter rodape__contato">
             Dúvidas? Entre em contato.
         </p>
 
         <ul class="rodape__links">
-            <li><a class="fonte-inter" href="">Perguntas frequentes</a></li>
-            <li><a class="fonte-inter" href="">Central de Ajuda</a></li>
-            <li><a class="fonte-inter" href="">Conta</a></li>
-            <li><a class="fonte-inter" href="">Imprensa</a></li>
-            <li><a class="fonte-inter" href="">Relações com investidores</a></li>
-            <li><a class="fonte-inter" href="">Carreiras</a></li>
-            <li><a class="fonte-inter" href="">Resgatar cartão pré-pago</a></li>
-            <li><a class="fonte-inter" href="">Comprar cartão pré-pago</a></li>
-            <li><a class="fonte-inter" href="">Formas de assistir</a></li>
-            <li><a class="fonte-inter" href="">Termos de uso</a></li>
-            <li><a class="fonte-inter" href="">Privacidade</a></li>
-            <li><a class="fonte-inter" href="">Preferências de cookies</a></li>
-            <li><a class="fonte-inter" href="">Informações corporativas</a></li>
-            <li><a class="fonte-inter" href="">Entre em contato</a></li>
-            <li><a class="fonte-inter" href="">Teste de velocidade</a></li>
-            <li><a class="fonte-inter" href="">Avisos legais</a></li>
+            <li><a class="fonte-inter" href="#">Perguntas frequentes</a></li>
+            <li><a class="fonte-inter" href="#">Central de Ajuda</a></li>
+            <li><a class="fonte-inter" href="#">Conta</a></li>
+            <li><a class="fonte-inter" href="#">Imprensa</a></li>
+            <li><a class="fonte-inter" href="#">Relações com investidores</a></li>
+            <li><a class="fonte-inter" href="#">Carreiras</a></li>
+            <li><a class="fonte-inter" href="#">Resgatar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="#">Comprar cartão pré-pago</a></li>
+            <li><a class="fonte-inter" href="#">Formas de assistir</a></li>
+            <li><a class="fonte-inter" href="#">Termos de uso</a></li>
+            <li><a class="fonte-inter" href="#">Privacidade</a></li>
+            <li><a class="fonte-inter" href="#">Preferências de cookies</a></li>
+            <li><a class="fonte-inter" href="#">Informações corporativas</a></li>
+            <li><a class="fonte-inter" href="#">Entre em contato</a></li>
+            <li><a class="fonte-inter" href="#">Teste de velocidade</a></li>
+            <li><a class="fonte-inter" href="#">Avisos legais</a></li>
         </ul>
+
+        <p class="fonte-inter rodape__copyright">© 2026 Netflix | Todos os direitos reservados</p>
 
     </footer>
 </body>

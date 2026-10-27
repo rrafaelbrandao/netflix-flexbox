@@ -1,3 +1,163 @@
+/* ===== Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Corpo da página ===== */
+
+body {
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: #F5F5F5;
+
+    /* Estilos */
+    background-color: #141414;
+}
+
+a {
+    /* Estilos */
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+/* ===== Logo (usada no header de todas as páginas) ===== */
+
+.logo-netflix {
+    /* Dimensões */
+    width: 18%;
+    height: 100%;
+    padding: 30px 20px;
+
+    /* Posicionamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estilos */
+    background-color: transparent;
+}
+
+.logo-netflix img {
+    /* Dimensões */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ===== Botões ===== */
+
+.botao {
+    /* Dimensões */
+    padding: 12px 20px;
+
+    /* Textos */
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+
+    /* Estilos */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botao--vermelho {
+    background-color: #E50914;
+}
+
+.botao--vermelho:hover {
+    background-color: #B80710;
+}
+
+.botao--cinza {
+    background-color: rgba(113, 113, 113, 0.6);
+}
+
+.botao--cinza:hover {
+    background-color: rgba(198, 197, 197, 0.6);
+}
+
+/* ===== Campos de formulário ===== */
+
+.campo {
+    /* Dimensões */
+    padding: 12px 10px;
+
+    /* Textos */
+    font-size: 1rem;
+    color: #F5F5F5;
+
+    /* Estilos */
+    background-color: transparent;
+    border: solid 2px rgb(37, 37, 37);
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+}
+
+.campo:focus {
+    border-color: #F5F5F5;
+}
+
+/* ===== Rodapé ===== */
+
+.rodape {
+    /* Dimensões */
+    padding: 80px 10% 40px 10%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    /* Estilos */
+    background-color: #141414;
+    border-top: 1px solid #333333;
+}
+
+.rodape__contato,
+.rodape__copyright {
+    /* Textos */
+    font-size: 1rem;
+    color: #B3B3B3;
+}
+
+.rodape__links {
+    /* Posicionamento */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    /* Estilos */
+    list-style: none;
+}
+
+.rodape__links li {
+    /* Dimensões */
+    width: 25%;
+}
+
+.rodape__links a {
+    /* Textos */
+    font-size: 1rem;
+    color: #B3B3B3;
+
+    /* Estilos */
+    transition: color 0.5s ease;
+}
+
+.rodape__links a:hover,
+.rodape__links a:focus-visible {
+    /* Estilos */
+    color: #F5F5F5;
+}
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +205,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .logo-netflix img {
@@ -77,13 +237,13 @@ header
 .menu-de-navegacao li {
     /* Dimensões */
     padding: 10px;
-    
+
     /* Textos */
     list-style: none;
 
     /* Estilos */
     border-radius: 5px;
-    
+
     transition: background-color 0.5s ease;
 }
 
@@ -102,7 +262,7 @@ header
 
 .menu-de-navegacao li:hover a {
     /* Estilos */
-    color: #E50914; 
+    color: #E50914;
 }
 
 .menu-perfil {
@@ -117,7 +277,7 @@ header
     align-items: center;
 }
 
-.menu-perfil figure {
+.menu-perfil button {
     /* Dimensões */
     width: 25%;
     height: 100%;
@@ -133,37 +293,36 @@ header
     /* Estilos */
     border-radius: 5px;
     background-color: #f5f5f565;
-    
+
 }
 
 .menu-perfil img {
-    /* Posicioanmento */
+    /* Posicionamento */
     width: 100%;
     height: 100%;
     object-fit: contain;
 
     /* Estilos */
     border-radius: 8px;
-    
+
 }
 
 .hero-banner {
     /* Dimensões */
     width: 92%;
-    height: 90vh;
+    height: 100vh;
     margin: 20px 4%;
-    padding-top: 10%;
-    padding-left: 5%;
+    padding: 50px 50px;
 
     /* Posicionamento */
     display: flex;
     flex-direction: column;
-    row-gap: 5%;
+    row-gap: 50px;
 
 
     /* Estilos */
     background-color: rgba(20, 20, 20, 1);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/poster-horizontal/stranger-things.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/poster-horizontal/stranger-things.jpg);
     background-size: 100% 100vh;
     background-position: top;
     background-repeat: no-repeat;
@@ -171,16 +330,37 @@ header
 
 }
 
-.hero-banner img {
+.hero-banner__titulo {
     /* Dimensões*/
     width: 40%;
-    height: auto;
+    height: 40%;
+}
+
+.hero-banner__titulo img {
+    /* Dimensões*/
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
-.hero-banner p {
+.hero-banner__info {
     /* Dimensões */
-    width: 40%;
+    width: 100%;
+
+    /* Posicionamento */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    /* Textos */
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: 500;
+    list-style: inside;
+}
+
+.hero-banner__descricao {
     /* Textos */
     font-size: 1.25em;
     text-decoration: none;
@@ -188,38 +368,26 @@ header
     font-weight: 500;
 }
 
-.hero-banner div {
-    /* Dimensões*/
-    width: 40%;
-
+.hero-banner__botoes {
     display: flex;
     flex-direction: row;
     gap: 15px;
-
-
 }
 
 .hero-banner button {
     /* Dimensões */
     padding: 10px;
-    
+
     /* Estilos */
     background-color: #f5f5f565;
     border: none;
     border-radius: 10px;
 }
 
-.hero-banner a {
-    /* Dimensões */
-    padding: 15px;
-
-    /* Textos */
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #F5F5F5;
-    font-weight: 500;
+.hero-banner button:hover {
+    /* Estilos */
+    background-color: #f5f5f565;
 }
-
 .categoria-filmes {
     /* Dimensões */
     margin: 20px 4%;
@@ -323,7 +491,7 @@ header
 
 .rodape__links a {
     /* Textos */
-    font-size: 0.9em;
+    font-size: 1rem;
     text-decoration: underline;
     color: #B3B3B3;
     transition: color 0.5s ease;
@@ -334,3 +502,127 @@ header
     color: #F5F5F5;
 }
 
+
+/* ===== Cabeçalho padronizado das páginas do catálogo ===== */
+.cabecalho {
+    width: 100%;
+    min-height: 90px;
+    height: 12vh;
+    padding: 15px 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .logo-netflix {
+    width: 12%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho .logo-netflix img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cabecalho .menu-de-navegacao {
+    width: 60%;
+    height: 100%;
+}
+
+.cabecalho .menu-de-navegacao ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecalho .menu-de-navegacao li {
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cabecalho .menu-de-navegacao a {
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.cabecalho .menu-de-navegacao li:hover,
+.cabecalho .menu-de-navegacao li:focus-within {
+    background-color: #F5F5F5;
+}
+
+.cabecalho .menu-de-navegacao li:hover a,
+.cabecalho .menu-de-navegacao li:focus-within a {
+    color: #E50914;
+}
+
+.cabecalho .menu-perfil {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .menu-perfil__botao {
+    width: 30%;
+    height: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cabecalho .menu-perfil__botao img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+    .cabecalho {
+        height: auto;
+        min-height: 80px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cabecalho .logo-netflix {
+        width: 30%;
+        height: 55px;
+    }
+
+    .cabecalho .menu-perfil {
+        width: 28%;
+        height: 55px;
+    }
+
+    .cabecalho .menu-de-navegacao {
+        width: 100%;
+        height: auto;
+        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        width: max-content;
+        min-width: 100%;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+}

@@ -347,3 +347,30 @@ header {
     color: #F5F5F5;
     border-color: #F5F5F5;
 }
+
+/* ===== Mobile ===== */ 
+@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+    
+    .logo-netflix {
+        /* Dimensões */
+        width: 30%;
+        padding: 0;
+    }
+    
+    .perfis__cards {
+        /* Posicionamento */
+        flex-wrap: wrap; /* Quebra os cards em outra linha */
+        gap: 20px;
+    }
+
+    .card {
+        /* Dimensões */
+        width: 120px;
+    }
+
+    .card img {
+        /* Dimensões */
+        width: 120px;
+        height: 120px;
+    }
+}

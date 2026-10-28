@@ -594,28 +594,49 @@ header
     border-radius: 8px;
 }
 
-@media (max-width: 760px) {
+
+/* ===== Mobile ===== */ 
+@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+
+    body {
+        background-size: 100% 100vh; /* Ajuste na cor de fundo */
+    }
+
     .cabecalho {
         height: auto;
-        min-height: 80px;
+        min-height: 90px;
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .cabecalho .logo-netflix {
-        width: 30%;
-        height: 55px;
-    }
-
+    .cabecalho .logo-netflix,
     .cabecalho .menu-perfil {
-        width: 28%;
         height: 55px;
+        padding: 0;
     }
 
     .cabecalho .menu-de-navegacao {
+        order: 3;
         width: 100%;
         height: auto;
-        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        width: max-content;
+        min-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+
+    .cabecalho .logo-netflix {
+        width: 25%;
+        padding: 0;
+    }
+
+    .cabecalho .menu-de-navegacao {
         overflow-x: auto;
     }
 
@@ -625,4 +646,5 @@ header
         justify-content: flex-start;
         gap: 8px;
     }
+
 }

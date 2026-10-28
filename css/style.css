@@ -136,12 +136,13 @@ a {
     row-gap: 15px;
 
     /* Estilos */
-    list-style: none;
+   list-style: none;
 }
 
 .rodape__links li {
     /* Dimensões */
     width: 25%;
+    list-style: none;
 }
 
 .rodape__links a {
@@ -394,6 +395,7 @@ header {
     font-style: normal;
     font-size: 1.75em;
     font-weight: 500;
+    text-align: center;
     color: #F5F5F5;
 
     /* Estilos */
@@ -462,7 +464,7 @@ header {
 
 .promocao__preco {
     /* Dimensões */
-    display: 1;
+    flex:  1;
     padding: 15px 30px;
 
     /* Textos */
@@ -595,4 +597,151 @@ header {
 .rodape__links a:hover {
     /* Estilos */
     color: #F5F5F5;
+}
+
+/* ===== Mobile ===== */ 
+@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+    body {
+        /* Posicionamento */
+        background-size: auto 100vh;
+        background-position: center top;
+    }
+    
+    header {
+        /* Posicionamento */
+        justify-content: space-around;
+        
+    }
+    
+    .menu-de-navegacao {
+        /* Posicionamento */
+        display: none;
+    }
+
+    .logo-netflix {
+        /* Dimensões */
+        padding: 0;
+
+    }
+
+    .entrar a {
+        /* Dimensões */
+        padding: 10px 15px;
+    }
+
+    .hero-section {
+        /* Dimensões */
+        min-height: 65vh;
+        margin-top: 30px;
+        padding: 10px;
+
+        /* Posicionamento */
+        justify-content: start;
+    }
+
+    .hero-section h1 {
+        /* Textos */
+        font-size: 2.0rem;
+    }
+
+    .hero-section__preco {
+        /* Textos */
+        font-size: 1.0rem;
+    }
+
+    .hero-section__chamada {
+        /* Textos */
+        font-size: 1.0rem;
+    }
+
+    .login {
+        /* Dimensões */
+        padding: 10px;
+        width: 100%;
+        
+        /* Posicionamento */
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        /* Estilos */
+        background-color: rgba(23, 23, 23, 0.8);
+        border-radius: 5px;
+    }
+
+    .campo-email {
+        /* Dimensões */
+        width: 100%;
+
+        /* Textos */
+        font-size: 1rem;
+    }
+
+    .campo-botao {
+        /* Dimensões */
+        width: 100%;
+
+        /* Textos */
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .catalogo {
+        margin-bottom: 80px;
+    }
+
+    .promocao {
+        /* Dimensões */
+        margin-bottom: 10px;
+    }
+
+    .promocao__icon {
+        width: 20%;
+    }
+
+    .promocao__preco {
+        /* Dimensões */
+        padding: 10px;
+        width: 70%;
+    }
+
+
+    .promocao__preco p {
+        /* Textos */
+        font-size: 0.75rem;
+    }
+
+    .filmes {
+        /* Dimensões */
+        height: 70%;
+        
+    }
+
+    .lista-filmes {
+        /* Posicionamento */
+        overflow-x: auto;
+
+    }
+
+    .lista-filmes__filme {
+        /* Posicionamento */
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 110px;
+    }
+
+    .rodape {
+        padding: 40px 5% 40px;
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        width: 50%;
+    }
+
+    .rodape__links a {
+        font-size: 0.7rem;
+        text-decoration: none;
+    }
+
 }

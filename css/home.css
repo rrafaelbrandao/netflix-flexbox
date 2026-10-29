@@ -713,3 +713,43 @@ header
     }
 
 }
+
+/* ===== Tablet ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        /* Estilos */
+        background-image: none;
+        background-color: rgba(20, 20, 20, 1);
+    }
+
+     .hero-banner {
+        /* Dimensões */
+        height: 80vh;
+        padding: 40px;
+
+        /* Posicionamento */
+        justify-content: space-between;
+        
+
+        /* Estilos */
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .filmes {
+        /* Posicionamento */
+        overflow-x: auto;
+    }
+
+    .filmes li {
+        /* Dimensões */
+        width: 220px;
+
+        /* Posicionamento */
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+}

@@ -750,3 +750,27 @@ header {
     }
 
 }
+
+/* ===== Tablet ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu-de-navegacao a {
+        /* Dimensões */
+        padding: 12px;
+
+        /* Textos */
+        font-size: 1.125rem;
+    }
+
+    .entrar a {
+        /* Dimensões */
+        padding: 12px 24px;
+
+        /* Textos */
+        font-size: 1.125rem;
+    }
+
+    .campo-botao {
+        /* Dimensões */
+        width: 25%;
+    }
+}

@@ -799,3 +799,44 @@ header {
         text-decoration: none;
     }
 }
+
+/*===== Tablet =====*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        /* Estilos */
+        background-image: none;
+        background-color: rgba(20, 20, 20, 1);
+    }
+
+    .hero-banner {
+        /* Dimensões */
+        height: 80vh;
+        padding: 40px;
+
+        /* Posicionamento */
+        justify-content: space-between;
+
+        /* Estilos */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-banner__descricao {
+        /* Dimensões */
+        max-width: none;
+    }
+
+    .hero-banner button {
+        /* Dimensões */
+        padding: 12px 20px;
+
+        /* Estilos */
+        background-color: rgba(113, 113, 113, 0.6);
+        border-radius: 5px;
+    }
+
+    .hero-banner button:hover {
+        /* Estilos */
+        background-color: rgba(198, 197, 197, 0.6);
+    }
+}

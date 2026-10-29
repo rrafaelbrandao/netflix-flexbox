@@ -687,6 +687,7 @@ header {
     }
 
     .catalogo {
+        /* Dimensões */
         margin-bottom: 80px;
     }
 
@@ -696,6 +697,7 @@ header {
     }
 
     .promocao__icon {
+        /* Dimensões */
         width: 20%;
     }
 
@@ -731,16 +733,19 @@ header {
     }
 
     .rodape {
+        /* Dimensões */
         padding: 40px 5% 40px;
         gap: 20px;
     }
 
     .rodape__links li {
+        /* Dimensões */
         width: 50%;
     }
 
     .rodape__links a {
-        font-size: 0.7rem;
+        /* Textos */
+        font-size: 0.8rem;
         text-decoration: none;
     }
 

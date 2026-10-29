@@ -659,35 +659,96 @@ body {
     border-radius: 8px;
 }
 
-@media (max-width: 760px) {
+
+/* ===== Mobile ===== */
+@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+
     .cabecalho {
+        /* Dimensões */
         height: auto;
-        min-height: 80px;
+
+        /* Posicionamento */
         flex-wrap: wrap;
         gap: 10px;
     }
 
     .cabecalho .logo-netflix {
-        width: 30%;
-        height: 55px;
+        /* Dimensões */
+        width: 25%;
+        height: 60px;
+        padding: 0;
     }
 
     .cabecalho .menu-perfil {
-        width: 28%;
-        height: 55px;
+        /* Dimensões */
+        width: auto;
+        height: 60px;
+        padding: 0;
+
+        /* Posicionamento */
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        /* Dimensões */
+        width: 50px;
+        height: 50px;
+        padding: 10px;
     }
 
     .cabecalho .menu-de-navegacao {
+        /* Dimensões */
         width: 100%;
         height: auto;
+
+        /* Posicionamento */
         order: 3;
         overflow-x: auto;
     }
 
     .cabecalho .menu-de-navegacao ul {
+        /* Dimensões */
         width: max-content;
         min-width: 100%;
+        height: auto;
+
+        /* Posicionamento */
         justify-content: flex-start;
-        gap: 8px;
+        gap: 10px;
+    }
+
+    .player {
+        /* Dimensões */
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .informacoes__titulo {
+        /* Textos */
+        font-size: 1.75rem;
+    }
+
+    .informacoes__descricao {
+        /* Textos */
+        font-size: 1rem;
+    }
+
+    .rodape {
+        /* Dimensões */
+        padding: 40px 5% 40px;
+
+        /* Posicionamento */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /* Dimensões */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /* Textos */
+        font-size: 0.8rem;
+        text-decoration: none;
     }
 }

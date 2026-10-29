@@ -599,52 +599,117 @@ header
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
 
     body {
-        background-size: 100% 100vh; /* Ajuste na cor de fundo */
+        /* Estilos */
+        background-image: none;
+        background-color: rgba(20, 20, 20, 1);
     }
 
     .cabecalho {
+        /* Dimensões*/
         height: auto;
-        min-height: 90px;
+
+        /* Posicionamento */
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .cabecalho .logo-netflix,
-    .cabecalho .menu-perfil {
-        height: 55px;
+    .cabecalho .logo-netflix {
+        /* Dimensões */
+        width: 25%;
+        height: 60px;
         padding: 0;
     }
 
+    .cabecalho .menu-perfil {
+        /* Dimensões */
+        width: auto;
+        height: 60px;
+        padding: 0;
+
+        /* Posicionamento*/
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        /* Dimensões */
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
     .cabecalho .menu-de-navegacao {
-        order: 3;
+        /* Dimensões */
         width: 100%;
         height: auto;
+
+        /* Posicionamento */
+        order: 3; /* Troca a ordem com os elementos de perfil*/
         overflow-x: auto;
     }
 
     .cabecalho .menu-de-navegacao ul {
-        width: max-content;
+        /* Dimensões */
+        width: max-content; /* A lista pode se acomodar tranquilamente*/
         min-width: 100%;
         height: auto;
+
+        /* Posicionamento */
         justify-content: flex-start;
-        gap: 8px;
-    }
-
-
-    .cabecalho .logo-netflix {
-        width: 25%;
-        padding: 0;
-    }
-
-    .cabecalho .menu-de-navegacao {
+        gap: 10px;
         overflow-x: auto;
     }
 
-    .cabecalho .menu-de-navegacao ul {
-        width: max-content;
-        min-width: 100%;
-        justify-content: flex-start;
-        gap: 8px;
+    .hero-banner {
+        /* Dimensões */
+        min-height: 45vh;
+        height: auto;
+        padding: 25px;
+
+        /* Posicioanmento */
+        justify-content: end;
+        align-items: center;
+        background-size: cover;
+        row-gap: 20px;
+    }
+
+    .hero-banner__info {
+        /* Dimensões */
+        width: 100%;
+
+        /* Posicionamento */
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .hero-banner__descricao {
+        /* Dimensões */
+        display: none;
+    }
+
+    .filmes {
+        /* Posicionamento */
+        overflow-x: auto;
+    }
+
+    .filmes li {
+        flex-grow: 0; /* Impede que o card cresça, mantendo o valor padrão*/
+        flex-shrink: 0; /* Impede que o card diminua, mantendo o valor padrão*/
+        flex-basis: 220px;
+    }
+
+    .rodape {
+        padding: 40px 5% 40px;
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        width: 50%;
+    }
+
+    .rodape__links a {
+        font-size: 0.8rem;
+        text-decoration: none;
     }
 
 }

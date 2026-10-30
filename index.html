@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Netflix | Filmes e séries online</title>
-</head>
-<body>
-    <header>
-
-            <!-- Logo da Netflix-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+        <title>
+            Netflix | Filmes, séries e muito mais
+        </title>
+    </head>
+    <body>
+        <header>
             <a class="logo-netflix" href="index.html">
-                <img src="assets/icons/logo-netflix.svg" alt="Netflix">
+                <img src="assets/icons/logo-netflix.svg" alt="Netflix" />
             </a>
-
-            <!-- Seções da página -->
             <nav class="menu-de-navegacao">
                 <ul>
                     <li>
@@ -37,117 +35,158 @@
                     </li>
                 </ul>
             </nav>
-
-            <!-- Botão entrar-->
             <div class="entrar">
-                <a class="fonte-inter" href="pages/login.html">Entrar</a>
+                <a class="fonte-inter" href="pages/login.html">
+                    Entrar
+                </a>
             </div>
-
-    </header>
-
-    <main>
-        <section class="hero-section">
-
-            <h1 class="fonte-inter">
-                Filmes, séries e muito mais, sem limites
-            </h1>
-
-            <p class="fonte-inter hero-section__preco">
-                A partir de R$ 25,90. Cancele quando quiser.
-            </p>
-
-            <p class="fonte-inter hero-section__chamada">
-                Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
-            </p>
-
-            <form class="login">
-                <input class="campo-email" type="email" aria-label="Email" placeholder="Email">
-                <a class="campo-botao" href="pages/login.html">Vamos lá &gt;</a>
-            </form>
-
-        </section>
-
-        <section class="catalogo">
-
-            <div class="promocao" id="promocao">
-                <img class="promocao__icon" src="assets/images/pipoca.png" alt="">
-                
-                <div class="promocao__preco">
-                    <p class="fonte-inter">
-                        A Netflix que você adora por apenas R$25,90.
-                    </p>
-                    <p class="fonte-inter">
-                        Aproveite nossa opção mais acessível, o plano com anúncios.
-                    </p>
+        </header>
+        <main>
+            <section class="hero-section">
+                <h1 class="fonte-inter">
+                    Filmes, séries e muito mais, sem limites
+                </h1>
+                <p class="fonte-inter hero-section__preco">
+                    A partir de R$ 25,90. Cancele quando quiser.
+                </p>
+                <p class="fonte-inter hero-section__chamada">
+                    Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+                </p>
+                <form class="login">
+                    <input class="campo-email" type="email" aria-label="Email" placeholder="Email" />
+                    <a class="campo-botao" href="pages/login.html">
+                        Vamos lá >
+                    </a>
+                </form>
+            </section>
+            <section class="catalogo">
+                <div class="promocao" id="promocao">
+                    <img class="promocao__icon" src="assets/images/pipoca.png" alt="" />
+                    <div class="promocao__preco">
+                        <p class="fonte-inter">
+                            A Netflix que você adora por apenas R$25,90.
+                        </p>
+                        <p class="fonte-inter">
+                            Aproveite nossa opção mais acessível, o plano com anúncios.
+                        </p>
+                    </div>
                 </div>
-
-            </div>
-
-            <div class="filmes" id="em-alta">
-
-                <h2 class="fonte-inter"> 
-                    Em alta
-                </h2>
-
-                <ul class="lista-filmes">
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas Profundezas">
-                    </li>
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva Cadáver">
-                    </li>
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor">
-                    </li>
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência">
-                    </li>
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/thrash.jpg" alt="Thrash">
-                    </li>
-
-                    <li class="lista-filmes__filme">
-                        <img src="assets/images/poster-vertical/duna.jpeg" alt="Duna">
-                    </li>
-                    
-                </ul>
-
-            </div>
-        </section>
-    </main>
-
-    <footer class="rodape" id="duvidas">
-
-        <p class="fonte-inter rodape__contato">
-            Dúvidas? Entre em contato.
-        </p>
-
-        <ul class="rodape__links">
-            <li><a class="fonte-inter" href="#">Perguntas frequentes</a></li>
-            <li><a class="fonte-inter" href="#">Central de Ajuda</a></li>
-            <li><a class="fonte-inter" href="#">Conta</a></li>
-            <li><a class="fonte-inter" href="#">Imprensa</a></li>
-            <li><a class="fonte-inter" href="#">Relações com investidores</a></li>
-            <li><a class="fonte-inter" href="#">Carreiras</a></li>
-            <li><a class="fonte-inter" href="#">Resgatar cartão pré-pago</a></li>
-            <li><a class="fonte-inter" href="#">Comprar cartão pré-pago</a></li>
-            <li><a class="fonte-inter" href="#">Formas de assistir</a></li>
-            <li><a class="fonte-inter" href="#">Termos de uso</a></li>
-            <li><a class="fonte-inter" href="#">Privacidade</a></li>
-            <li><a class="fonte-inter" href="#">Preferências de cookies</a></li>
-            <li><a class="fonte-inter" href="#">Informações corporativas</a></li>
-            <li><a class="fonte-inter" href="#">Entre em contato</a></li>
-            <li><a class="fonte-inter" href="#">Teste de velocidade</a></li>
-            <li><a class="fonte-inter" href="#">Avisos legais</a></li>
-        </ul>
-
-        <p class="fonte-inter rodape__copyright">© 2026 Netflix | Todos os direitos reservados</p>
-
-    </footer>
-</body>
+                <div class="filmes" id="em-alta">
+                    <h2 class="fonte-inter">
+                        Em alta
+                    </h2>
+                    <ul class="lista-filmes">
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas Profundezas" />
+                        </li>
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva Cadáver" />
+                        </li>
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor" />
+                        </li>
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência" />
+                        </li>
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/thrash.jpg" alt="Thrash" />
+                        </li>
+                        <li class="lista-filmes__filme">
+                            <img src="assets/images/poster-vertical/duna.jpeg" alt="Duna" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape" id="duvidas">
+            <p class="fonte-inter rodape__contato">
+                Dúvidas? Entre em contato.
+            </p>
+            <ul class="rodape__links">
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Perguntas frequentes
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Central de Ajuda
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Conta
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Imprensa
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Relações com investidores
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Carreiras
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Resgatar cartão pré-pago
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Comprar cartão pré-pago
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Formas de assistir
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Termos de uso
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Privacidade
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Preferências de cookies
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Informações corporativas
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Entre em contato
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Teste de velocidade
+                    </a>
+                </li>
+                <li>
+                    <a class="fonte-inter" href="#">
+                        Avisos legais
+                    </a>
+                </li>
+            </ul>
+            <p class="fonte-inter rodape__copyright">
+                © 2026 Netflix | Todos os direitos reservados
+            </p>
+        </footer>
+    </body>
 </html>

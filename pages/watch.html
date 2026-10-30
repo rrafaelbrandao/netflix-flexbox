@@ -1,162 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/watch.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Assistindo: Stranger Things | Netflix</title>
-</head>
-<body>
-
-    <!-- Header reutilizado -->
-    <header class="cabecalho">
-
-        <!-- Logo da Netflix -->
-        <a class="logo-netflix" href="home.html">
-            <img src="../assets/icons/logo-netflix.svg" alt="Netflix">
-        </a>
-
-        <!-- Menu de navegação -->
-        <nav class="menu-de-navegacao">
-            <ul>
-                <li><a href="home.html#em-alta">Em alta</a></li>
-                <li><a href="home.html#continuar-assistindo">Continuar assistindo</a></li>
-                <li><a href="home.html#acao">Ação</a></li>
-                <li><a href="home.html#comedia">Comédia</a></li>
-                <li><a href="home.html#terror">Terror</a></li>
-            </ul>
-        </nav>
-
-        <!-- Ícones: busca, notificações e perfil -->
-        <div class="menu-perfil">
-
-            <button class="menu-perfil__botao" type="button" aria-label="Buscar">
-                <img src="../assets/icons/search-icon.png" alt="">
-            </button>
-
-            <button class="menu-perfil__botao" type="button" aria-label="Notificações">
-                <img src="../assets/icons/notification-icon.png" alt="">
-            </button>
-
-            <button class="menu-perfil__botao" type="button" aria-label="Perfil">
-                <img src="../assets/icons/rafael-perfil-icone.png" alt="">
-            </button>
-
-        </div>
-
-    </header>
-
-    <main class="conteudo-principal">
-
-        <!-- 6.1 Player & 6.2 Controles -->
-        <section class="player-container">
-
-            <div class="player">
-                <!-- Iframe oficial do YouTube com o ID do vídeo Wb3kaP580kA -->
-                <iframe 
-                    class="player__iframe" 
-                    src="https://www.youtube.com/embed/Wb3kaP580kA?autoplay=0&rel=0&modestbranding=1" 
-                    title="Stranger Things 5 | Trailer oficial | Netflix" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                ></iframe>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/watch.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+        <title>
+            Assistir Stranger Things | Netflix
+        </title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a class="logo-netflix" href="home.html">
+                <img src="../assets/icons/logo-netflix.svg" alt="Netflix" />
+            </a>
+            <nav class="menu-de-navegacao">
+                <ul>
+                    <li>
+                        <a href="home.html#em-alta">
+                            Em alta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html#continuar-assistindo">
+                            Continuar assistindo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html#acao">
+                            Ação
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html#comedia">
+                            Comédia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html#terror">
+                            Terror
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-perfil">
+                <button class="menu-perfil__botao" type="button" aria-label="Buscar">
+                    <img src="../assets/icons/search-icon.png" alt="" />
+                </button>
+                <button class="menu-perfil__botao" type="button" aria-label="Notificações">
+                    <img src="../assets/icons/notification-icon.png" alt="" />
+                </button>
+                <button class="menu-perfil__botao" type="button" aria-label="Perfil">
+                    <img src="../assets/icons/rafael-perfil-icone.png" alt="" />
+                </button>
             </div>
-
-        </section>
-
-        <!-- 6.3 Informações -->
-        <section class="informacoes">
-
-            <h1 class="informacoes__titulo">Stranger Things</h1>
-
-            <p class="informacoes__descricao">
-                Quando um garoto desaparece em Hawkins, seus amigos enfrentam segredos do governo e forças sobrenaturais para trazê-lo de volta.
+        </header>
+        <main class="conteudo-principal">
+            <section class="player-container">
+                <div class="player">
+                    <iframe class="player__iframe" src="https://www.youtube.com/embed/Wb3kaP580kA?autoplay=0&amp;rel=0&amp;modestbranding=1" title="Stranger Things 5 | Trailer oficial | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                        </iframe>
+                </div>
+            </section>
+            <section class="informacoes">
+                <h1 class="informacoes__titulo">
+                    Stranger Things
+                </h1>
+                <p class="informacoes__descricao">
+                    Quando um garoto desaparece em Hawkins, seus amigos enfrentam segredos do governo e forças sobrenaturais para trazê-lo de volta.
+                </p>
+                <ul class="informacoes__metadados">
+                    <li>
+                        2026
+                    </li>
+                    <li>
+                        •
+                    </li>
+                    <li>
+                        Ficção Científica
+                    </li>
+                    <li>
+                        •
+                    </li>
+                    <li>
+                        2h 10min
+                    </li>
+                </ul>
+            </section>
+            <section class="mais-conteudos">
+                <h2 class="mais-conteudos__titulo">
+                    Mais conteúdos para assistir
+                </h2>
+                <ul class="lista-cards">
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/duna.jpeg" alt="Duna" />
+                    </li>
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas profundezas" />
+                    </li>
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva-Cadáver" />
+                    </li>
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor" />
+                    </li>
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência" />
+                    </li>
+                    <li class="lista-cards__item">
+                        <img src="../assets/images/poster-vertical/thrash.jpg" alt="Thrash" />
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p class="rodape__contato">
+                Dúvidas? Entre em contato.
             </p>
-
-            <ul class="informacoes__metadados">
-                <li>2026</li>
-                <li>&#8226;</li>
-                <li>Ficção Científica</li>
-                <li>&#8226;</li>
-                <li>2h 10min</li>
-            </ul>
-
-        </section>
-
-        <!-- 6.4 Próximos conteúdos -->
-        <section class="mais-conteudos">
-
-            <h2 class="mais-conteudos__titulo">Mais conteúdos para assistir</h2>
-
-            <ul class="lista-cards">
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/duna.jpeg" alt="Duna">
-                </li>
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas profundezas">
-                </li>
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva-Cadáver">
-                </li>
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor">
-                </li>
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência">
-                </li>
-
-                <li class="lista-cards__item">
-                    <img src="../assets/images/poster-vertical/thrash.jpg" alt="Thrash">
-                </li>
-
-            </ul>
-
-        </section>
-
-    </main>
-
-    <!-- Rodapé reutilizado -->
-    <footer class="rodape">
-
-        <p class="rodape__contato">
-            Dúvidas? Entre em contato.
-        </p>
-
-        <nav aria-label="Links do rodapé">
-            <ul class="rodape__links">
-                <li><a href="#">Perguntas frequentes</a></li>
-                <li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">Conta</a></li>
-                <li><a href="#">Imprensa</a></li>
-                <li><a href="#">Relações com investidores</a></li>
-                <li><a href="#">Carreiras</a></li>
-                <li><a href="#">Resgatar cartão pré-pago</a></li>
-                <li><a href="#">Comprar cartão pré-pago</a></li>
-                <li><a href="#">Formas de assistir</a></li>
-                <li><a href="#">Termos de uso</a></li>
-                <li><a href="#">Privacidade</a></li>
-                <li><a href="#">Preferências de cookies</a></li>
-                <li><a href="#">Informações corporativas</a></li>
-                <li><a href="#">Entre em contato</a></li>
-                <li><a href="#">Teste de velocidade</a></li>
-                <li><a href="#">Avisos legais</a></li>
-            </ul>
-        </nav>
-
-        <p class="rodape__copyright">
-            &copy; 2026 Netflix | Todos os direitos reservados
-        </p>
-
-    </footer>
-
-</body>
+            <nav aria-label="Links do rodapé">
+                <ul class="rodape__links">
+                    <li>
+                        <a href="#">
+                            Perguntas frequentes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Central de Ajuda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Conta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Imprensa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Relações com investidores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Carreiras
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Resgatar cartão pré-pago
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Comprar cartão pré-pago
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Formas de assistir
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Termos de uso
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Preferências de cookies
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Informações corporativas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Entre em contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Teste de velocidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Avisos legais
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="rodape__copyright">
+                © 2026 Netflix | Todos os direitos reservados
+            </p>
+        </footer>
+    </body>
 </html>

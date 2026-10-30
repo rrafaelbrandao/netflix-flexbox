@@ -1,119 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Início | Rafael</title>
-</head>
-<body>
-    <header class="cabecalho">
-
-        <a class="logo-netflix" href="home.html">
-            <img src="../assets/icons/logo-netflix.svg" alt="Netflix">
-        </a>
-
-        <nav class="menu-de-navegacao" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#em-alta">Em alta</a></li>
-                <li><a href="#continuar-assistindo">Continuar assistindo</a></li>
-                <li><a href="#acao">Ação</a></li>
-                <li><a href="#comedia">Comédia</a></li>
-                <li><a href="#terror">Terror</a></li>
-            </ul>
-        </nav>
-
-        <div class="menu-perfil">
-            <button class="menu-perfil__botao" type="button" aria-label="Buscar"><img src="../assets/icons/search-icon.png" alt=""></button>
-            <button class="menu-perfil__botao" type="button" aria-label="Notificações"><img src="../assets/icons/notification-icon.png" alt=""></button>
-            <button class="menu-perfil__botao" type="button" aria-label="Perfil"><img src="../assets/icons/rafael-perfil-icone.png" alt=""></button>
-        </div>
-
-    </header>
-
-    <main>
-        <section class="hero-banner">
-            <h1 class="hero-banner__titulo"><img src="../assets/images/stranger-things-logo.webp" alt="Stranger Things"></h1>
-            <ul class="hero-banner__info">
-                <li>2026</li><li>5 temporadas</li><li>16 anos</li><li>Ficção Científica</li>
-            </ul>
-            <p class="hero-banner__descricao">Quando um garoto desaparece em Hawkins, seus amigos enfrentam segredos do governo e forças sobrenaturais para trazê-lo de volta.</p>
-            <div class="hero-banner__botoes">
-                <a class="botao botao--cinza" href="watch.html">Assistir</a>
-                <a class="botao botao--cinza" href="details.html">Mais Informações</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/home.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
+        <title>
+            Início | Netflix
+        </title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a class="logo-netflix" href="home.html">
+                <img src="../assets/icons/logo-netflix.svg" alt="Netflix" />
+            </a>
+            <nav class="menu-de-navegacao" aria-label="Navegação principal">
+                <ul>
+                    <li>
+                        <a href="#em-alta">
+                            Em alta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#continuar-assistindo">
+                            Continuar assistindo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#acao">
+                            Ação
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#comedia">
+                            Comédia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#terror">
+                            Terror
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-perfil">
+                <button class="menu-perfil__botao" type="button" aria-label="Buscar">
+                    <img src="../assets/icons/search-icon.png" alt="" />
+                </button>
+                <button class="menu-perfil__botao" type="button" aria-label="Notificações">
+                    <img src="../assets/icons/notification-icon.png" alt="" />
+                </button>
+                <button class="menu-perfil__botao" type="button" aria-label="Perfil">
+                    <img src="../assets/icons/rafael-perfil-icone.png" alt="" />
+                </button>
             </div>
-        </section>
-        <section id="em-alta" class="categoria-filmes">
-            <h2>Em alta</h2>
-            <ul class="filmes">
-                <li><img src="../assets/images/poster-horizontal/a-origem.jpeg" alt="A origem"></li>
-                <li><img src="../assets/images/poster-horizontal/duna.jpeg" alt="Duna"></li>
-                <li><img src="../assets/images/poster-horizontal/interestelar.jpeg" alt="Interestelar"></li>
-                <li><img src="../assets/images/poster-horizontal/the-batman.jpeg" alt="The Batman"></li>
-                <li><img src="../assets/images/poster-horizontal/homem-aranha-aranhaverso.jpeg" alt="Homem-Aranha: Através do Aranhaverso"></li>
-                <li><img src="../assets/images/poster-horizontal/batman-cavaleiro-das-trevas.jpeg" alt="Batman: O Cavaleiro das Trevas"></li>
+        </header>
+        <main>
+            <section class="hero-banner">
+                <h1 class="hero-banner__titulo">
+                    <img src="../assets/images/stranger-things-logo.webp" alt="Stranger Things" />
+                </h1>
+                <ul class="hero-banner__info">
+                    <li>
+                        2026
+                    </li>
+                    <li>
+                        5 temporadas
+                    </li>
+                    <li>
+                        16 anos
+                    </li>
+                    <li>
+                        Ficção Científica
+                    </li>
+                </ul>
+                <p class="hero-banner__descricao">
+                    Quando um garoto desaparece em Hawkins, seus amigos enfrentam segredos do governo e forças sobrenaturais para trazê-lo de volta.
+                </p>
+                <div class="hero-banner__botoes">
+                    <a class="botao botao--cinza" href="watch.html">
+                        Assistir
+                    </a>
+                    <a class="botao botao--cinza" href="details.html">
+                        Mais Informações
+                    </a>
+                </div>
+            </section>
+            <section id="em-alta" class="categoria-filmes">
+                <h2>
+                    Em alta
+                </h2>
+                <ul class="filmes">
+                    <li>
+                        <img src="../assets/images/poster-horizontal/a-origem.jpeg" alt="A origem" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/duna.jpeg" alt="Duna" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/interestelar.jpeg" alt="Interestelar" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/the-batman.jpeg" alt="The Batman" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/homem-aranha-aranhaverso.jpeg" alt="Homem-Aranha: Através do Aranhaverso" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/batman-cavaleiro-das-trevas.jpeg" alt="Batman: O Cavaleiro das Trevas" />
+                    </li>
+                </ul>
+            </section>
+            <section id="continuar-assistindo" class="categoria-filmes">
+                <h2>
+                    Continuar assistindo
+                </h2>
+                <ul class="filmes">
+                    <li>
+                        <img src="../assets/images/poster-horizontal/glass.jpeg" alt="Glass" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/agente-oculto.jpeg" alt="Agente oculto" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/john-wick.jpeg" alt="John Wick" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/oppenheimmer.jpeg" alt="Oppenheimer" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/rebel-moon.jpeg" alt="Rebel Moon" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/resgate-2.jpeg" alt="Resgate 2" />
+                    </li>
+                </ul>
+            </section>
+            <section id="acao" class="categoria-filmes">
+                <h2>
+                    Ação
+                </h2>
+                <ul class="filmes">
+                    <li>
+                        <img src="../assets/images/poster-horizontal/missao-impossivel.jpeg" alt="Missão Impossível" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/madmax.jpeg" alt="Mad Max" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/sisu.jpeg" alt="Sisu" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/trem-bala.jpeg" alt="Trem-Bala" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/top-gun.jpeg" alt="Top Gun" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/ambulancia.jpeg" alt="Ambulância" />
+                    </li>
+                </ul>
+            </section>
+            <section id="comedia" class="categoria-filmes">
+                <h2>
+                    Comédia
+                </h2>
+                <ul class="filmes">
+                    <li>
+                        <img src="../assets/images/poster-horizontal/gente-grande.jpeg" alt="Gente Grande" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/se-beber-nao-case.jpeg" alt="Se Beber, Não Case" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/free-guy.jpeg" alt="Free Guy" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/misterio-no-mediterraneo.jpeg" alt="Mistério no Mediterrâneo" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/familia-no-bagulho.jpeg" alt="Família no Bagulho" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/home-de-toronto.jpeg" alt="O Homem de Toronto" />
+                    </li>
+                </ul>
+            </section>
+            <section id="terror" class="categoria-filmes">
+                <h2>
+                    Terror
+                </h2>
+                <ul class="filmes">
+                    <li>
+                        <img src="../assets/images/poster-horizontal/invocacao-do-mal.jpeg" alt="Invocação do Mal" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/it-a-coisa.jpeg" alt="It: A Coisa" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/sorris.jpeg" alt="Sorria" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/hereditario.jpeg" alt="Hereditário" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/rua-do-medo.jpeg" alt="Rua do Medo" />
+                    </li>
+                    <li>
+                        <img src="../assets/images/poster-horizontal/um-lugar-silencioso.jpeg" alt="Um Lugar Silencioso" />
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p class="rodape__contato">
+                Dúvidas? Entre em contato.
+            </p>
+            <ul class="rodape__links">
+                <li>
+                    <a href="#">
+                        Perguntas frequentes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Central de Ajuda
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Conta
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Imprensa
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Relações com investidores
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Carreiras
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Resgatar cartão pré-pago
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Comprar cartão pré-pago
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Formas de assistir
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Termos de uso
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Privacidade
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Preferências de cookies
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Informações corporativas
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Entre em contato
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Teste de velocidade
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Avisos legais
+                    </a>
+                </li>
             </ul>
-        </section>
-        <section id="continuar-assistindo" class="categoria-filmes">
-            <h2>Continuar assistindo</h2>
-            <ul class="filmes">
-                <li><img src="../assets/images/poster-horizontal/glass.jpeg" alt="Glass"></li>
-                <li><img src="../assets/images/poster-horizontal/agente-oculto.jpeg" alt="Agente oculto"></li>
-                <li><img src="../assets/images/poster-horizontal/john-wick.jpeg" alt="John Wick"></li>
-                <li><img src="../assets/images/poster-horizontal/oppenheimmer.jpeg" alt="Oppenheimer"></li>
-                <li><img src="../assets/images/poster-horizontal/rebel-moon.jpeg" alt="Rebel Moon"></li>
-                <li><img src="../assets/images/poster-horizontal/resgate-2.jpeg" alt="Resgate 2"></li>
-            </ul>
-        </section>
-        <section id="acao" class="categoria-filmes">
-            <h2>Ação</h2>
-            <ul class="filmes">
-                <li><img src="../assets/images/poster-horizontal/missao-impossivel.jpeg" alt="Missão Impossível"></li>
-                <li><img src="../assets/images/poster-horizontal/madmax.jpeg" alt="Mad Max"></li>
-                <li><img src="../assets/images/poster-horizontal/sisu.jpeg" alt="Sisu"></li>
-                <li><img src="../assets/images/poster-horizontal/trem-bala.jpeg" alt="Trem-Bala"></li>
-                <li><img src="../assets/images/poster-horizontal/top-gun.jpeg" alt="Top Gun"></li>
-                <li><img src="../assets/images/poster-horizontal/ambulancia.jpeg" alt="Ambulância"></li>
-            </ul>
-        </section>
-        <section id="comedia" class="categoria-filmes">
-            <h2>Comédia</h2>
-            <ul class="filmes">
-                <li><img src="../assets/images/poster-horizontal/gente-grande.jpeg" alt="Gente Grande"></li>
-                <li><img src="../assets/images/poster-horizontal/se-beber-nao-case.jpeg" alt="Se Beber, Não Case"></li>
-                <li><img src="../assets/images/poster-horizontal/free-guy.jpeg" alt="Free Guy"></li>
-                <li><img src="../assets/images/poster-horizontal/misterio-no-mediterraneo.jpeg" alt="Mistério no Mediterrâneo"></li>
-                <li><img src="../assets/images/poster-horizontal/familia-no-bagulho.jpeg" alt="Família no Bagulho"></li>
-                <li><img src="../assets/images/poster-horizontal/home-de-toronto.jpeg" alt="O Homem de Toronto"></li>
-            </ul>
-        </section>
-        <section id="terror" class="categoria-filmes">
-            <h2>Terror</h2>
-            <ul class="filmes">
-                <li><img src="../assets/images/poster-horizontal/invocacao-do-mal.jpeg" alt="Invocação do Mal"></li>
-                <li><img src="../assets/images/poster-horizontal/it-a-coisa.jpeg" alt="It: A Coisa"></li>
-                <li><img src="../assets/images/poster-horizontal/sorris.jpeg" alt="Sorria"></li>
-                <li><img src="../assets/images/poster-horizontal/hereditario.jpeg" alt="Hereditário"></li>
-                <li><img src="../assets/images/poster-horizontal/rua-do-medo.jpeg" alt="Rua do Medo"></li>
-                <li><img src="../assets/images/poster-horizontal/um-lugar-silencioso.jpeg" alt="Um Lugar Silencioso"></li>
-            </ul>
-        </section>
-    </main>
-    <footer class="rodape">
-        <p class="rodape__contato">Dúvidas? Entre em contato.</p>
-        <ul class="rodape__links">
-            <li><a href="#">Perguntas frequentes</a></li><li><a href="#">Central de Ajuda</a></li>
-            <li><a href="#">Conta</a></li><li><a href="#">Imprensa</a></li>
-            <li><a href="#">Relações com investidores</a></li><li><a href="#">Carreiras</a></li>
-            <li><a href="#">Resgatar cartão pré-pago</a></li><li><a href="#">Comprar cartão pré-pago</a></li>
-            <li><a href="#">Formas de assistir</a></li><li><a href="#">Termos de uso</a></li>
-            <li><a href="#">Privacidade</a></li><li><a href="#">Preferências de cookies</a></li>
-            <li><a href="#">Informações corporativas</a></li><li><a href="#">Entre em contato</a></li>
-            <li><a href="#">Teste de velocidade</a></li><li><a href="#">Avisos legais</a></li>
-        </ul>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

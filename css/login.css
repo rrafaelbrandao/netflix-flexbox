@@ -1,6 +1,20 @@
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-/* ===== Reset ===== */
+body {
+    /* Dimensões */
+    min-height: 100vh;
+    /* Posicionamento */
+    display: flex;
+    flex-direction: column;
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: #F5F5F5;
+    /* Estilos */
+    background-color: #141414;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/imagem-fundo-principal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 * {
     margin: 0;
@@ -8,17 +22,11 @@
     box-sizing: border-box;
 }
 
+/* ===== Estilizações comuns a todas as páginas ===== */
+
+/* ===== Reset ===== */
+
 /* ===== Corpo da página ===== */
-
-body {
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    color: #F5F5F5;
-
-    /* Estilos */
-    background-color: #141414;
-}
 
 a {
     /* Estilos */
@@ -162,23 +170,9 @@ a {
 }
 /* ===== Página de login ===== */
 
-body {
-    /* Dimensões */
-    min-height: 100vh;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-
-    /* Estilos */
-    /* Overlay escuro (gradiente) por cima da imagem de fundo */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/imagem-fundo-principal.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* ===== Header ===== */
+
+/* ===== Header da página ===== */
 
 header {
     /* Dimensões */
@@ -191,6 +185,8 @@ header {
 }
 
 /* ===== Main ===== */
+
+/* ===== Main da página ===== */
 
 main {
     /* Dimensões */

@@ -1,6 +1,17 @@
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-/* ===== Reset ===== */
+body {
+    /* Dimensões */
+    min-height: 100vh;
+    /* Textos */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: #F5F5F5;
+    /* Estilos */
+    background-color: #141414;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle at center, rgba(55, 12, 15, 0.7) 0%, rgba(15, 3, 4, 0.9) 45%, rgba(0, 0, 0, 0.98) 90%);
+}
 
 * {
     margin: 0;
@@ -8,17 +19,17 @@
     box-sizing: border-box;
 }
 
-/* ===== Corpo da página ===== */
-
-body {
-    /* Textos */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    color: #F5F5F5;
-
-    /* Estilos */
-    background-color: #141414;
+.fonte-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+/* ===== Estilizações comuns a todas as páginas ===== */
+
+/* ===== Reset ===== */
+
+/* ===== Corpo da página ===== */
 
 a {
     /* Estilos */
@@ -164,33 +175,9 @@ a {
 
 /* ===== Estilizações específicas da página ===== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* Dimensões */
-    min-height: 100vh;
-
-    /* Posicionamento */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* Estilos */
-    background-color: #141414;
-    background-image: radial-gradient(circle at center, rgba(55, 12, 15, 0.7) 0%, rgba(15, 3, 4, 0.9) 45%, rgba(0, 0, 0, 0.98) 90%);
-}
-
-.fonte-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 /* ===== Header ===== */
+
+/* ===== Header da página ===== */
 
 header {
     /* Dimensões */
@@ -230,6 +217,8 @@ header {
 }
 
 /* ===== Main ===== */
+
+/* ===== Main da página ===== */
 
 .perfis {
     /* Dimensões */

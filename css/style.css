@@ -1,4 +1,4 @@
-
+/* ===== Estilizações comuns a todas as páginas ===== */
 
 html {
     scroll-behavior: smooth; /* Rolagem suave */
@@ -31,19 +31,15 @@ body {
   font-style: normal;
 }
 
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-/* ===== Reset ===== */
-
-/* ===== Corpo da página ===== */
-
 a {
     /* Estilos */
     text-decoration: none;
     color: #F5F5F5;
 }
 
-/* ===== Logo (usada no header de todas as páginas) ===== */
+/* ===== Corpo da página ===== */
+
+/* ===== Logo ===== */
 
 .logo-netflix {
     /* Dimensões */

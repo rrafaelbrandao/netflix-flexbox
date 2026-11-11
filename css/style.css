@@ -1,17 +1,11 @@
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-html {
-    scroll-behavior: smooth; /* Rolagem suave */
-}
-
 body {
-    /* Dimensões */
+    /*  Dimensões  */
     min-height: 100vh;
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     color: #F5F5F5;
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgba(20, 20, 20, 1);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/imagem-fundo-principal.jpg);
     background-size: 100% 100vh;
@@ -19,254 +13,94 @@ body {
     background-repeat: no-repeat;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.fonte-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-a {
-    /* Estilos */
-    text-decoration: none;
-    color: #F5F5F5;
-}
-
-/* ===== Corpo da página ===== */
-
-/* ===== Logo ===== */
-
-.logo-netflix {
-    /* Dimensões */
-    width: 18%;
-    height: 100%;
-    padding: 30px 20px;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent;
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ===== Botões ===== */
-
-.botao {
-    /* Dimensões */
-    padding: 12px 20px;
-
-    /* Textos */
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: #F5F5F5;
-
-    /* Estilos */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.botao--vermelho {
-    background-color: #E50914;
-}
-
-.botao--vermelho:hover {
-    background-color: #B80710;
-}
-
-.botao--cinza {
-    background-color: rgba(113, 113, 113, 0.6);
-}
-
-.botao--cinza:hover {
-    background-color: rgba(198, 197, 197, 0.6);
-}
-
-/* ===== Rodapé ===== */
-
-.rodape {
-    /* Dimensões */
-    padding: 80px 10% 40px 10%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    /* Estilos */
-    background-color: #141414;
-    border-top: 1px solid #333333;
-}
-
-.rodape__contato,
-.rodape__copyright {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-}
-
-.rodape__links {
-    /* Posicionamento */
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-
-    /* Estilos */
-   list-style: none;
-}
-
-.rodape__links li {
-    /* Dimensões */
-    width: 25%;
-    list-style: none;
-}
-
-.rodape__links a {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-
-    /* Estilos */
-    transition: color 0.5s ease;
-}
-
-.rodape__links a:hover,
-.rodape__links a:focus-visible {
-    /* Estilos */
-    color: #F5F5F5;
-}
-
-/* ===== Header ===== */
-
-/* ===== Header da página ===== */
-
 header {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 15vh;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent;
 
-}
-
-.logo-netflix {
-    /* Dimensões */
-    width: 18%;
-    height: 100%;
-    padding: 30px 20px;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent;
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .menu-de-navegacao {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 54%;
     height: 100%;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent;
 }
 
 .menu-de-navegacao ul {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 100%;
 
-    /* Posicionamneto */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    /* Estilos */
+    /*  Estilos  */
     list-style: none;
 }
 
 .menu-de-navegacao a {
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 10px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: block;
 
-    /* Textos */
+    /*  Textos  */
     text-decoration: none;
     font-weight: 500;
 
-    /* Estilos*/
+    /*  Estilos */
     color: #F5F5F5;
     border-radius: 3px;
     transition: background-color 0.5s ease;
 }
 
 .menu-de-navegacao a:hover {
-    /* Estilos */
+    /*  Estilos  */
+    /*   Textos   */
     color: #E50914;
     background-color: #F5F5F5;
 }
 
 .entrar {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 18%;
     height: 100%;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent;
 }
 
 .entrar a {
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 10px 20px;
 
-    /* Textos */
+    /*  Textos  */
     text-decoration: none;
     color: #F5F5F5;
     font-weight: 500;
 
-    /* Estilos */
+    /*  Estilos  */
     border-radius: 3px;
 
     background-color: #E50914;
@@ -274,23 +108,18 @@ header {
 }
 
 .entrar a:hover {
+    /*   Estilos   */
     background-color: #B80710;
 }
 
-/* ===== Main ===== */
-
-/* hero-section */
-
-/* ===== Main da página ===== */
-
 .hero-section {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 80%;
     min-height: 85vh;
     margin: 0 10%;
     padding: 50px 30px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,33 +128,33 @@ header {
 }
 
 .hero-section h1 {
-    /* Textos */
+    /*  Textos  */
     font-size: 3rem;
     color: #F5F5F5;
     font-weight: 800;
 }
 
 .hero-section__preco {
-    /* Textos */
+    /*  Textos  */
     font-size: 1.5rem;
     color: #F5F5F5;
     font-weight: 500;
 }
 
 .hero-section__chamada {
-    /* Textos */
+    /*  Textos  */
     font-size: 1.25rem;
     color: #B3B3B3;
     font-weight: 300;
 }
 
 .login {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 15%;
     max-width: 1000px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -335,31 +164,31 @@ header {
 }
 
 .campo-email {
-    /* Dimensões*/
+    /*  Dimensões */
     width: 50%;
     height: 100%;
     padding: 13px;
 
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.25rem;
     color: #F5F5F5;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgba(23, 23, 23, 0.811);
     border-radius: 3px;
     border: solid 2px rgb(37, 37, 37);
 }
 
 .campo-botao {
-    /* Dimensões*/
+    /*  Dimensões */
     width: 20%;
     height: 100%;
     padding: 10px;
 
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -368,7 +197,7 @@ header {
     text-align: center;
     color: #F5F5F5;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: #E50914;
     border-radius: 3px;
     border: none;
@@ -377,370 +206,238 @@ header {
 }
 
 .campo-botao:hover {
+    /*   Estilos   */
     background-color: #B80710;
 }
 
-/* catalogo */
 .catalogo {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 100%;
     margin-top: -80px;
     padding-top: 60px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgba(20, 20, 20, 1);
     border-radius: 50% 50% 0 0 / 80px 80px 0 0;
     border-top: 3px solid #E50914;
 }
 
 .promocao {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 80%;
     margin-bottom: 50px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
 
-    /* Estilos */
+    /*  Estilos  */
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
 .promocao:hover {
-    /* Estilos */
+    /*  Estilos  */
     transform: scale(1.10);
 }
 
 .promocao:hover .promocao__preco{
+    /*   Estilos   */
     background-color: #B80710;
 }
 
 .promocao__icon {
-    /* Dimesnões */
+    /*  Dimensões  */
     width: 75px;
     height: auto;
+    /*   Estilos   */
     object-fit: contain;
 }
 
 .promocao__preco {
-    /* Dimensões */
+    /*  Dimensões  */
+    /*   Posicionamento   */
     flex:  1;
     padding: 15px 30px;
 
-    /* Textos */
+    /*  Textos  */
     font-size: 1.25em;
     font-weight: 500;
     color: #F5F5F5;
 
-    /* Estilos */
+    /*  Estilos  */
     transition: background-color 0.5s ease;
     border-radius: 10px;
     background-color: #E50914;
 }
 
 .filmes {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 80%;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .filmes h2 {
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 10px 0;
 
-    /* Textos */
+    /*  Textos  */
     font-size: 2em;
     font-weight: 600;
     color: #F5F5F5;
 }
 
-.lista-filmes {
-    /* Dimensões */
-    width: 100%;
-    margin-bottom: 20px;
-
-    /* Posicionamento*/
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-
-    /* Estilos */
-    list-style: none;
-}
-
-.lista-filmes__filme {
-    /* Dimensões */
-    flex: 1;
-
-    /* Estilos */
-    border-radius: 10px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.lista-filmes__filme img {
-    /* Dimensões */
-    width: 100%;
-    aspect-ratio: 2 / 3; /* Gera a dimensão de imagem retrato*/
-    object-fit: cover;
-
-    /* Estilos*/
-    border-radius: 10px;
-}
-
-.lista-filmes__filme:hover {
-    /* Estilos */
-    transform: scale(1.10);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* ===== Footer ===== */
-
-.rodape {
-    /* Dimensões */
-    width: 100%;
-    padding: 80px 10% 40px 10%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    /* Estilos */
-    background-color: rgba(20, 20, 20, 1);
-}
-
-.rodape__contato {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-}
-
-.rodape__links {
-    /* Dimensões */
-    width: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 15px;
-
-    /* Estilos */
-    list-style: none;
-}
-
-.rodape__links li {
-    /* Dimensões */
-    width: 25%;
-}
-
-.rodape__links a {
-    /* Textos */
-    font-size: 1rem;
-    text-decoration: underline;
-    color: #B3B3B3;
-    transition: color 0.5s ease;
-}
-
-.rodape p {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-    transition: color 0.5s ease;
-}
-
-
-.rodape__links a:hover {
-    /* Estilos */
-    color: #F5F5F5;
-}
-
 /* ===== Mobile ===== */ 
+
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
     body {
-        /* Posicionamento */
+        /*   Estilos   */
         background-size: auto 100vh;
         background-position: center top;
     }
     
     header {
-        /* Posicionamento */
+        /*  Posicionamento  */
         justify-content: space-around;
         
     }
     
     .menu-de-navegacao {
-        /* Posicionamento */
+        /*  Posicionamento  */
         display: none;
     }
 
-    .logo-netflix {
-        /* Dimensões */
-        padding: 0;
-
-    }
-
     .entrar a {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 10px 15px;
     }
 
     .hero-section {
-        /* Dimensões */
+        /*  Dimensões  */
         min-height: 65vh;
         margin-top: 30px;
         padding: 10px;
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         justify-content: start;
     }
 
     .hero-section h1 {
-        /* Textos */
+        /*  Textos  */
         font-size: 2.0rem;
     }
 
     .hero-section__preco {
-        /* Textos */
+        /*  Textos  */
         font-size: 1.0rem;
     }
 
     .hero-section__chamada {
-        /* Textos */
+        /*  Textos  */
         font-size: 1.0rem;
     }
 
     .login {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 10px;
         width: 100%;
         
-        /* Posicionamento */
+        /*  Posicionamento  */
         display: flex;
         flex-direction: column;
         gap: 20px;
 
-        /* Estilos */
+        /*  Estilos  */
         background-color: rgba(23, 23, 23, 0.8);
         border-radius: 5px;
     }
 
     .campo-email {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 100%;
 
-        /* Textos */
+        /*  Textos  */
         font-size: 1rem;
     }
 
     .campo-botao {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 100%;
 
-        /* Textos */
+        /*  Textos  */
         text-align: center;
         font-size: 1rem;
     }
 
     .catalogo {
-        /* Dimensões */
+        /*  Dimensões  */
         margin-bottom: 80px;
     }
 
     .promocao {
-        /* Dimensões */
+        /*  Dimensões  */
         margin-bottom: 10px;
     }
 
     .promocao__icon {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 20%;
     }
 
     .promocao__preco {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 10px;
         width: 70%;
     }
 
 
     .promocao__preco p {
-        /* Textos */
+        /*  Textos  */
         font-size: 0.75rem;
     }
 
     .filmes {
-        /* Dimensões */
+        /*  Dimensões  */
         height: 70%;
         
-    }
-
-    .lista-filmes {
-        /* Posicionamento */
-        overflow-x: auto;
-
-    }
-
-    .lista-filmes__filme {
-        /* Posicionamento */
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 110px;
-    }
-
-    .rodape {
-        /* Dimensões */
-        padding: 40px 5% 40px;
-        gap: 20px;
-    }
-
-    .rodape__links li {
-        /* Dimensões */
-        width: 50%;
-    }
-
-    .rodape__links a {
-        /* Textos */
-        font-size: 0.8rem;
-        text-decoration: none;
     }
 
 }
 
 /* ===== Tablet ===== */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .menu-de-navegacao a {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 12px;
 
-        /* Textos */
+        /*  Textos  */
         font-size: 1.125rem;
     }
 
     .entrar a {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 12px 24px;
 
-        /* Textos */
+        /*  Textos  */
         font-size: 1.125rem;
     }
 
     .campo-botao {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 25%;
     }
 }

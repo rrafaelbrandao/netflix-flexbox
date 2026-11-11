@@ -1,0 +1,451 @@
+html {
+    /*   Estilos   */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+* {
+    /*  Dimensões  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*  Textos  */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: #F5F5F5;
+}
+
+a {
+    /*  Textos  */
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.fonte-inter {
+    /*  Textos  */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.logo-netflix {
+    /*  Dimensões  */
+    width: 18%;
+    height: 100%;
+    padding: 30px 20px;
+    /*  Posicionamento  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  Estilos  */
+    background-color: transparent;
+}
+
+.logo-netflix img {
+    /*  Dimensões  */
+    width: 100%;
+    height: 100%;
+    /*  Estilos  */
+    object-fit: contain;
+}
+
+.botao {
+    /*  Dimensões  */
+    padding: 12px 20px;
+    /*  Textos  */
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+    /*  Estilos  */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botao--vermelho {
+    /*  Estilos  */
+    background-color: #E50914;
+}
+
+.botao--vermelho:hover {
+    /*  Estilos  */
+    background-color: #B80710;
+}
+
+.botao--cinza {
+    /*  Estilos  */
+    background-color: rgba(113, 113, 113, 0.6);
+}
+
+.botao--cinza:hover {
+    /*  Estilos  */
+    background-color: rgba(198, 197, 197, 0.6);
+}
+
+.campo {
+    /*  Dimensões  */
+    padding: 12px 10px;
+    /*  Textos  */
+    font-size: 1rem;
+    color: #F5F5F5;
+    /*  Estilos  */
+    background-color: transparent;
+    border: solid 2px rgb(37, 37, 37);
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+}
+
+.campo:focus {
+    /*  Estilos  */
+    border-color: #F5F5F5;
+}
+
+.cabecalho {
+    /*  Dimensões  */
+    width: 100%;
+    min-height: 90px;
+    height: 12vh;
+    padding: 15px 4%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .logo-netflix {
+    /*  Dimensões  */
+    width: 12%;
+    height: 100%;
+    padding: 0;
+    /*  Posicionamento  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho .logo-netflix img {
+    /*  Dimensões  */
+    width: 100%;
+    height: 100%;
+    /*  Estilos  */
+    object-fit: contain;
+}
+
+.cabecalho .menu-de-navegacao {
+    /*  Dimensões  */
+    width: 60%;
+    height: 100%;
+}
+
+.cabecalho .menu-de-navegacao ul {
+    /*  Dimensões  */
+    width: 100%;
+    height: 100%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*  Estilos  */
+    list-style: none;
+}
+
+.cabecalho .menu-de-navegacao li {
+    /*  Dimensões  */
+    padding: 8px 10px;
+    /*  Estilos  */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cabecalho .menu-de-navegacao a {
+    /*  Textos  */
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.cabecalho .menu-de-navegacao li:hover, .cabecalho .menu-de-navegacao li:focus-within {
+    /*  Estilos  */
+    background-color: #F5F5F5;
+}
+
+.cabecalho .menu-de-navegacao li:hover a, .cabecalho .menu-de-navegacao li:focus-within a {
+    /*  Textos  */
+    color: #E50914;
+}
+
+.cabecalho .menu-perfil {
+    /*  Dimensões  */
+    width: 15%;
+    height: 70%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.cabecalho .menu-perfil__botao {
+    /*  Dimensões  */
+    width: 30%;
+    height: 100%;
+    padding: 4px;
+    /*  Posicionamento  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  Estilos  */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cabecalho .menu-perfil__botao:hover {
+    /* Estilos */
+    background-color: #f5f5f56f;
+    border-radius: 5px;
+}
+
+.cabecalho .menu-perfil__botao img {
+    /*  Dimensões  */
+    width: 25px;
+    height: 25px;
+    /*  Estilos  */
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.lista-cards::-webkit-scrollbar-thumb {
+    /* Dimensões */
+    background-color: #333333;
+    border-radius: 3px;
+}
+
+.lista-cards::-webkit-scrollbar {
+    /* Dimensões */
+    height: 6px;
+}
+
+.lista-filmes::-webkit-scrollbar-thumb {
+    /* Dimensões */
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.lista-filmes::-webkit-scrollbar {
+    /* Dimensões */
+    height: 6px;
+}
+
+.lista-filmes {
+    /*  Dimensões  */
+    width: 100%;
+    margin-bottom: 20px;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /*  Estilos  */
+    list-style: none;
+}
+
+.lista-filmes__filme {
+    /*  Posicionamento  */
+    flex: 1;
+    /*  Estilos  */
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.lista-filmes__filme img {
+    /*  Dimensões  */
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    /*  Estilos  */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lista-filmes__filme:hover {
+    /*  Estilos  */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.lista-cards {
+    /*  Dimensões  */
+    width: 100%;
+    margin-bottom: 20px;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /*  Estilos  */
+    list-style: none;
+    overflow-x: auto;
+}
+
+.lista-cards__item {
+    /*  Posicionamento  */
+    flex: 1;
+    /*  Dimensões  */
+    min-width: 0;
+    /*  Estilos  */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.lista-cards__item img {
+    /*  Dimensões  */
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    /*  Estilos  */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lista-cards__item:hover {
+    /*  Estilos  */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.rodape {
+    /*  Dimensões  */
+    width: 100%;
+    padding: 80px 10% 40px;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /*  Estilos  */
+    background-color: #141414;
+    border-top: 1px solid #333;
+}
+
+.rodape__contato, .rodape__copyright {
+    /*  Textos  */
+    font-size: 1rem;
+    color: #B3B3B3;
+}
+
+.rodape__links {
+    /*  Dimensões  */
+    width: 100%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    /*  Estilos  */
+    list-style: none;
+}
+
+.rodape__links li {
+    /*  Dimensões  */
+    width: 25%;
+}
+
+.rodape__links a {
+    /*  Textos  */
+    font-size: 1rem;
+    color: #B3B3B3;
+    text-decoration: underline;
+    /*  Estilos  */
+    transition: color 0.5s ease;
+}
+
+.rodape__links a:hover, .rodape__links a:focus-visible {
+    /*  Textos  */
+    color: #F5F5F5;
+}
+
+@media (max-width: 450px) {
+    
+    .rodape {
+        /*  Dimensões  */
+        padding: 40px 5%;
+        /*  Posicionamento  */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /*  Dimensões  */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /*  Textos  */
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+    .cabecalho {
+        /*  Dimensões  */
+        height: auto;
+        /*  Posicionamento  */
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cabecalho .logo-netflix {
+        /*  Dimensões  */
+        width: 25%;
+        height: 60px;
+    }
+
+    .cabecalho .menu-perfil {
+        /*  Dimensões  */
+        width: auto;
+        height: 60px;
+        /*  Posicionamento  */
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        /*  Dimensões  */
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .cabecalho .menu-de-navegacao {
+        /*  Dimensões  */
+        width: 100%;
+        height: auto;
+        /*  Posicionamento  */
+        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        /*  Dimensões  */
+        width: max-content;
+        min-width: 100%;
+        height: auto;
+        /*  Posicionamento  */
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .lista-filmes,
+    .lista-cards {
+        /*  Posicionamento  */
+        overflow-x: auto;
+    }
+
+    .lista-filmes__filme,
+    .lista-cards__item {
+        /*  Posicionamento  */
+        flex: 0 0 110px;
+    }
+}

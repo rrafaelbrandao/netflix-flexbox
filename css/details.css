@@ -1,413 +1,30 @@
 body {
-    /* Dimensões */
+    /*  Dimensões  */
     min-height: 100vh;
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     color: #F5F5F5;
-    /* Estilos */
+    /*  Estilos  */
     background-color: #141414;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.fonte-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-/* ===== Reset ===== */
-
-/* ===== Corpo da página ===== */
-
-a {
-    /* Estilos */
-    text-decoration: none;
-    color: #F5F5F5;
-}
-
-/* ===== Logo (usada no header de todas as páginas) ===== */
-
-.logo-netflix {
-    /* Dimensões */
-    width: 18%;
-    height: 100%;
-    padding: 30px 20px;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent;
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ===== Botões ===== */
-
-.botao {
-    /* Dimensões */
-    padding: 12px 20px;
-
-    /* Textos */
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: #F5F5F5;
-
-    /* Estilos */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.botao--vermelho {
-    background-color: #E50914;
-}
-
-.botao--vermelho:hover {
-    background-color: #B80710;
-}
-
-.botao--cinza {
-    background-color: rgba(113, 113, 113, 0.6);
-}
-
-.botao--cinza:hover {
-    background-color: rgba(198, 197, 197, 0.6);
-}
-
-/* ===== Campos de formulário ===== */
-
-.campo {
-    /* Dimensões */
-    padding: 12px 10px;
-
-    /* Textos */
-    font-size: 1rem;
-    color: #F5F5F5;
-
-    /* Estilos */
-    background-color: transparent;
-    border: solid 2px rgb(37, 37, 37);
-    border-radius: 5px;
-    transition: border-color 0.5s ease;
-}
-
-.campo:focus {
-    border-color: #F5F5F5;
-}
-
-/* ===== Rodapé ===== */
-
-.rodape {
-    /* Dimensões */
-    padding: 80px 10% 40px 10%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    /* Estilos */
-    background-color: #141414;
-    border-top: 1px solid #333333;
-}
-
-.rodape__contato,
-.rodape__copyright {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-}
-
-.rodape__links {
-    /* Posicionamento */
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-
-    /* Estilos */
-    list-style: none;
-}
-
-.rodape__links li {
-    /* Dimensões */
-    width: 25%;
-}
-
-.rodape__links a {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-
-    /* Estilos */
-    transition: color 0.5s ease;
-}
-
-.rodape__links a:hover,
-.rodape__links a:focus-visible {
-    /* Estilos */
-    color: #F5F5F5;
-}
-
-/* ===== Estilizações específicas da página ===== */
-
-/* ===== Header da página ===== */
-
-header {
-    /* Dimensões */
-    width: 100%;
-    height: 15vh;
-    padding: 20px 2.5%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-netflix {
-    /* Dimensões */
-    width: 15%;
-    height: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    object-fit: contain;
-}
-
-.menu-de-navegacao {
-    /* Dimensões */
-    width: 60%;
-    height: 100%;
-}
-
-.menu-de-navegacao ul {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    /* Textos */
-    list-style: none;
-}
-
-.menu-de-navegacao li {
-    /* Dimensões */
-    padding: 10px;
-
-    /* Estilos */
-    border-radius: 5px;
-    transition: background-color 0.5s ease;
-}
-
-.menu-de-navegacao a {
-    /* Textos */
-    text-decoration: none;
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
-.menu-de-navegacao li:hover {
-    /* Estilos */
-    background-color: #F5F5F5;
-}
-
-.menu-de-navegacao li:hover a {
-    /* Estilos */
-    color: #E50914;
-}
-
-.menu-perfil {
-    /* Dimensões */
-    width: 20%;
-    height: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-perfil button {
-    /* Dimensões */
-    width: 25%;
-    height: 100%;
-    padding: 2px;
-
-    /* Posicionamento */
-    display: flex;
-    align-items: center;
-
-    /* Estilos */
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-perfil figure:hover {
-    /* Estilos */
-    border-radius: 5px;
-    background-color: #f5f5f565;
-}
-
-.menu-perfil img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-
-    /* Estilos */
-    border-radius: 8px;
-}
-
-.cabecalho {
-    width: 100%;
-    min-height: 90px;
-    height: 12vh;
-    padding: 15px 4%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cabecalho .logo-netflix {
-    width: 12%;
-    height: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cabecalho .logo-netflix img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.cabecalho .menu-de-navegacao {
-    width: 60%;
-    height: 100%;
-}
-
-.cabecalho .menu-de-navegacao ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-.cabecalho .menu-de-navegacao li {
-    padding: 8px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cabecalho .menu-de-navegacao a {
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
-.cabecalho .menu-de-navegacao li:hover,
-.cabecalho .menu-de-navegacao li:focus-within {
-    background-color: #F5F5F5;
-}
-
-.cabecalho .menu-de-navegacao li:hover a,
-.cabecalho .menu-de-navegacao li:focus-within a {
-    color: #E50914;
-}
-
-.cabecalho .menu-perfil {
-    width: 15%;
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cabecalho .menu-perfil__botao {
-    width: 30%;
-    height: 100%;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.cabecalho .menu-perfil__botao:hover {
-    background-color: #f5f5f56f;
-    border-radius: 5px;
-
-}
-
-.cabecalho .menu-perfil__botao img {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
 .hero-banner {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 92%;
     height: 100vh;
     margin: 20px 4%;
     padding: 50px 50px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgba(20, 20, 20, 1);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/poster-horizontal/stranger-things.jpg);
     background-size: 100% 100vh;
@@ -417,36 +34,38 @@ header {
 }
 
 .hero-banner__titulo {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 40%;
     height: 40%;
 }
 
 .hero-banner__titulo img {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 100%;
+    /*   Estilos   */
     object-fit: contain;
 }
 
 .hero-banner__info {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 10px;
 
-    /* Textos */
+    /*  Textos  */
     font-size: 1.25em;
     color: #F5F5F5;
     font-weight: 500;
+    /*   Estilos   */
     list-style: inside;
 }
 
 .hero-banner__descricao {
-    /* Textos */
+    /*  Textos  */
     font-size: 1.25em;
     text-decoration: none;
     color: #F5F5F5;
@@ -454,23 +73,24 @@ header {
 }
 
 .hero-banner__botoes {
+    /*   Posicionamento   */
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
 .hero-banner button {
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 10px;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: #f5f5f565;
     border: none;
     border-radius: 10px;
 }
 
 .hero-banner button:hover {
-    /* Estilos */
+    /*  Estilos  */
     background-color: #f5f5f565;
 }
 
@@ -479,86 +99,87 @@ header {
    ========================================== */
 
 .detalhes {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 92%;
     margin: 40px auto;
     padding: 40px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 40px;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgba(20, 20, 20, 0.9);
     border-radius: 10px;
 }
 
 .detalhes__poster {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 280px;
     height: auto;
 
-    /* Estilos */
+    /*  Estilos  */
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .detalhes__info {
-    /* Dimensões */
+    /*  Dimensões  */
     flex: 1;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .detalhes__titulo {
-    /* Textos */
+    /*  Textos  */
     font-size: 2.5rem;
     font-weight: 700;
     color: #F5F5F5;
 }
 
 .detalhes__descricao {
-    /* Textos */
+    /*  Textos  */
     font-size: 1.1rem;
     line-height: 1.5;
     color: #b3b3b3;
 }
 
 .detalhes__lista {
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .detalhes__item {
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     gap: 15px;
 
-    /* Textos */
+    /*  Textos  */
     font-size: 0.95rem;
 }
 
 .detalhes__item dt {
-    /* Textos */
+    /*  Textos  */
     font-weight: bold;
     color: #777;
+    /*   Dimensões   */
     min-width: 90px;
 }
 
 .detalhes__item dd {
-    /* Textos */
+    /*  Textos  */
     color: #F5F5F5;
 }
 
 .detalhes__botoes {
-    /* Dimensões */
+    /*  Dimensões  */
     margin-top: 10px;
 }
 
@@ -567,187 +188,80 @@ header {
    ========================================== */
 
 .sugestoes {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 92%;
     margin: 40px auto;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .sugestoes__titulo {
-    /* Textos */
+    /*  Textos  */
     color: #F5F5F5;
     font-size: 1.5rem;
     font-weight: 600;
 }
-
-.lista-filmes {
-    /* Posicionamento */
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    overflow-x: auto;
-
-    /* Dimensões */
-    padding-bottom: 15px;
-
-    /* Textos */
-    list-style: none;
-}
-
-.lista-filmes::-webkit-scrollbar {
-    /* Dimensões */
-    height: 6px;
-}
-
-.lista-filmes::-webkit-scrollbar-thumb {
-    /* Estilos */
-    background-color: #333;
-    border-radius: 3px;
-}
-
-.lista-filmes__filme {
-    /* Dimensões */
-    min-width: 200px;
-    height: 300px;
-    flex-shrink: 0;
-
-    /* Estilos */
-    border-radius: 6px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.lista-filmes__filme:hover {
-    /* Estilos */
-    transform: scale(1.05);
-}
-
-.lista-filmes__filme img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-
-    /* Estilos */
-    object-fit: cover;
-}
-/* ===== Cabeçalho padronizado das páginas do catálogo ===== */
-
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
 
     body {
-        /* Estilos */
+        /*  Estilos  */
         background-image: none;
         background-color: rgba(20, 20, 20, 1);
     }
 
-    .cabecalho {
-        /* Dimensões */
-        height: auto;
-
-        /* Posicionamento */
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .cabecalho .logo-netflix {
-        /* Dimensões */
-        width: 25%;
-        height: 60px;
-        padding: 0;
-    }
-
-    .cabecalho .menu-perfil {
-        /* Dimensões */
-        width: auto;
-        height: 60px;
-        padding: 0;
-
-        /* Posicionamento */
-        gap: 10px;
-    }
-
-    .cabecalho .menu-perfil__botao {
-        /* Dimensões */
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-    }
-
-    .cabecalho .menu-de-navegacao {
-        /* Dimensões */
-        width: 100%;
-        height: auto;
-
-        /* Posicionamento */
-        order: 3;
-        overflow-x: auto;
-    }
-
-    .cabecalho .menu-de-navegacao ul {
-        /* Dimensões */
-        width: max-content;
-        min-width: 100%;
-        height: auto;
-
-        /* Posicionamento */
-        justify-content: flex-start;
-        gap: 10px;
-    }
-
     .hero-banner {
-        /* Dimensões */
+        /*  Dimensões  */
         min-height: 45vh;
         height: auto;
         padding: 25px;
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         justify-content: flex-end;
         align-items: center;
         row-gap: 20px;
 
-        /* Estilos */
+        /*  Estilos  */
         background-size: cover;
     }
 
     .hero-banner__info {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 100%;
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         flex-wrap: wrap;
         justify-content: center;
         gap: 6px 10px;
 
-        /* Textos */
+        /*  Textos  */
         font-size: 1rem;
     }
 
     .hero-banner__descricao {
-        /* Dimensões */
+        /*  Dimensões  */
+        /*   Posicionamento   */
         display: none;
     }
 
     .detalhes {
-        /* Dimensões */
+        /*  Dimensões  */
         margin: 25px auto;
         padding: 20px;
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         flex-direction: column;
         align-items: center;
         gap: 20px;
 
-        /* Textos */
+        /*  Textos  */
         text-align: center;
     }
 
     .detalhes__poster {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 60%;
         max-width: 200px;
         height: auto;
@@ -755,88 +269,69 @@ header {
     }
 
     .detalhes__info {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 100%;
         flex-grow: 0; /* Não permite que os filhos cresçam*/
         flex-shrink: 1; /* Poderá diminuir o tamanho, para manter a proporção*/
         flex-basis: auto; /* Mantém o tamanho padrão*/
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         gap: 15px;
     }
 
     .detalhes__titulo {
-        /* Textos */
+        /*  Textos  */
         font-size: 1.75rem;
     }
 
     .detalhes__descricao {
-        /* Textos */
+        /*  Textos  */
         font-size: 1rem;
     }
 
     .detalhes__lista {
-        /* Textos */
+        /*  Textos  */
         text-align: left;
-    }
-
-    .rodape {
-        /* Dimensões */
-        padding: 40px 5% 40px;
-
-        /* Posicionamento */
-        gap: 20px;
-    }
-
-    .rodape__links li {
-        /* Dimensões */
-        width: 50%;
-    }
-
-    .rodape__links a {
-        /* Textos */
-        font-size: 0.8rem;
-        text-decoration: none;
     }
 }
 
 /*===== Tablet =====*/
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
-        /* Estilos */
+        /*  Estilos  */
         background-image: none;
         background-color: rgba(20, 20, 20, 1);
     }
 
     .hero-banner {
-        /* Dimensões */
+        /*  Dimensões  */
         height: 80vh;
         padding: 40px;
 
-        /* Posicionamento */
+        /*  Posicionamento  */
         justify-content: space-between;
 
-        /* Estilos */
+        /*  Estilos  */
         background-size: cover;
         background-position: center;
     }
 
     .hero-banner__descricao {
-        /* Dimensões */
+        /*  Dimensões  */
         max-width: none;
     }
 
     .hero-banner .botao {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 12px 20px;
 
-        /* Estilos */
+        /*  Estilos  */
         background-color: rgba(113, 113, 113, 0.6);
         border-radius: 5px;
     }
 
     .hero-banner .botao:hover {
-        /* Estilos */
+        /*  Estilos  */
         background-color: rgba(198, 197, 197, 0.6);
     }
 }

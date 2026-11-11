@@ -1,11 +1,11 @@
 body {
-    /* Dimensões */
+    /*  Dimensões  */
     min-height: 100vh;
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     color: #F5F5F5;
-    /* Estilos */
+    /*  Estilos  */
     background-color: #141414;
     background-size: cover;
     background-position: center;
@@ -13,218 +13,31 @@ body {
     background-image: radial-gradient(circle at center, rgba(55, 12, 15, 0.7) 0%, rgba(15, 3, 4, 0.9) 45%, rgba(0, 0, 0, 0.98) 90%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.fonte-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-/* ===== Estilizações comuns a todas as páginas ===== */
-
-/* ===== Reset ===== */
-
-/* ===== Corpo da página ===== */
-
-a {
-    /* Estilos */
-    text-decoration: none;
-    color: #F5F5F5;
-}
-
-/* ===== Logo (usada no header de todas as páginas) ===== */
-
-.logo-netflix {
-    /* Dimensões */
-    width: 18%;
-    height: 100%;
-    padding: 30px 20px;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent;
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ===== Botões ===== */
-
-.botao {
-    /* Dimensões */
-    padding: 12px 20px;
-
-    /* Textos */
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: #F5F5F5;
-
-    /* Estilos */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-}
-
-.botao--vermelho {
-    background-color: #E50914;
-}
-
-.botao--vermelho:hover {
-    background-color: #B80710;
-}
-
-.botao--cinza {
-    background-color: rgba(113, 113, 113, 0.6);
-}
-
-.botao--cinza:hover {
-    background-color: rgba(198, 197, 197, 0.6);
-}
-
-/* ===== Campos de formulário ===== */
-
-.campo {
-    /* Dimensões */
-    padding: 12px 10px;
-
-    /* Textos */
-    font-size: 1rem;
-    color: #F5F5F5;
-
-    /* Estilos */
-    background-color: transparent;
-    border: solid 2px rgb(37, 37, 37);
-    border-radius: 5px;
-    transition: border-color 0.5s ease;
-}
-
-.campo:focus {
-    border-color: #F5F5F5;
-}
-
-/* ===== Rodapé ===== */
-
-.rodape {
-    /* Dimensões */
-    padding: 80px 10% 40px 10%;
-
-    /* Posicionamento */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    /* Estilos */
-    background-color: #141414;
-    border-top: 1px solid #333333;
-}
-
-.rodape__contato,
-.rodape__copyright {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-}
-
-.rodape__links {
-    /* Posicionamento */
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-
-    /* Estilos */
-    list-style: none;
-}
-
-.rodape__links li {
-    /* Dimensões */
-    width: 25%;
-}
-
-.rodape__links a {
-    /* Textos */
-    font-size: 1rem;
-    color: #B3B3B3;
-
-    /* Estilos */
-    transition: color 0.5s ease;
-}
-
-.rodape__links a:hover,
-.rodape__links a:focus-visible {
-    /* Estilos */
-    color: #F5F5F5;
-}
-/* ===== Geral =====*/
-
-/* ===== Estilizações específicas da página ===== */
-
-/* ===== Header ===== */
-
 /* ===== Header da página ===== */
 
 header {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     height: 15vh;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent
 
 }
-
-.logo-netflix {
-    /* Dimensões */
-    width: 15%;
-    height: 100%;
-
-    /* Posicionamento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Estilos */
-    background-color: transparent
-}
-
-.logo-netflix img {
-    /* Dimensões */
-    width: 80%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ===== Main ===== */
 
 /* ===== Main da página ===== */
 
 .perfis {
-    /* Dimensões */
+    /*  Dimensões  */
     margin-top: 50px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,10 +46,10 @@ header {
 
 
 .perfis h1 {
-    /* Dimensões */
+    /*  Dimensões  */
     margin-bottom: 15px;
 
-    /* Textos */
+    /*  Textos  */
     font-size: 2em;
     text-align: justify;
     color: #F5F5F5;
@@ -244,44 +57,44 @@ header {
 }
 
 .perfis__cards {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 100%;
     max-width: 900px;
     height: 100%;
     padding: 20px 0;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 25px;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent;
 }
 
 .card {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 150px;
     height: 100%;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 
-    /* Estilos */
+    /*  Estilos  */
     cursor: pointer;
 }
 
 .card img {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 150px;
     height: 150px;
 
-    /* Estilos */
+    /*  Estilos  */
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid transparent;
@@ -289,38 +102,42 @@ header {
 }
 
 .card:hover img {
+    /*   Estilos   */
     transform: scale(1.05);
     border-color: #F5F5F5;
 }
 
 .card h2 {
-    /* Textos */
+    /*  Textos  */
     font-size: 1em;
     text-align: center;
     color: #f5f5f570;
     font-weight: 500;
 
-    /* Estilos */
+    /*  Estilos  */
     transition: color 0.5s ease;
 }
 
 .card:hover h2 {
+    /*   Textos   */
     color: #F5F5F5;
 }
 .card a {
+    /*   Dimensões   */
     margin-top: 10px;
+    /*   Textos   */
     text-decoration: none;
 }
 
 .perfis__gerenciar {
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 10px 25px;
     margin-top: 35px;
 
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: inline-block;
 
-    /* Textos */
+    /*  Textos  */
     font-family: "Inter", sans-serif;
     font-size: 1em;
     color: #808080;
@@ -328,7 +145,7 @@ header {
     letter-spacing: 2px;
     text-align: center;
 
-    /* Estilos */
+    /*  Estilos  */
     background-color: transparent;
     border: 1px solid #808080;
     border-radius: 20px;
@@ -337,7 +154,8 @@ header {
 }
 
 .perfis__gerenciar:hover {
-    /* Estilos */
+    /*  Estilos  */
+    /*   Textos   */
     color: #F5F5F5;
     border-color: #F5F5F5;
 }
@@ -345,25 +163,19 @@ header {
 /* ===== Mobile ===== */ 
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
     
-    .logo-netflix {
-        /* Dimensões */
-        width: 30%;
-        padding: 0;
-    }
-    
     .perfis__cards {
-        /* Posicionamento */
+        /*  Posicionamento  */
         flex-wrap: wrap; /* Quebra os cards em outra linha */
         gap: 20px;
     }
 
     .card {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 120px;
     }
 
     .card img {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 120px;
         height: 120px;
     }

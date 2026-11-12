@@ -63,6 +63,7 @@ body {
     text-decoration: none;
     color: #F5F5F5;
     font-weight: 500;
+    
     /*   Estilos   */
     list-style: inside;
 }
@@ -172,30 +173,41 @@ body {
 
 /* ===== Modal de destaque ===== */
 .modal-destaque {
+    /* Posicionamento */
     position: fixed;
     inset: 0;
     z-index: 1000;
     display: none;
     justify-content: center;
     align-items: center;
+
+    /* Dimensões */
     padding: 20px;
+
+    /* Estilos */
     background-color: rgb(0 0 0 / 75%);
 }
 
+/* Mostra o modal quando o ID dele aparece no endereço da página. */
 .modal-destaque:target {
     display: flex;
 }
 
 .modal-destaque__conteudo {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
+    /* Dimensões */
     width: 90%;
     max-width: 640px;
     aspect-ratio: 16 / 9;
     padding: 40px;
+    gap: 20px;
+
+    /* Posicionamento */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* Estilos */
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -203,47 +215,68 @@ body {
 }
 
 .modal-destaque__conteudo::before {
+    /* Conteúdo */
     content: "";
+
+    /* Posicionamento */
     position: absolute;
     inset: 0;
+
+    /* Estilos: gradiente escuro para ajudar a ler o texto */
     background: linear-gradient(90deg, rgb(0 0 0 / 85%), transparent);
 }
 
+/* Coloca o título, as informações e os botões acima do gradiente. */
 .modal-destaque__conteudo > * {
+    /* Posicionamento */
     position: relative;
     z-index: 1;
 }
 
 .modal-destaque__conteudo h2 {
+    /* Textos */
     font-size: 2.5rem;
 }
 
 .modal-destaque .hero-banner__info {
+    /* Posicionamento */
     flex-wrap: wrap;
-    list-style: none;
+
+    /* Textos */
     font-size: 1rem;
+
+    /* Estilos */
+    list-style: none;
 }
 
 .modal-destaque .hero-banner__descricao {
+    /* Dimensões */
     max-width: 500px;
+
+    /* Textos */
     font-size: 1rem;
 }
 
 .modal-destaque__fechar {
+    /* Posicionamento */
     position: absolute;
     top: 12px;
     right: 12px;
     z-index: 2;
+
+    /* Textos */
     color: #fff;
     font-size: 2rem;
 }
 
 .modal-destaque__conteudo .hero-banner__botoes button {
+    /* Estilos */
     border-radius: 5px;
 }
 
-/* :has() esconde a rolagem da página enquanto um modal está aberto. */
+/* Impede a rolagem da página ao fundo enquanto o modal está aberto. */
 body:has(.modal-destaque:target) {
+    /* Posicionamento */
     overflow: hidden;
 }
 
@@ -251,23 +284,77 @@ body:has(.modal-destaque:target) {
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
 
     .modal-destaque {
+        /* Dimensões */
         padding: 12px;
     }
 
     .modal-destaque__conteudo {
+        /* Dimensões */
         width: 100%;
+        max-height: 90vh;
+        padding: 56.25% 18px 20px;
+        gap: 20px;
+
+        /* Posicionamento */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-y: auto;
+
+        /* Estilos */
         aspect-ratio: auto;
-        min-height: 70vh;
-        padding: 24px;
-        gap: 16px;
+        background-color: #141414;
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        /* Textos */
+        text-align: left;
+    }
+
+    .modal-destaque__conteudo::before {
+        /* Estilos: escurece a parte de baixo da imagem para destacar o texto */
+        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
     }
 
     .modal-destaque__conteudo h2 {
-        font-size: 2rem;
+        /* Textos */
+        font-size: 1.8rem;
+    }
+
+    .modal-destaque .hero-banner__info {
+        /* Dimensões */
+        width: 100%;
+        padding-left: 22px;
+
+        /* Textos */
+        font-size: 0.9rem;
+
+        /* Estilos */
+        display: block;
+        list-style: disc;
+    }
+
+    .modal-destaque .hero-banner__info li {
+        /* Dimensões */
+        margin-top: 6px;
+    }
+
+    .modal-destaque .hero-banner__descricao {
+        /* Dimensões */
+        display: block;
+        width: 100%;
+
+        /* Textos */
+        font-size: 0.95rem;
+        line-height: 1.4;
     }
 
     .modal-destaque .hero-banner__botoes {
+        /* Posicionamento */
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     body {
@@ -282,13 +369,17 @@ body:has(.modal-destaque:target) {
         height: auto;
         padding: 25px;
 
-        /* Posicioanmento */
         /*   Posicionamento   */
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
+
         /*   Estilos   */
         background-size: cover;
-        row-gap: 20px;
+    }
+
+    .hero-banner__titulo {
+        /* Dimensões */
+        width: 70%;
     }
 
     .hero-banner__info {

@@ -178,6 +178,13 @@ main {
         height: 10vh;
     }
 
+    .logo-netflix {
+        /*  Dimensões  */
+        width: 36%;
+        height: 60px;
+        padding: 0;
+    }
+
     .login {
         /*  Dimensões  */
         padding: 20px 30px;

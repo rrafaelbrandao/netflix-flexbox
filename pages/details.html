@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/elements.css" />
+        <link rel="stylesheet" href="../css/watch.css" />
         <link rel="stylesheet" href="../css/details.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -96,15 +97,15 @@
                         Stranger Things
                     </h2>
                     <p class="detalhes__descricao">
-                        Quando um garoto desaparece em Hawkins, seus amigos enfrentam segredos do governo e forças sobrenaturais para trazê-lo de volta.
+                        Na cidade de Hawkins, o desaparecimento de Will Byers muda a rotina de seus amigos e familiares. Durante as buscas, eles conhecem Eleven, uma garota com habilidades extraordinárias, e descobrem que experimentos secretos abriram caminho para uma dimensão perigosa. Juntos, eles enfrentam ameaças sobrenaturais e tentam proteger a cidade.
                     </p>
                     <dl class="detalhes__lista">
                         <div class="detalhes__item">
                             <dt>
-                                Diretor
+                                Criadores
                             </dt>
                             <dd>
-                                Irmãos Duffer
+                                Matt e Ross Duffer
                             </dd>
                         </div>
                         <div class="detalhes__item">
@@ -125,7 +126,7 @@
                         </div>
                         <div class="detalhes__item">
                             <dt>
-                                Ano
+                                Ano de estreia
                             </dt>
                             <dd>
                                 2016
@@ -133,10 +134,34 @@
                         </div>
                         <div class="detalhes__item">
                             <dt>
-                                Duração
+                                Temporadas
                             </dt>
                             <dd>
-                                5 temporadas
+                                5
+                            </dd>
+                        </div>
+                        <div class="detalhes__item">
+                            <dt>
+                                Episódios
+                            </dt>
+                            <dd>
+                                42
+                            </dd>
+                        </div>
+                        <div class="detalhes__item">
+                            <dt>
+                                Classificação indicativa
+                            </dt>
+                            <dd>
+                                16 anos
+                            </dd>
+                        </div>
+                        <div class="detalhes__item">
+                            <dt>
+                                País de origem
+                            </dt>
+                            <dd>
+                                Estados Unidos
                             </dd>
                         </div>
                     </dl>
@@ -147,32 +172,145 @@
                     </div>
                 </div>
             </section>
-            <section class="sugestoes">
-                <h2 class="sugestoes__titulo">
+            <section class="mais-conteudos">
+                <h2 class="mais-conteudos__titulo">
                     Você também pode gostar
                 </h2>
                 <ul class="lista-filmes">
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/duna.jpeg" alt="Duna" />
+                        <a id="card-sugestao-1" class="lista-filmes__link" href="#modal-sugestao-1" aria-label="Abrir detalhes de De Volta à Ação">
+                            <img src="../assets/images/poster-vertical/back-in-action.jpg" alt="De Volta à Ação" />
+                        </a>
                     </li>
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas profundezas" />
+                        <a id="card-sugestao-2" class="lista-filmes__link" href="#modal-sugestao-2" aria-label="Abrir detalhes de Enola Holmes 2">
+                            <img src="../assets/images/poster-vertical/enola-holmes-2.jpg" alt="Enola Holmes 2" />
+                        </a>
                     </li>
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/noiva-cadaver.webp" alt="Noiva cadaver" />
+                        <a id="card-sugestao-3" class="lista-filmes__link" href="#modal-sugestao-3" aria-label="Abrir detalhes de Glass Onion">
+                            <img src="../assets/images/poster-vertical/glass-onion.jpg" alt="Glass Onion: Um Mistério Knives Out" />
+                        </a>
                     </li>
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/o-protetor.jpg" alt="O protetor" />
+                        <a id="card-sugestao-4" class="lista-filmes__link" href="#modal-sugestao-4" aria-label="Abrir detalhes de O Projeto Adam">
+                            <img src="../assets/images/poster-vertical/the-adam-project.jpg" alt="O Projeto Adam" />
+                        </a>
                     </li>
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivencia" />
+                        <a id="card-sugestao-5" class="lista-filmes__link" href="#modal-sugestao-5" aria-label="Abrir detalhes de A Sociedade da Neve">
+                            <img src="../assets/images/poster-vertical/society-of-the-snow.jpeg" alt="A Sociedade da Neve" />
+                        </a>
                     </li>
                     <li class="lista-filmes__filme">
-                        <img src="../assets/images/poster-vertical/thrash.jpg" alt="Thrash" />
+                        <a id="card-sugestao-6" class="lista-filmes__link" href="#modal-sugestao-6" aria-label="Abrir detalhes de Donzela">
+                            <img src="../assets/images/poster-vertical/damsel.jpg" alt="Donzela" />
+                        </a>
                     </li>
                 </ul>
             </section>
         </main>
+        <div class="modal-destaque" id="modal-sugestao-1">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/back-in-action.jpg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-1" aria-label="Voltar ao filme">×</a>
+                <h2>De Volta à Ação</h2>
+                <ul class="hero-banner__info">
+                    <li>Ação</li>
+                    <li>Comédia</li>
+                    <li>Espionagem</li>
+                </ul>
+                <p class="hero-banner__descricao">Anos depois de deixarem a CIA para criar uma família, os ex-agentes Matt e Emily voltam ao mundo da espionagem quando suas identidades são reveladas.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-sugestao-2">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/enola-holmes-2.jpg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-2" aria-label="Voltar ao filme">×</a>
+                <h2>Enola Holmes 2</h2>
+                <ul class="hero-banner__info">
+                    <li>Mistério</li>
+                    <li>Aventura</li>
+                    <li>Investigação</li>
+                </ul>
+                <p class="hero-banner__descricao">Agora uma detetive por conta própria, Enola aceita seu primeiro caso oficial: encontrar uma garota desaparecida. A investigação revela uma conspiração perigosa e exige a ajuda de Sherlock.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-sugestao-3">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/glass-onion.jpg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-3" aria-label="Voltar ao filme">×</a>
+                <h2>Glass Onion: Um Mistério Knives Out</h2>
+                <ul class="hero-banner__info">
+                    <li>Comédia</li>
+                    <li>Mistério</li>
+                    <li>Investigação</li>
+                </ul>
+                <p class="hero-banner__descricao">O detetive Benoit Blanc viaja até uma ilha na Grécia para investigar um mistério envolvendo um bilionário da tecnologia e seu grupo de amigos.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-sugestao-4">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/the-adam-project.jpg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-4" aria-label="Voltar ao filme">×</a>
+                <h2>O Projeto Adam</h2>
+                <ul class="hero-banner__info">
+                    <li>Ficção científica</li>
+                    <li>Aventura</li>
+                    <li>Viagem no tempo</li>
+                </ul>
+                <p class="hero-banner__descricao">Após viajar acidentalmente no tempo, o piloto Adam encontra sua versão de 12 anos. Juntos, eles partem em uma missão para salvar o futuro.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-sugestao-5">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/society-of-the-snow.jpeg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-5" aria-label="Voltar ao filme">×</a>
+                <h2>A Sociedade da Neve</h2>
+                <ul class="hero-banner__info">
+                    <li>Drama</li>
+                    <li>Sobrevivência</li>
+                    <li>Baseado em fatos reais</li>
+                </ul>
+                <p class="hero-banner__descricao">Depois da queda de um avião nos Andes, os sobreviventes precisam se unir e enfrentar condições extremas para tentar voltar para casa.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-sugestao-6">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/damsel.jpg')">
+                <a class="modal-destaque__fechar" href="#card-sugestao-6" aria-label="Voltar ao filme">×</a>
+                <h2>Donzela</h2>
+                <ul class="hero-banner__info">
+                    <li>Fantasia</li>
+                    <li>Aventura</li>
+                    <li>Sobrevivência</li>
+                </ul>
+                <p class="hero-banner__descricao">Uma jovem aceita se casar com um príncipe, mas descobre que foi escolhida como sacrifício para pagar uma antiga dívida. Para sobreviver ao dragão, ela precisa confiar na própria inteligência e coragem.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
         <footer class="rodape">
             <p class="rodape__contato">
                 Dúvidas? Entre em contato.

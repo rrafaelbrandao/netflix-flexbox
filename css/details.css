@@ -143,6 +143,9 @@ body {
 }
 
 .detalhes__descricao {
+    /* Dimensões */
+    max-width: 700px;
+
     /*  Textos  */
     font-size: 1.1rem;
     line-height: 1.5;
@@ -166,11 +169,13 @@ body {
 }
 
 .detalhes__item dt {
+    /* Dimensões */
+    width: 150px;
+    flex-shrink: 0;
+
     /*  Textos  */
     font-weight: bold;
     color: #777;
-    /*   Dimensões   */
-    min-width: 90px;
 }
 
 .detalhes__item dd {
@@ -204,7 +209,167 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
 }
+/* ===== Modal dos filmes sugeridos ===== */
+.modal-destaque {
+    /* Posicionamento */
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    /* Dimensões */
+    padding: 20px;
+
+    /* Estilos */
+    background-color: rgb(0 0 0 / 75%);
+}
+
+.modal-destaque:target {
+    /* Posicionamento */
+    display: flex;
+}
+
+.modal-destaque__conteudo {
+    /* Dimensões */
+    width: 90%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    padding: 32px;
+    gap: 16px;
+
+    /* Posicionamento */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Estilos */
+    overflow: hidden;
+    background-color: #141414;
+    background-size: auto 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.modal-destaque__conteudo::before {
+    /* Conteúdo */
+    content: "";
+
+    /* Posicionamento */
+    position: absolute;
+    inset: 0;
+
+    /* Estilos */
+    background: linear-gradient(90deg, #141414 28%, rgb(20 20 20 / 85%) 58%, transparent);
+}
+
+.modal-destaque__conteudo > * {
+    /* Posicionamento */
+    position: relative;
+    z-index: 1;
+}
+
+.modal-destaque__conteudo h2 {
+    /* Textos */
+    max-width: 55%;
+    font-size: 2rem;
+}
+
+.modal-destaque .hero-banner__info {
+    /* Dimensões */
+    max-width: 55%;
+
+    /* Posicionamento */
+    flex-wrap: wrap;
+
+    /* Textos */
+    font-size: 0.95rem;
+
+    /* Estilos */
+    list-style: none;
+}
+
+.modal-destaque .hero-banner__descricao {
+    /* Dimensões */
+    max-width: 55%;
+
+    /* Textos */
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.modal-destaque__fechar {
+    /* Posicionamento */
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    z-index: 2;
+
+    /* Textos */
+    color: #fff;
+    font-size: 2rem;
+}
+
+.modal-destaque__conteudo .hero-banner__botoes button {
+    /* Estilos */
+    border-radius: 5px;
+}
+
+body:has(.modal-destaque:target) {
+    /* Posicionamento */
+    overflow: hidden;
+}
+
 @media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+    .modal-destaque {
+        /* Dimensões */
+        padding: 12px;
+    }
+
+    .modal-destaque__conteudo {
+        /* Dimensões */
+        width: 100%;
+        max-height: 90vh;
+        padding: 32vh 18px 20px;
+        gap: 16px;
+
+        /* Posicionamento */
+        justify-content: flex-start;
+        overflow-y: auto;
+
+        /* Estilos */
+        aspect-ratio: auto;
+        background-size: auto 30vh;
+        background-position: top center;
+    }
+
+    .modal-destaque__conteudo::before {
+        /* Estilos */
+        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
+    }
+
+    .modal-destaque__conteudo h2,
+    .modal-destaque .hero-banner__info,
+    .modal-destaque .hero-banner__descricao {
+        /* Dimensões */
+        max-width: 100%;
+    }
+
+    .modal-destaque .hero-banner__descricao {
+        /* Posicionamento */
+        display: block;
+
+        /* Textos */
+        font-size: 1rem;
+    }
+
+    .modal-destaque .hero-banner__botoes {
+        /* Posicionamento */
+        flex-wrap: wrap;
+    }
 
     body {
         /*  Estilos  */
@@ -218,13 +383,17 @@ body {
         height: auto;
         padding: 25px;
 
-        /*  Posicionamento  */
-        justify-content: flex-end;
+        /*   Posicionamento   */
+        justify-content: space-between;
         align-items: center;
-        row-gap: 20px;
 
-        /*  Estilos  */
+        /*   Estilos   */
         background-size: cover;
+    }
+
+    .hero-banner__titulo {
+        /* Dimensões */
+        width: 70%;
     }
 
     .hero-banner__info {

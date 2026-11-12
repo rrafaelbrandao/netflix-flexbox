@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/elements.css" />
         <link rel="stylesheet" href="../css/watch.css" />
+        <link rel="stylesheet" href="../css/details.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet" />
@@ -62,7 +63,7 @@
             <section class="player-container">
                 <div class="player">
                     <iframe class="player__iframe" src="https://www.youtube.com/embed/Wb3kaP580kA?autoplay=0&amp;rel=0&amp;modestbranding=1" title="Stranger Things 5 | Trailer oficial | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-                        </iframe>
+                    </iframe>
                 </div>
             </section>
             <section class="informacoes">
@@ -94,28 +95,140 @@
                 <h2 class="mais-conteudos__titulo">
                     Mais conteúdos para assistir
                 </h2>
-                <ul class="lista-cards">
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/duna.jpeg" alt="Duna" />
+                <ul class="lista-filmes">
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-1" class="lista-filmes__link" href="#modal-watch-1" aria-label="Abrir detalhes de De Volta à Ação">
+                            <img src="../assets/images/poster-vertical/caramelo.jpg" alt="De Volta à Ação" />
+                        </a>
                     </li>
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/nas-profundezas.jpg" alt="Nas profundezas" />
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-2" class="lista-filmes__link" href="#modal-watch-2" aria-label="Abrir detalhes de Enola Holmes 2">
+                            <img src="../assets/images/poster-vertical/back-in-action.jpg" alt="Enola Holmes 2" />
+                        </a>
                     </li>
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/noiva-cadaver.webp" alt="A Noiva-Cadáver" />
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-3" class="lista-filmes__link" href="#modal-watch-3" aria-label="Abrir detalhes de Glass Onion">
+                            <img src="../assets/images/poster-vertical/dont-look-up.jpg" alt="Glass Onion: Um Mistério Knives Out" />
+                        </a>
                     </li>
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/o-protetor.jpg" alt="O Protetor" />
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-4" class="lista-filmes__link" href="#modal-watch-4" aria-label="Abrir detalhes de O Projeto Adam">
+                            <img src="../assets/images/poster-vertical/havoc.jpg" alt="O Projeto Adam" />
+                        </a>
                     </li>
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/sobrevivencia.jpeg" alt="Sobrevivência" />
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-5" class="lista-filmes__link" href="#modal-watch-5" aria-label="Abrir detalhes de A Sociedade da Neve">
+                            <img src="../assets/images/poster-vertical/rebel-ridge.jpg" alt="A Sociedade da Neve" />
+                        </a>
                     </li>
-                    <li class="lista-cards__item">
-                        <img src="../assets/images/poster-vertical/thrash.jpg" alt="Thrash" />
+                    <li class="lista-filmes__filme">
+                        <a id="card-watch-6" class="lista-filmes__link" href="#modal-watch-6" aria-label="Abrir detalhes de Donzela">
+                            <img src="../assets/images/poster-vertical/the-platform-2.jpg" alt="Donzela" />
+                        </a>
                     </li>
-                </ul>
-            </section>
         </main>
+        
+        <div class="modal-destaque" id="modal-watch-1">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/caramelo.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-1" aria-label="Voltar ao filme">×</a>
+                <h2>Caramelo</h2>
+                <ul class="hero-banner__info" >
+                    <li>Drama</li>
+                    <li>Comédia</li>
+                    <li>Brasil</li>
+                </ul>
+                <p class="hero-banner__descricao">Prestes a realizar o sonho de comandar um restaurante, o chef Pedro recebe uma notícia que muda seus planos. Com a companhia do cão Caramelo, ele embarca em uma jornada de amizade e redescoberta.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-watch-2">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/carry-on.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-2" aria-label="Voltar ao filme">×</a>
+                <h2>Bagagem de Risco</h2>
+                <ul class="hero-banner__info">
+                    <li>Suspense</li>
+                    <li>Ação</li>
+                    <li>Corrida contra o tempo</li>
+                </ul>
+                <p class="hero-banner__descricao">Na véspera de Natal, um agente de segurança de aeroporto é chantageado por um viajante misterioso e precisa impedir que um pacote perigoso embarque em um voo.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-watch-3">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/dont-look-up.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-3" aria-label="Voltar ao filme">×</a>
+                <h2>Não Olhe Para Cima</h2>
+                <ul class="hero-banner__info">
+                    <li>Comédia</li>
+                    <li>Ficção científica</li>
+                    <li>Sátira</li>
+                </ul>
+                <p class="hero-banner__descricao">Dois astrônomos descobrem um cometa em rota de colisão com a Terra. Para alertar a humanidade, eles enfrentam a indiferença da mídia, do público e de autoridades.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-watch-4">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/havoc.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-4" aria-label="Voltar ao filme">×</a>
+                <h2>Havoc</h2>
+                <ul class="hero-banner__info">
+                    <li>Ação</li>
+                    <li>Suspense</li>
+                    <li>Crime</li>
+                </ul>
+                <p class="hero-banner__descricao">Depois que uma negociação de drogas dá errado, um detetive precisa atravessar o submundo do crime para resgatar o filho de um político e desvendar uma rede de corrupção.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-watch-5">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/rebel-ridge.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-5" aria-label="Voltar ao filme">×</a>
+                <h2>Rebel Ridge</h2>
+                <ul class="hero-banner__info">
+                    <li>Suspense</li>
+                    <li>Ação</li>
+                    <li>Corrupção</li>
+                </ul>
+                <p class="hero-banner__descricao">Um ex-fuzileiro chega a uma pequena cidade para pagar a fiança do primo, mas a polícia confisca seu dinheiro. Com a ajuda de uma funcionária do tribunal, ele enfrenta uma conspiração local.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-destaque" id="modal-watch-6">
+            <div class="modal-destaque__conteudo" style="background-image: url('../assets/images/poster-vertical/the-platform-2.jpg')">
+                <a class="modal-destaque__fechar" href="#card-watch-6" aria-label="Voltar ao filme">×</a>
+                <h2>O Poço 2</h2>
+                <ul class="hero-banner__info">
+                    <li>Suspense</li>
+                    <li>Ficção científica</li>
+                    <li>Sobrevivência</li>
+                </ul>
+                <p class="hero-banner__descricao">Em uma prisão vertical, uma nova moradora precisa sobreviver a um sistema brutal de distribuição de comida, imposto por um líder misterioso e suas regras rígidas.</p>
+                <div class="hero-banner__botoes">
+                    <button class="botao botao--vermelho" type="button">Assistir</button>
+                    <button class="botao botao--cinza" type="button">Mais detalhes</button>
+                </div>
+            </div>
+        </div>
         <footer class="rodape">
             <p class="rodape__contato">
                 Dúvidas? Entre em contato.

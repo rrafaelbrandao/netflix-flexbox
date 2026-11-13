@@ -370,10 +370,12 @@ header {
     /*  Dimensões  */
     width: 100%;
     margin-bottom: 20px;
+
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 15px;
+
     /*  Estilos  */
     list-style: none;
     overflow-y: hidden;
@@ -382,9 +384,16 @@ header {
 .lista-filmes__filme {
     /*  Posicionamento  */
     flex: 1;
+    
     /*  Estilos  */
     border-radius: 10px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.lista-filmes__filme:hover {
+    /*  Estilos  */
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .lista-filmes__filme img {

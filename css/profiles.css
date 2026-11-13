@@ -1,3 +1,18 @@
+/* ===== 1. Reset e Base ===== */
+
+html {
+    /*   Estilos   */
+    scroll-behavior: smooth; /* Rolagem suave */
+    
+}
+
+* {
+    /*  Dimensões  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     /*  Dimensões  */
     min-height: 100vh;
@@ -13,6 +28,23 @@ body {
     background-image: radial-gradient(circle at center, rgba(55, 12, 15, 0.7) 0%, rgba(15, 3, 4, 0.9) 45%, rgba(0, 0, 0, 0.98) 90%);
 }
 
+a {
+    /*  Textos  */
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+/* ===== 2. Tipografia ===== */
+
+.fonte-inter {
+    /*  Textos  */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* ===== 3. Header ===== */
+
 header {
     /*  Dimensões  */
     width: 100%;
@@ -27,6 +59,29 @@ header {
     /*  Estilos  */
     background-color: transparent
 }
+
+.logo-netflix {
+    /*  Dimensões  */
+    width: 18%;
+    height: 100%;
+    padding: 30px 20px;
+    /*  Posicionamento  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*  Estilos  */
+    background-color: transparent;
+}
+
+.logo-netflix img {
+    /*  Dimensões  */
+    width: 100%;
+    height: 100%;
+    /*  Estilos  */
+    object-fit: contain;
+}
+
+/* ===== 4. Seção de Perfis ===== */
 
 .perfis {
     /*  Dimensões  */
@@ -83,6 +138,13 @@ header {
     cursor: pointer;
 }
 
+.card a {
+    /*   Dimensões   */
+    margin-top: 10px;
+    /*   Textos   */
+    text-decoration: none;
+}
+
 .card img {
     /*  Dimensões  */
     width: 150px;
@@ -117,13 +179,6 @@ header {
     color: #F5F5F5;
 }
 
-.card a {
-    /*   Dimensões   */
-    margin-top: 10px;
-    /*   Textos   */
-    text-decoration: none;
-}
-
 .perfis__gerenciar {
     /*  Dimensões  */
     padding: 10px 25px;
@@ -149,20 +204,20 @@ header {
 }
 
 .perfis__gerenciar:hover {
-    /*  Estilos  */
     /*   Textos   */
     color: #F5F5F5;
+    
+    /*  Estilos  */
     border-color: #F5F5F5;
 }
 
-/* ===== Mobile ===== */
+/* ===== 5. Responsividade — Mobile (max-width: 450px) ===== */
+
 @media (max-width: 450px) {
-    /* Média de largura para a maioria dos smartphones */
 
     .perfis__cards {
         /*  Posicionamento  */
         flex-wrap: wrap;
-        /* Quebra os cards em outra linha */
         gap: 20px;
     }
 

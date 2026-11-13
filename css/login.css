@@ -170,8 +170,9 @@ main {
     color: #B3B3B3;
 }
 
-/* ===== Mobile ===== */ 
-@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
+/* ===== Mobile ===== */
+@media (max-width: 450px) {
+    /* Média de largura para a maioria dos smartphones */
 
     header {
         /*  Dimensões  */
@@ -187,9 +188,9 @@ main {
 
     .login {
         /*  Dimensões  */
+        margin-top: 30px;
         padding: 20px 30px;
         margin-bottom: 30px;
     }
 
 }
-

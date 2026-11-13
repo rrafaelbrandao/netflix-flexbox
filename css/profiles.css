@@ -13,8 +13,6 @@ body {
     background-image: radial-gradient(circle at center, rgba(55, 12, 15, 0.7) 0%, rgba(15, 3, 4, 0.9) 45%, rgba(0, 0, 0, 0.98) 90%);
 }
 
-/* ===== Header da página ===== */
-
 header {
     /*  Dimensões  */
     width: 100%;
@@ -28,10 +26,7 @@ header {
 
     /*  Estilos  */
     background-color: transparent
-
 }
-
-/* ===== Main da página ===== */
 
 .perfis {
     /*  Dimensões  */
@@ -43,7 +38,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
 
 .perfis h1 {
     /*  Dimensões  */
@@ -122,6 +116,7 @@ header {
     /*   Textos   */
     color: #F5F5F5;
 }
+
 .card a {
     /*   Dimensões   */
     margin-top: 10px;
@@ -160,12 +155,14 @@ header {
     border-color: #F5F5F5;
 }
 
-/* ===== Mobile ===== */ 
-@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
-    
+/* ===== Mobile ===== */
+@media (max-width: 450px) {
+    /* Média de largura para a maioria dos smartphones */
+
     .perfis__cards {
         /*  Posicionamento  */
-        flex-wrap: wrap; /* Quebra os cards em outra linha */
+        flex-wrap: wrap;
+        /* Quebra os cards em outra linha */
         gap: 20px;
     }
 

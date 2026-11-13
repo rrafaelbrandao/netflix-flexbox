@@ -1,6 +1,7 @@
 html {
     /*   Estilos   */
-    scroll-behavior: smooth; /* Rolagem suave */
+    scroll-behavior: smooth;
+    /* Rolagem suave */
 }
 
 * {
@@ -8,13 +9,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    /*  Textos  */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    color: #F5F5F5;
 }
 
 main {
@@ -176,12 +170,14 @@ a {
     font-weight: 500;
 }
 
-.cabecalho .menu-de-navegacao li:hover, .cabecalho .menu-de-navegacao li:focus-within {
+.cabecalho .menu-de-navegacao li:hover,
+.cabecalho .menu-de-navegacao li:focus-within {
     /*  Estilos  */
     background-color: #F5F5F5;
 }
 
-.cabecalho .menu-de-navegacao li:hover a, .cabecalho .menu-de-navegacao li:focus-within a {
+.cabecalho .menu-de-navegacao li:hover a,
+.cabecalho .menu-de-navegacao li:focus-within a {
     /*  Textos  */
     color: #E50914;
 }
@@ -260,6 +256,7 @@ a {
     gap: 15px;
     /*  Estilos  */
     list-style: none;
+    overflow-y: hidden;
 }
 
 .lista-filmes__filme {
@@ -284,11 +281,6 @@ a {
     border-radius: 10px;
 }
 
-.lista-filmes__filme:hover {
-    /*  Estilos  */
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
 
 .lista-cards {
     /*  Dimensões  */
@@ -342,7 +334,8 @@ a {
     border-top: 1px solid #333;
 }
 
-.rodape__contato, .rodape__copyright {
+.rodape__contato,
+.rodape__copyright {
     /*  Textos  */
     font-size: 1rem;
     color: #B3B3B3;
@@ -374,13 +367,18 @@ a {
     transition: color 0.5s ease;
 }
 
-.rodape__links a:hover, .rodape__links a:focus-visible {
+.rodape__links a:hover,
+.rodape__links a:focus-visible {
     /*  Textos  */
     color: #F5F5F5;
 }
 
 @media (max-width: 450px) {
-    
+
+    .logo-netflix {
+        padding: 0;
+    }
+
     .rodape {
         /*  Dimensões  */
         padding: 40px 5%;
@@ -457,5 +455,10 @@ a {
     .lista-cards__item {
         /*  Posicionamento  */
         flex: 0 0 110px;
+    }
+
+    .lista-filmes__filme:hover {
+        /*  Estilos  */
+        transform: none;
     }
 }

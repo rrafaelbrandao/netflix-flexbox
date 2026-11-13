@@ -1,6 +1,7 @@
 body {
     /*  Dimensões  */
     min-height: 100vh;
+    
     /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -319,6 +320,8 @@ body:has(.modal-destaque:target) {
     }
 
     .modal-destaque__conteudo h2 {
+        /* Dimensões */
+        margin-top: 5%;
         /* Textos */
         font-size: 1.8rem;
     }
@@ -359,6 +362,7 @@ body:has(.modal-destaque:target) {
 
     body {
         /*  Estilos  */
+        overflow-x: hidden;
         background-image: none;
         background-color: rgba(20, 20, 20, 1);
     }

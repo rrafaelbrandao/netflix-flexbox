@@ -401,8 +401,8 @@ body:has(.modal-destaque:target) {
         width: 100%;
 
         /*  Posicionamento  */
-        flex-wrap: wrap;
-        justify-content: center;
+        display: flex;
+        justify-content: start;
         gap: 6px 10px;
 
         /*  Textos  */

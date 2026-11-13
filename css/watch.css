@@ -9,8 +9,6 @@ body {
     background-color: #141414;
 }
 
-/* ===== Main da página ===== */
-
 .conteudo-principal {
     /*  Dimensões  */
     width: 92%;
@@ -24,6 +22,9 @@ body {
     gap: 30px;
 }
 
+.sugestoes {
+    margin-left: 0;
+}
 
 /* ==========================================
    6.1 PLAYER E 6.2 CONTROLES VISUAIS

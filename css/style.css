@@ -411,8 +411,7 @@ header {
 
     .filmes {
         /*  Dimensões  */
-        height: 70%;
-        
+        height: 100%;
     }
 
 }
@@ -439,5 +438,10 @@ header {
     .campo-botao {
         /*  Dimensões  */
         width: 25%;
+    }
+
+    .lista-filmes__filme:hover {
+    /*  Estilos  */
+    transform: none;
     }
 }

@@ -1,9 +1,8 @@
 /* ===== 1. Reset e Base ===== */
 
 html {
-    /*   Estilos   */
+    /*  Estilos  */
     scroll-behavior: smooth; /* Rolagem suave */
-    
 }
 
 * {
@@ -11,6 +10,20 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    /*  Dimensões  */
+    min-height: 100vh;
+    /*  Textos  */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: #F5F5F5;
+    /*  Estilos  */
+    background-color: #141414;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -24,12 +37,16 @@ a {
     text-decoration: none;
 }
 
+/* ===== 2. Tipografia ===== */
+
 .fonte-inter {
     /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/* ===== 3. Header ===== */
 
 .cabecalho {
     /*  Dimensões  */
@@ -90,16 +107,16 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.cabecalho .menu-de-navegacao a {
-    /*  Textos  */
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
 .cabecalho .menu-de-navegacao li:hover,
 .cabecalho .menu-de-navegacao li:focus-within {
     /*  Estilos  */
     background-color: #F5F5F5;
+}
+
+.cabecalho .menu-de-navegacao a {
+    /*  Textos  */
+    color: #F5F5F5;
+    font-weight: 500;
 }
 
 .cabecalho .menu-de-navegacao li:hover a,
@@ -136,7 +153,7 @@ a {
 }
 
 .cabecalho .menu-perfil__botao:hover {
-    /* Estilos */
+    /*  Estilos  */
     background-color: #f5f5f56f;
     border-radius: 5px;
 }
@@ -150,26 +167,274 @@ a {
     border-radius: 5px;
 }
 
-.logo-netflix {
+/* ===== 4. Hero Banner ===== */
+
+.hero-banner {
     /*  Dimensões  */
-    width: 18%;
-    height: 100%;
-    padding: 30px 20px;
+    width: 92%;
+    height: 100vh;
+    margin: 20px 4%;
+    padding: 50px;
     /*  Posicionamento  */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
     /*  Estilos  */
-    background-color: transparent;
+    background-color: rgba(20, 20, 20, 1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/poster-horizontal/stranger-things.jpg);
+    background-size: 100% 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
-.logo-netflix img {
+.hero-banner__titulo {
+    /*  Dimensões  */
+    width: 40%;
+    height: 40%;
+}
+
+.hero-banner__titulo img {
     /*  Dimensões  */
     width: 100%;
     height: 100%;
     /*  Estilos  */
     object-fit: contain;
 }
+
+.hero-banner__info {
+    /*  Dimensões  */
+    width: 100%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /*  Textos  */
+    font-size: 1.25em;
+    color: #F5F5F5;
+    font-weight: 500;
+    /*  Estilos  */
+    list-style: inside;
+}
+
+.hero-banner__descricao {
+    /*  Textos  */
+    font-size: 1.25em;
+    color: #F5F5F5;
+    font-weight: 500;
+}
+
+.hero-banner__botoes {
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.botao {
+    /*  Dimensões  */
+    padding: 12px 20px;
+    /*  Textos  */
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+    /*  Estilos  */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botao--vermelho {
+    /*  Estilos  */
+    background-color: #E50914;
+}
+
+.botao--vermelho:hover {
+    /*  Estilos  */
+    background-color: #B80710;
+}
+
+.botao--cinza {
+    /*  Estilos  */
+    background-color: rgba(113, 113, 113, 0.6);
+}
+
+.botao--cinza:hover {
+    /*  Estilos  */
+    background-color: rgba(198, 197, 197, 0.6);
+}
+
+/* ===== 5. Categorias de Filmes ===== */
+
+.categoria-filmes {
+    /*  Dimensões  */
+    width: 92%;
+    margin: 20px 4%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.categoria-filmes h2 {
+    /*  Textos  */
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+.filmes {
+    /*  Dimensões  */
+    width: 100%;
+    /*  Posicionamento  */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /*  Estilos  */
+    list-style: none;
+    scrollbar-color: #E50914 #222;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.filmes li {
+    /*  Dimensões  */
+    flex: 0 0 280px;
+    /*  Posicionamento  */
+    position: relative;
+    z-index: 1;
+    /*  Estilos  */
+    transition: transform 0.5s ease;
+}
+
+.filme-card {
+    /*  Posicionamento  */
+    display: block;
+    /*  Estilos  */
+    border-radius: 10px;
+    outline-offset: 4px;
+}
+
+.filme-card:focus-visible {
+    /*  Estilos  */
+    outline: 3px solid #F5F5F5;
+}
+
+.filmes img {
+    /*  Dimensões  */
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /*  Estilos  */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== 6. Modal de Destaque ===== */
+
+.modal-destaque {
+    /*  Posicionamento  */
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /*  Dimensões  */
+    padding: 20px;
+    /*  Estilos  */
+    background-color: rgb(0 0 0 / 75%);
+}
+
+.modal-destaque:target {
+    /*  Posicionamento  */
+    display: flex;
+}
+
+.modal-destaque__conteudo {
+    /*  Dimensões  */
+    width: 90%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    padding: 40px;
+    gap: 20px;
+    /*  Posicionamento  */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*  Estilos  */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.modal-destaque__conteudo::before {
+    /*  Conteúdo  */
+    content: "";
+    /*  Posicionamento  */
+    position: absolute;
+    inset: 0;
+    /*  Estilos  */
+    background: linear-gradient(90deg, rgb(0 0 0 / 85%), transparent);
+}
+
+.modal-destaque__conteudo > * {
+    /*  Posicionamento  */
+    position: relative;
+    z-index: 1;
+}
+
+.modal-destaque__conteudo h2 {
+    /*  Textos  */
+    font-size: 2.5rem;
+}
+
+.modal-destaque .hero-banner__info {
+    /*  Posicionamento  */
+    flex-wrap: wrap;
+    /*  Textos  */
+    font-size: 1rem;
+    /*  Estilos  */
+    list-style: none;
+}
+
+.modal-destaque .hero-banner__descricao {
+    /*  Dimensões  */
+    max-width: 500px;
+    /*  Textos  */
+    font-size: 1rem;
+}
+
+.modal-destaque__fechar {
+    /*  Posicionamento  */
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    /*  Textos  */
+    color: #fff;
+    font-size: 2rem;
+}
+
+.modal-destaque__conteudo .hero-banner__botoes button {
+    /*  Estilos  */
+    border-radius: 5px;
+}
+
+body:has(.modal-destaque:target) {
+    /*  Posicionamento  */
+    overflow: hidden;
+}
+
+/* ===== 7. Rodapé ===== */
 
 .rodape {
     /*  Dimensões  */
@@ -223,383 +488,9 @@ a {
     color: #F5F5F5;
 }
 
+/* ===== 8. Responsividade — Mobile (max-width: 450px) ===== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    /*  Dimensões  */
-    min-height: 100vh;
-    
-    /*  Textos  */
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    color: #F5F5F5;
-    /*  Estilos  */
-    background-color: #141414;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-banner {
-    /*  Dimensões  */
-    width: 92%;
-    height: 100vh;
-    margin: 20px 4%;
-    padding: 50px 50px;
-
-    /*  Posicionamento  */
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-
-
-    /*  Estilos  */
-    background-color: rgba(20, 20, 20, 1);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/poster-horizontal/stranger-things.jpg);
-    background-size: 100% 100vh;
-    background-position: top;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-
-}
-
-.hero-banner__titulo {
-    /*  Dimensões */
-    width: 40%;
-    height: 40%;
-}
-
-.hero-banner__titulo img {
-    /*  Dimensões */
-    width: 100%;
-    height: 100%;
-    /*   Estilos   */
-    object-fit: contain;
-}
-
-.hero-banner__info {
-    /*  Dimensões  */
-    width: 100%;
-
-    /*  Posicionamento  */
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-
-    /*  Textos  */
-    font-size: 1.25em;
-    text-decoration: none;
-    color: #F5F5F5;
-    font-weight: 500;
-    
-    /*   Estilos   */
-    list-style: inside;
-}
-
-.hero-banner__descricao {
-    /*  Textos  */
-    font-size: 1.25em;
-    text-decoration: none;
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
-.hero-banner__botoes {
-    /*   Posicionamento   */
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.hero-banner button {
-    /*  Dimensões  */
-    padding: 10px;
-
-    /*  Estilos  */
-    background-color: #f5f5f565;
-    border: none;
-    border-radius: 10px;
-}
-
-.hero-banner button:hover {
-    /*  Estilos  */
-    background-color: #f5f5f565;
-}
-
-.categoria-filmes {
-    /*  Dimensões  */
-    margin: 20px 4%;
-    width: 92%;
-
-    /*  Posicionamento  */
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.categoria-filmes h2 {
-    /*  Textos  */
-    font-size: 1.5em;
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
-.filmes {
-    /*  Dimensões  */
-    width: 100%;
-
-    /*  Posicionamento  */
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    /* Barra de rolagem */
-    scrollbar-color: #e50914 #222;
-    scroll-behavior: smooth; /* Rolagem suave e animada */
-    scrollbar-width: thin; /* Deixa a barra de rolagem visivelmente mais fina */
-
-    /*   Estilos   */
-    list-style: none;
-}
-
-
-.filmes li {
-    /*  Dimensões  */
-    flex: 0 0 280px; /* Faz com que cada item ocupe o mesmo espaço disponível */
-
-    /*  Posicionamento  */
-    position: relative;
-    z-index: 1;
-
-    /*  Estilos  */
-    transition: transform 0.5s ease;
-}
-
-.filme-card {
-    display: block;
-    border-radius: 10px;
-    outline-offset: 4px;
-}
-
-.filme-card:focus-visible {
-    outline: 3px solid #F5F5F5;
-}
-
-.filmes img {
-    /*  Dimensões  */
-    width: 100%;
-    aspect-ratio: 16 / 9; /* Mantém a proporção da imagem em 16:9 */
-    object-fit: cover;
-
-    /*  Estilos  */
-    border-radius: 10px;
-}
-
-/* ===== Modal de destaque ===== */
-.modal-destaque {
-    /* Posicionamento */
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    /* Dimensões */
-    padding: 20px;
-
-    /* Estilos */
-    background-color: rgb(0 0 0 / 75%);
-}
-
-/* Mostra o modal quando o ID dele aparece no endereço da página. */
-.modal-destaque:target {
-    display: flex;
-}
-
-.modal-destaque__conteudo {
-    /* Dimensões */
-    width: 90%;
-    max-width: 640px;
-    aspect-ratio: 16 / 9;
-    padding: 40px;
-    gap: 20px;
-
-    /* Posicionamento */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    /* Estilos */
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.modal-destaque__conteudo::before {
-    /* Conteúdo */
-    content: "";
-
-    /* Posicionamento */
-    position: absolute;
-    inset: 0;
-
-    /* Estilos: gradiente escuro para ajudar a ler o texto */
-    background: linear-gradient(90deg, rgb(0 0 0 / 85%), transparent);
-}
-
-/* Coloca o título, as informações e os botões acima do gradiente. */
-.modal-destaque__conteudo > * {
-    /* Posicionamento */
-    position: relative;
-    z-index: 1;
-}
-
-.modal-destaque__conteudo h2 {
-    /* Textos */
-    font-size: 2.5rem;
-}
-
-.modal-destaque .hero-banner__info {
-    /* Posicionamento */
-    flex-wrap: wrap;
-
-    /* Textos */
-    font-size: 1rem;
-
-    /* Estilos */
-    list-style: none;
-}
-
-.modal-destaque .hero-banner__descricao {
-    /* Dimensões */
-    max-width: 500px;
-
-    /* Textos */
-    font-size: 1rem;
-}
-
-.modal-destaque__fechar {
-    /* Posicionamento */
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 2;
-
-    /* Textos */
-    color: #fff;
-    font-size: 2rem;
-}
-
-.modal-destaque__conteudo .hero-banner__botoes button {
-    /* Estilos */
-    border-radius: 5px;
-}
-
-/* Impede a rolagem da página ao fundo enquanto o modal está aberto. */
-body:has(.modal-destaque:target) {
-    /* Posicionamento */
-    overflow: hidden;
-}
-
-/* ===== Mobile ===== */ 
-@media (max-width: 450px) { /* Média de largura para a maioria dos smartphones */
-
-    .modal-destaque {
-        /* Dimensões */
-        padding: 12px;
-    }
-
-    .modal-destaque__conteudo {
-        /* Dimensões */
-        width: 100%;
-        max-height: 90vh;
-        padding: 56.25% 18px 20px;
-        gap: 20px;
-
-        /* Posicionamento */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        overflow-y: auto;
-
-        /* Estilos */
-        aspect-ratio: auto;
-        background-color: #141414;
-        background-size: 100% auto;
-        background-position: top center;
-        background-repeat: no-repeat;
-
-        /* Textos */
-        text-align: left;
-    }
-
-    .modal-destaque__conteudo::before {
-        /* Estilos: escurece a parte de baixo da imagem para destacar o texto */
-        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
-    }
-
-    .modal-destaque__conteudo h2 {
-        /* Dimensões */
-        margin-top: 5%;
-        /* Textos */
-        font-size: 1.8rem;
-    }
-
-    .modal-destaque .hero-banner__info {
-        /* Dimensões */
-        width: 100%;
-        padding-left: 22px;
-
-        /* Textos */
-        font-size: 0.9rem;
-
-        /* Estilos */
-        display: block;
-        list-style: disc;
-    }
-
-    .modal-destaque .hero-banner__info li {
-        /* Dimensões */
-        margin-top: 6px;
-    }
-
-    .modal-destaque .hero-banner__descricao {
-        /* Dimensões */
-        display: block;
-        width: 100%;
-
-        /* Textos */
-        font-size: 0.95rem;
-        line-height: 1.4;
-    }
-
-    .modal-destaque .hero-banner__botoes {
-        /* Posicionamento */
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+@media (max-width: 450px) {
 
     body {
         /*  Estilos  */
@@ -613,34 +504,30 @@ body:has(.modal-destaque:target) {
         min-height: 45vh;
         height: auto;
         padding: 25px;
-
-        /*   Posicionamento   */
+        /*  Posicionamento  */
         justify-content: space-between;
         align-items: center;
-
-        /*   Estilos   */
+        /*  Estilos  */
         background-size: cover;
     }
 
     .hero-banner__titulo {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 70%;
     }
 
     .hero-banner__info {
         /*  Dimensões  */
         width: 100%;
-
         /*  Posicionamento  */
         flex-wrap: wrap;
         justify-content: center;
-        /*   Textos   */
+        /*  Textos  */
         font-size: 1rem;
     }
 
     .hero-banner__descricao {
-        /*  Dimensões  */
-        /*   Posicionamento   */
+        /*  Posicionamento  */
         display: none;
     }
 
@@ -650,15 +537,86 @@ body:has(.modal-destaque:target) {
     }
 
     .filmes li {
-        /*   Dimensões   */
-        flex-grow: 0; /* Impede que o card cresça, mantendo o valor padrão*/
-        flex-shrink: 0; /* Impede que o card diminua, mantendo o valor padrão*/
+        /*  Dimensões  */
+        flex-grow: 0;
+        flex-shrink: 0;
         flex-basis: 220px;
+    }
+
+    .modal-destaque {
+        /*  Dimensões  */
+        padding: 12px;
+    }
+
+    .modal-destaque__conteudo {
+        /*  Dimensões  */
+        width: 100%;
+        max-height: 90vh;
+        padding: 56.25% 18px 20px;
+        gap: 20px;
+        /*  Posicionamento  */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-y: auto;
+        /*  Estilos  */
+        aspect-ratio: auto;
+        background-color: #141414;
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        /*  Textos  */
+        text-align: left;
+    }
+
+    .modal-destaque__conteudo::before {
+        /*  Estilos  */
+        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
+    }
+
+    .modal-destaque__conteudo h2 {
+        /*  Dimensões  */
+        margin-top: 5%;
+        /*  Textos  */
+        font-size: 1.8rem;
+    }
+
+    .modal-destaque .hero-banner__info {
+        /*  Dimensões  */
+        width: 100%;
+        padding-left: 22px;
+        /*  Textos  */
+        font-size: 0.9rem;
+        /*  Estilos  */
+        display: block;
+        list-style: disc;
+    }
+
+    .modal-destaque .hero-banner__info li {
+        /*  Dimensões  */
+        margin-top: 6px;
+    }
+
+    .modal-destaque .hero-banner__descricao {
+        /*  Dimensões  */
+        display: block;
+        width: 100%;
+        /*  Textos  */
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .modal-destaque .hero-banner__botoes {
+        /*  Posicionamento  */
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
 }
 
-/* ===== Tablet ===== */
+/* ===== 9. Responsividade — Tablet (768px – 1024px) ===== */
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     body {
@@ -667,20 +625,16 @@ body:has(.modal-destaque:target) {
         background-color: rgba(20, 20, 20, 1);
     }
 
-     .hero-banner {
+    .hero-banner {
         /*  Dimensões  */
         height: 80vh;
         padding: 40px;
-
         /*  Posicionamento  */
         justify-content: space-between;
-        
-
         /*  Estilos  */
         background-size: cover;
         background-position: center;
     }
-
 
     .filmes {
         /*  Posicionamento  */
@@ -689,11 +643,10 @@ body:has(.modal-destaque:target) {
 
     .filmes li {
         /*  Dimensões  */
-        width: 220px;
-
-        /*  Posicionamento  */
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: auto;
+        width: 220px;
     }
+
 }

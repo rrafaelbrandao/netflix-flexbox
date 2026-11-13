@@ -149,7 +149,7 @@ a {
 }
 
 .cabecalho .menu-perfil__botao:hover {
-    /* Estilos */
+    /*  Estilos  */
     background-color: #f5f5f56f;
     border-radius: 5px;
 }
@@ -163,7 +163,7 @@ a {
     border-radius: 5px;
 }
 
-/* ===== 4. Listas de Filmes / Sugestões ===== */
+/* ===== 4. Hero Banner ===== */
 
 main {
     /*  Dimensões  */
@@ -176,12 +176,10 @@ main {
     height: 100vh;
     margin: 20px 4%;
     padding: 50px 50px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-
     /*  Estilos  */
     background-color: rgba(20, 20, 20, 1);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/poster-horizontal/stranger-things.jpg);
@@ -201,24 +199,22 @@ main {
     /*  Dimensões  */
     width: 100%;
     height: 100%;
-    /*   Estilos   */
+    /*  Estilos  */
     object-fit: contain;
 }
 
 .hero-banner__info {
     /*  Dimensões  */
     width: 100%;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 10px;
-
     /*  Textos  */
     font-size: 1.25em;
     color: #F5F5F5;
     font-weight: 500;
-    /*   Estilos   */
+    /*  Estilos  */
     list-style: inside;
 }
 
@@ -231,23 +227,60 @@ main {
 }
 
 .hero-banner__botoes {
-    /*   Posicionamento   */
+    /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
+
+.botao {
+    /*  Dimensões  */
+    padding: 12px 20px;
+    /*  Textos  */
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+    /*  Estilos  */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.botao--vermelho {
+    /*  Estilos  */
+    background-color: #E50914;
+}
+
+.botao--vermelho:hover {
+    /*  Estilos  */
+    background-color: #B80710;
+}
+
+.botao--cinza {
+    /*  Estilos  */
+    background-color: rgba(113, 113, 113, 0.6);
+}
+
+.botao--cinza:hover {
+    /*  Estilos  */
+    background-color: rgba(198, 197, 197, 0.6);
+}
+
+/* ===== 5. Detalhes ===== */
 
 .detalhes {
     /*  Dimensões  */
     width: 92%;
     margin: 40px auto;
     padding: 40px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 40px;
-
     /*  Estilos  */
     background-color: rgba(20, 20, 20, 0.9);
     border-radius: 10px;
@@ -257,7 +290,6 @@ main {
     /*  Dimensões  */
     width: 280px;
     height: auto;
-
     /*  Estilos  */
     border-radius: 8px;
     object-fit: cover;
@@ -267,7 +299,6 @@ main {
 .detalhes__info {
     /*  Dimensões  */
     flex: 1;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -282,13 +313,12 @@ main {
 }
 
 .detalhes__descricao {
-    /* Dimensões */
+    /*  Dimensões  */
     max-width: 700px;
-
     /*  Textos  */
     font-size: 1.1rem;
     line-height: 1.5;
-    color: #b3b3b3;
+    color: #B3B3B3;
 }
 
 .detalhes__lista {
@@ -302,16 +332,14 @@ main {
     /*  Posicionamento  */
     display: flex;
     gap: 15px;
-
     /*  Textos  */
     font-size: 0.95rem;
 }
 
 .detalhes__item dt {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 150px;
     flex-shrink: 0;
-
     /*  Textos  */
     font-weight: bold;
     color: #777;
@@ -327,11 +355,12 @@ main {
     margin-top: 10px;
 }
 
+/* ===== 6. Sugestões ===== */
+
 .sugestoes {
     /*  Dimensões  */
     width: 92%;
     margin: 40px auto;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -340,9 +369,9 @@ main {
 
 .sugestoes__titulo {
     /*  Textos  */
-    color: #F5F5F5;
     font-size: 1.5rem;
     font-weight: 600;
+    color: #F5F5F5;
 }
 
 .lista-filmes {
@@ -359,12 +388,12 @@ main {
 }
 
 .lista-filmes::-webkit-scrollbar {
-    /* Dimensões */
+    /*  Dimensões  */
     height: 6px;
 }
 
 .lista-filmes::-webkit-scrollbar-thumb {
-    /* Dimensões */
+    /*  Estilos  */
     background-color: #333;
     border-radius: 3px;
 }
@@ -378,7 +407,7 @@ main {
 }
 
 .lista-filmes__link {
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: block;
 }
 
@@ -391,44 +420,40 @@ main {
     border-radius: 10px;
 }
 
-/* ===== 5. Modal de Destaque ===== */
+/* ===== 7. Modal de Destaque ===== */
 
 .modal-destaque {
-    /* Posicionamento */
+    /*  Posicionamento  */
     position: fixed;
     inset: 0;
     z-index: 1000;
     display: none;
     justify-content: center;
     align-items: center;
-
-    /* Dimensões */
+    /*  Dimensões  */
     padding: 20px;
-
-    /* Estilos */
+    /*  Estilos  */
     background-color: rgb(0 0 0 / 75%);
 }
 
 .modal-destaque:target {
-    /* Posicionamento */
+    /*  Posicionamento  */
     display: flex;
 }
 
 .modal-destaque__conteudo {
-    /* Dimensões */
+    /*  Dimensões  */
     width: 90%;
     max-width: 640px;
     aspect-ratio: 16 / 9;
     padding: 32px;
     gap: 16px;
-
-    /* Posicionamento */
+    /*  Posicionamento  */
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /* Estilos */
+    /*  Estilos  */
     overflow: hidden;
     background-color: #141414;
     background-size: auto 100%;
@@ -438,75 +463,69 @@ main {
 }
 
 .modal-destaque__conteudo::before {
-    /* Conteúdo */
+    /*  Conteúdo  */
     content: "";
-
-    /* Posicionamento */
+    /*  Posicionamento  */
     position: absolute;
     inset: 0;
-
-    /* Estilos */
+    /*  Estilos  */
     background: linear-gradient(90deg, #141414 28%, rgb(20 20 20 / 85%) 58%, transparent);
 }
 
 .modal-destaque__conteudo > * {
-    /* Posicionamento */
+    /*  Posicionamento  */
     position: relative;
     z-index: 1;
 }
 
 .modal-destaque__conteudo h2 {
-    /* Textos */
+    /*  Dimensões  */
     max-width: 55%;
+    /*  Textos  */
     font-size: 2rem;
 }
 
 .modal-destaque .hero-banner__info {
-    /* Dimensões */
+    /*  Dimensões  */
     max-width: 55%;
-
-    /* Posicionamento */
+    /*  Posicionamento  */
     flex-wrap: wrap;
-
-    /* Textos */
+    /*  Textos  */
     font-size: 0.95rem;
-
-    /* Estilos */
+    /*  Estilos  */
     list-style: none;
 }
 
 .modal-destaque .hero-banner__descricao {
-    /* Dimensões */
+    /*  Dimensões  */
     max-width: 55%;
-
-    /* Textos */
+    /*  Textos  */
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
 .modal-destaque__fechar {
-    /* Posicionamento */
+    /*  Posicionamento  */
     position: absolute;
     top: 10px;
     right: 14px;
     z-index: 2;
-
-    /* Textos */
+    /*  Textos  */
     color: #fff;
     font-size: 2rem;
 }
 
 .modal-destaque__conteudo .hero-banner__botoes button {
-    /* Estilos */
+    /*  Estilos  */
     border-radius: 5px;
 }
 
 body:has(.modal-destaque:target) {
-    /* Posicionamento */
+    /*  Posicionamento  */
     overflow: hidden;
 }
 
-/* ===== 6. Rodapé ===== */
+/* ===== 8. Rodapé ===== */
 
 .rodape {
     /*  Dimensões  */
@@ -560,53 +579,51 @@ body:has(.modal-destaque:target) {
     color: #F5F5F5;
 }
 
-/* ===== 7. Responsividade — Mobile (max-width: 450px) ===== */
+/* ===== 9. Responsividade — Mobile (max-width: 450px) ===== */
 
 @media (max-width: 450px) {
+
     .modal-destaque {
-        /* Dimensões */
+        /*  Dimensões  */
         padding: 12px;
     }
 
     .modal-destaque__conteudo {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 100%;
         max-height: 90vh;
         padding: 32vh 18px 20px;
         gap: 16px;
-
-        /* Posicionamento */
+        /*  Posicionamento  */
         justify-content: flex-start;
         overflow-y: auto;
-
-        /* Estilos */
+        /*  Estilos  */
         aspect-ratio: auto;
         background-size: auto 30vh;
         background-position: top center;
     }
 
     .modal-destaque__conteudo::before {
-        /* Estilos */
+        /*  Estilos  */
         background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
     }
 
     .modal-destaque__conteudo h2,
     .modal-destaque .hero-banner__info,
     .modal-destaque .hero-banner__descricao {
-        /* Dimensões */
+        /*  Dimensões  */
         max-width: 100%;
     }
 
     .modal-destaque .hero-banner__descricao {
-        /* Posicionamento */
+        /*  Posicionamento  */
         display: block;
-
-        /* Textos */
+        /*  Textos  */
         font-size: 1rem;
     }
 
     .modal-destaque .hero-banner__botoes {
-        /* Posicionamento */
+        /*  Posicionamento  */
         flex-wrap: wrap;
     }
 
@@ -621,36 +638,31 @@ body:has(.modal-destaque:target) {
         min-height: 45vh;
         height: auto;
         padding: 25px;
-
-        /*   Posicionamento   */
+        /*  Posicionamento  */
         justify-content: space-between;
         align-items: center;
-
-        /*   Estilos   */
+        /*  Estilos  */
         background-size: cover;
     }
 
     .hero-banner__titulo {
-        /* Dimensões */
+        /*  Dimensões  */
         width: 70%;
     }
 
     .hero-banner__info {
         /*  Dimensões  */
         width: 100%;
-
         /*  Posicionamento  */
         display: flex;
         justify-content: start;
         gap: 6px 10px;
-
         /*  Textos  */
         font-size: 1rem;
     }
 
     .hero-banner__descricao {
-        /*  Dimensões  */
-        /*   Posicionamento   */
+        /*  Posicionamento  */
         display: none;
     }
 
@@ -658,12 +670,10 @@ body:has(.modal-destaque:target) {
         /*  Dimensões  */
         margin: 25px auto;
         padding: 20px;
-
         /*  Posicionamento  */
         flex-direction: column;
         align-items: center;
         gap: 20px;
-
         /*  Textos  */
         text-align: center;
     }
@@ -673,16 +683,14 @@ body:has(.modal-destaque:target) {
         width: 60%;
         max-width: 200px;
         height: auto;
-
     }
 
     .detalhes__info {
         /*  Dimensões  */
         width: 100%;
-        flex-grow: 0; /* Não permite que os filhos cresçam*/
-        flex-shrink: 1; /* Poderá diminuir o tamanho, para manter a proporção*/
-        flex-basis: auto; /* Mantém o tamanho padrão*/
-
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
         /*  Posicionamento  */
         gap: 15px;
     }
@@ -701,11 +709,13 @@ body:has(.modal-destaque:target) {
         /*  Textos  */
         text-align: left;
     }
+
 }
 
-/* ===== 7. Responsividade — Tablet (768px – 1024px) ===== */
+/* ===== 10. Responsividade — Tablet (768px – 1024px) ===== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     body {
         /*  Estilos  */
         background-image: none;
@@ -716,10 +726,8 @@ body:has(.modal-destaque:target) {
         /*  Dimensões  */
         height: 80vh;
         padding: 40px;
-
         /*  Posicionamento  */
         justify-content: space-between;
-
         /*  Estilos  */
         background-size: cover;
         background-position: center;
@@ -733,7 +741,6 @@ body:has(.modal-destaque:target) {
     .hero-banner .botao {
         /*  Dimensões  */
         padding: 12px 20px;
-
         /*  Estilos  */
         background-color: rgba(113, 113, 113, 0.6);
         border-radius: 5px;
@@ -743,4 +750,5 @@ body:has(.modal-destaque:target) {
         /*  Estilos  */
         background-color: rgba(198, 197, 197, 0.6);
     }
+
 }

@@ -319,4 +319,22 @@ main {
         margin-bottom: 30px;
     }
 
+    .rodape {
+        /*  Dimensões  */
+        padding: 40px 5%;
+        /*  Posicionamento  */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /*  Dimensões  */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /*  Textos  */
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
 }

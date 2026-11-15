@@ -3,7 +3,6 @@
 html {
     /*   Estilos   */
     scroll-behavior: smooth; /* Rolagem suave */
-    
 }
 
 * {
@@ -206,10 +205,12 @@ main {
 .hero-banner__info {
     /*  Dimensões  */
     width: 100%;
+
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
     /*  Textos  */
     font-size: 1.25em;
     color: #F5F5F5;
@@ -221,7 +222,6 @@ main {
 .hero-banner__descricao {
     /*  Textos  */
     font-size: 1.25em;
-    text-decoration: none;
     color: #F5F5F5;
     font-weight: 500;
 }
@@ -368,6 +368,9 @@ main {
 }
 
 .sugestoes__titulo {
+    /* Dimensões */
+    margin-bottom: 24px;
+
     /*  Textos  */
     font-size: 1.5rem;
     font-weight: 600;
@@ -385,6 +388,8 @@ main {
     /*  Estilos  */
     list-style: none;
     overflow-y: hidden;
+    scrollbar-color: #E50914 #222;
+    scrollbar-width: thin;
 }
 
 .lista-filmes::-webkit-scrollbar {
@@ -394,7 +399,7 @@ main {
 
 .lista-filmes::-webkit-scrollbar-thumb {
     /*  Estilos  */
-    background-color: #333;
+    background-color: #E50914;
     border-radius: 3px;
 }
 
@@ -583,6 +588,44 @@ body:has(.modal-destaque:target) {
 
 @media (max-width: 450px) {
 
+    .cabecalho {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cabecalho .logo-netflix {
+        width: 25%;
+        height: 60px;
+    }
+
+    .cabecalho .menu-perfil {
+        width: auto;
+        height: 60px;
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .cabecalho .menu-de-navegacao {
+        width: 100%;
+        height: auto;
+        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        width: max-content;
+        min-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
     .modal-destaque {
         /*  Dimensões  */
         padding: 12px;
@@ -653,10 +696,10 @@ body:has(.modal-destaque:target) {
     .hero-banner__info {
         /*  Dimensões  */
         width: 100%;
+        
         /*  Posicionamento  */
-        display: flex;
-        justify-content: start;
-        gap: 6px 10px;
+        flex-wrap: wrap;
+    
         /*  Textos  */
         font-size: 1rem;
     }
@@ -708,6 +751,34 @@ body:has(.modal-destaque:target) {
     .detalhes__lista {
         /*  Textos  */
         text-align: left;
+    }
+
+    .lista-filmes {
+        /*  Posicionamento  */
+        overflow-x: auto;
+    }
+
+    .lista-filmes__filme {
+        /*  Dimensões  */
+        flex: 0 0 150px;
+    }
+
+    .rodape {
+        /*  Dimensões  */
+        padding: 40px 5%;
+        /*  Posicionamento  */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /*  Dimensões  */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /*  Textos  */
+        font-size: 0.8rem;
+        text-decoration: none;
     }
 
 }

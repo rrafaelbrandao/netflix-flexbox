@@ -2,9 +2,7 @@
 
 html {
     /*   Estilos   */
-    scroll-behavior: smooth;
-    /* Rolagem suave */
-
+    scroll-behavior: smooth; /* Rolagem suave */
 }
 
 * {
@@ -56,16 +54,13 @@ header {
     /*  Dimensões  */
     width: 100%;
     height: 15vh;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     /*  Estilos  */
     background-color: transparent;
-
 }
 
 .logo-netflix {
@@ -73,12 +68,10 @@ header {
     width: 18%;
     height: 100%;
     padding: 30px 20px;
-
     /*  Posicionamento  */
     display: flex;
     justify-content: center;
     align-items: center;
-
     /*  Estilos  */
     background-color: transparent;
 }
@@ -95,7 +88,6 @@ header {
     /*  Dimensões  */
     width: 54%;
     height: 100%;
-
     /*  Estilos  */
     background-color: transparent;
 }
@@ -104,13 +96,11 @@ header {
     /*  Dimensões  */
     width: 100%;
     height: 100%;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
     /*  Estilos  */
     list-style: none;
 }
@@ -118,24 +108,21 @@ header {
 .menu-de-navegacao a {
     /*  Dimensões  */
     padding: 10px;
-
     /*  Posicionamento  */
     display: block;
-
     /*  Textos  */
     text-decoration: none;
     font-weight: 500;
-
-    /*  Estilos */
+    /*  Estilos  */
     color: #F5F5F5;
     border-radius: 3px;
     transition: background-color 0.5s ease;
 }
 
 .menu-de-navegacao a:hover {
-    /*  Estilos  */
-    /*   Textos   */
+    /*  Textos  */
     color: #E50914;
+    /*  Estilos  */
     background-color: #F5F5F5;
 }
 
@@ -143,12 +130,10 @@ header {
     /*  Dimensões  */
     width: 18%;
     height: 100%;
-
     /*  Posicionamento  */
     display: flex;
     justify-content: center;
     align-items: center;
-
     /*  Estilos  */
     background-color: transparent;
 }
@@ -156,21 +141,18 @@ header {
 .entrar a {
     /*  Dimensões  */
     padding: 10px 20px;
-
     /*  Textos  */
     text-decoration: none;
     color: #F5F5F5;
     font-weight: 500;
-
     /*  Estilos  */
     border-radius: 3px;
-
     background-color: #E50914;
     transition: background-color 0.5s ease;
 }
 
 .entrar a:hover {
-    /*   Estilos   */
+    /*  Estilos  */
     background-color: #B80710;
 }
 
@@ -182,7 +164,6 @@ header {
     min-height: 85vh;
     margin: 0 10%;
     padding: 50px 30px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -217,29 +198,25 @@ header {
     width: 100%;
     height: 15%;
     max-width: 1000px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1%;
-
 }
 
 .campo-email {
-    /*  Dimensões */
+    /*  Dimensões  */
     width: 50%;
     height: 100%;
     padding: 13px;
-
     /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.25rem;
     color: #F5F5F5;
-
     /*  Estilos  */
     background-color: rgba(23, 23, 23, 0.811);
     border-radius: 3px;
@@ -247,11 +224,10 @@ header {
 }
 
 .campo-botao {
-    /*  Dimensões */
+    /*  Dimensões  */
     width: 20%;
     height: 100%;
     padding: 10px;
-
     /*  Textos  */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -260,7 +236,6 @@ header {
     font-weight: 500;
     text-align: center;
     color: #F5F5F5;
-
     /*  Estilos  */
     background-color: #E50914;
     border-radius: 3px;
@@ -270,7 +245,7 @@ header {
 }
 
 .campo-botao:hover {
-    /*   Estilos   */
+    /*  Estilos  */
     background-color: #B80710;
 }
 
@@ -282,13 +257,11 @@ header {
     height: 100%;
     margin-top: -80px;
     padding-top: 60px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-
     /*  Estilos  */
     background-color: rgba(20, 20, 20, 1);
     border-radius: 50% 50% 0 0 / 80px 80px 0 0;
@@ -299,14 +272,12 @@ header {
     /*  Dimensões  */
     width: 80%;
     margin-bottom: 50px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
-
     /*  Estilos  */
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
@@ -317,7 +288,7 @@ header {
 }
 
 .promocao:hover .promocao__preco {
-    /*   Estilos   */
+    /*  Estilos  */
     background-color: #B80710;
 }
 
@@ -325,21 +296,18 @@ header {
     /*  Dimensões  */
     width: 75px;
     height: auto;
-    /*   Estilos   */
+    /*  Estilos  */
     object-fit: contain;
 }
 
 .promocao__preco {
-    /*  Dimensões  */
-    /*   Posicionamento   */
+    /*  Posicionamento  */
     flex: 1;
     padding: 15px 30px;
-
     /*  Textos  */
     font-size: 1.25em;
     font-weight: 500;
     color: #F5F5F5;
-
     /*  Estilos  */
     transition: background-color 0.5s ease;
     border-radius: 10px;
@@ -349,7 +317,6 @@ header {
 .filmes {
     /*  Dimensões  */
     width: 80%;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -359,7 +326,6 @@ header {
 .filmes h2 {
     /*  Dimensões  */
     padding: 10px 0;
-
     /*  Textos  */
     font-size: 2em;
     font-weight: 600;
@@ -370,30 +336,23 @@ header {
     /*  Dimensões  */
     width: 100%;
     margin-bottom: 20px;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 15px;
-
     /*  Estilos  */
     list-style: none;
     overflow-y: hidden;
+    scrollbar-color: #E50914 #222;
+    scrollbar-width: thin;
 }
 
 .lista-filmes__filme {
     /*  Posicionamento  */
     flex: 1;
-    
     /*  Estilos  */
     border-radius: 10px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.lista-filmes__filme:hover {
-    /*  Estilos  */
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .lista-filmes__filme img {
@@ -406,13 +365,13 @@ header {
 }
 
 .lista-filmes::-webkit-scrollbar {
-    /* Dimensões */
+    /*  Dimensões  */
     height: 6px;
 }
 
 .lista-filmes::-webkit-scrollbar-thumb {
-    /* Dimensões */
-    background-color: #333;
+    /*  Estilos  */
+    background-color: #E50914;
     border-radius: 3px;
 }
 
@@ -475,7 +434,7 @@ header {
 @media (max-width: 450px) {
 
     body {
-        /*   Estilos   */
+        /*  Estilos  */
         background-size: auto 100vh;
         background-position: center top;
     }
@@ -483,10 +442,10 @@ header {
     header {
         /*  Posicionamento  */
         justify-content: space-around;
-
     }
 
     .logo-netflix {
+        /*  Dimensões  */
         padding: 0;
     }
 
@@ -505,7 +464,6 @@ header {
         min-height: 65vh;
         margin-top: 30px;
         padding: 10px;
-
         /*  Posicionamento  */
         justify-content: start;
     }
@@ -529,12 +487,10 @@ header {
         /*  Dimensões  */
         padding: 10px;
         width: 100%;
-
         /*  Posicionamento  */
         display: flex;
         flex-direction: column;
         gap: 20px;
-
         /*  Estilos  */
         background-color: rgba(23, 23, 23, 0.8);
         border-radius: 5px;
@@ -543,7 +499,6 @@ header {
     .campo-email {
         /*  Dimensões  */
         width: 100%;
-
         /*  Textos  */
         font-size: 1rem;
     }
@@ -551,7 +506,6 @@ header {
     .campo-botao {
         /*  Dimensões  */
         width: 100%;
-
         /*  Textos  */
         text-align: center;
         font-size: 1rem;
@@ -588,14 +542,19 @@ header {
         overflow-x: auto;
     }
 
-    .filmes {
+    .lista-filmes__filme {
         /*  Dimensões  */
-        height: 100%;
+        flex: 0 0 150px;
     }
 
     .lista-filmes__filme:hover {
         /*  Estilos  */
         transform: none;
+    }
+
+    .filmes {
+        /*  Dimensões  */
+        height: 100%;
     }
 
     .rodape {
@@ -621,10 +580,10 @@ header {
 /* ===== 8. Responsividade — Tablet (768px – 1024px) ===== */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     .menu-de-navegacao a {
         /*  Dimensões  */
         padding: 12px;
-
         /*  Textos  */
         font-size: 1.125rem;
     }
@@ -632,7 +591,6 @@ header {
     .entrar a {
         /*  Dimensões  */
         padding: 12px 24px;
-
         /*  Textos  */
         font-size: 1.125rem;
     }
@@ -646,4 +604,5 @@ header {
         /*  Estilos  */
         transform: none;
     }
+
 }

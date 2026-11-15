@@ -255,7 +255,7 @@ a {
 
 .sugestoes__titulo {
     /* Dimensões */
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
     /*  Textos  */
     font-size: 1.5rem;
@@ -274,6 +274,8 @@ a {
     /*  Estilos  */
     list-style: none;
     overflow-y: hidden;
+    scrollbar-color: #E50914 #222;
+    scrollbar-width: thin;
 }
 
 .lista-filmes::-webkit-scrollbar {
@@ -283,7 +285,7 @@ a {
 
 .lista-filmes::-webkit-scrollbar-thumb {
     /*  Estilos  */
-    background-color: #333;
+    background-color: #E50914;
     border-radius: 3px;
 }
 
@@ -352,7 +354,7 @@ a {
     /*  Dimensões  */
     width: 100%;
     /*  Posicionamento  */
-    display: flex;
+    
     flex-direction: row;
     gap: 10px;
     /*  Textos  */
@@ -450,8 +452,7 @@ a {
     gap: 10px;
     /*  Textos  */
     font-size: 0.95rem;
-    /*  Estilos  */
-    list-style: none;
+
 }
 
 .modal-destaque .hero-banner__botoes {
@@ -548,6 +549,44 @@ body:has(.modal-destaque:target) {
 
 @media (max-width: 450px) {
 
+    .cabecalho {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cabecalho .logo-netflix {
+        width: 25%;
+        height: 60px;
+    }
+
+    .cabecalho .menu-perfil {
+        width: auto;
+        height: 60px;
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .cabecalho .menu-de-navegacao {
+        width: 100%;
+        height: auto;
+        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        width: max-content;
+        min-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
     .modal-destaque {
         /*  Dimensões  */
         padding: 12px;
@@ -559,13 +598,16 @@ body:has(.modal-destaque:target) {
         max-height: 90vh;
         padding: 32vh 18px 20px;
         gap: 16px;
+
         /*  Posicionamento  */
         justify-content: flex-start;
         overflow-y: auto;
+
         /*  Estilos  */
         aspect-ratio: auto;
         background-size: auto 30vh;
         background-position: top center;
+        list-style: inside;
     }
 
     .modal-destaque__conteudo::before {
@@ -599,6 +641,34 @@ body:has(.modal-destaque:target) {
     .informacoes__descricao {
         /*  Textos  */
         font-size: 1rem;
+    }
+
+    .lista-filmes {
+        /*  Posicionamento  */
+        overflow-x: auto;
+    }
+
+    .lista-filmes__filme {
+        /*  Dimensões  */
+        flex: 0 0 150px;
+    }
+
+    .rodape {
+        /*  Dimensões  */
+        padding: 40px 5%;
+        /*  Posicionamento  */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /*  Dimensões  */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /*  Textos  */
+        font-size: 0.8rem;
+        text-decoration: none;
     }
 
 }

@@ -499,6 +499,44 @@ body:has(.modal-destaque:target) {
         background-color: rgba(20, 20, 20, 1);
     }
 
+    .cabecalho {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .cabecalho .logo-netflix {
+        width: 25%;
+        height: 60px;
+    }
+
+    .cabecalho .menu-perfil {
+        width: auto;
+        height: 60px;
+        gap: 10px;
+    }
+
+    .cabecalho .menu-perfil__botao {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .cabecalho .menu-de-navegacao {
+        width: 100%;
+        height: auto;
+        order: 3;
+        overflow-x: auto;
+    }
+
+    .cabecalho .menu-de-navegacao ul {
+        width: max-content;
+        min-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
     .hero-banner {
         /*  Dimensões  */
         min-height: 45vh;
@@ -611,6 +649,24 @@ body:has(.modal-destaque:target) {
         /*  Posicionamento  */
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    .rodape {
+        /*  Dimensões  */
+        padding: 40px 5%;
+        /*  Posicionamento  */
+        gap: 20px;
+    }
+
+    .rodape__links li {
+        /*  Dimensões  */
+        width: 50%;
+    }
+
+    .rodape__links a {
+        /*  Textos  */
+        font-size: 0.8rem;
+        text-decoration: none;
     }
 
 }

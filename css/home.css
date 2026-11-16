@@ -339,99 +339,41 @@ a {
 /* ===== 6. Modal de Destaque ===== */
 
 .modal-destaque {
+    /* Dimensões */
+    inset: 0; /* O elemento ocupa o body inteiro */ 
+
     /*  Posicionamento  */
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    /*  Dimensões  */
-    padding: 20px;
+    position: fixed; /* O elemento vai ficar fixo na página, em relação ao body */
+    z-index: 100; /* O elemento vai se sobrepor aos outros */
+    display: none; /* O elemento fica oculto no fluxo normal da página */
+    
     /*  Estilos  */
-    background-color: rgb(0 0 0 / 75%);
+    background-color: rgb(0 0 0 / 90%);
 }
 
-.modal-destaque:target {
+.modal-destaque:target { /* Ao clicar no filme, o modal aparece*/
     /*  Posicionamento  */
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-destaque__conteudo {
     /*  Dimensões  */
-    width: 90%;
+    width: 100%;
     max-width: 640px;
     aspect-ratio: 16 / 9;
     padding: 40px;
     gap: 20px;
     /*  Posicionamento  */
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: start;
+    align-items: start;
     /*  Estilos  */
     overflow: hidden;
     background-size: cover;
-    background-position: center;
     border-radius: 10px;
-}
-
-.modal-destaque__conteudo::before {
-    /*  Conteúdo  */
-    content: "";
-    /*  Posicionamento  */
-    position: absolute;
-    inset: 0;
-    /*  Estilos  */
-    background: linear-gradient(90deg, rgb(0 0 0 / 85%), transparent);
-}
-
-.modal-destaque__conteudo > * {
-    /*  Posicionamento  */
-    position: relative;
-    z-index: 1;
-}
-
-.modal-destaque__conteudo h2 {
-    /*  Textos  */
-    font-size: 2.5rem;
-}
-
-.modal-destaque .hero-banner__info {
-    /*  Posicionamento  */
-    flex-wrap: wrap;
-    /*  Textos  */
-    font-size: 1rem;
-    /*  Estilos  */
-    list-style: none;
-}
-
-.modal-destaque .hero-banner__descricao {
-    /*  Dimensões  */
-    max-width: 500px;
-    /*  Textos  */
-    font-size: 1rem;
-}
-
-.modal-destaque__fechar {
-    /*  Posicionamento  */
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 2;
-    /*  Textos  */
-    color: #fff;
-    font-size: 2rem;
-}
-
-.modal-destaque__conteudo .hero-banner__botoes button {
-    /*  Estilos  */
-    border-radius: 5px;
-}
-
-body:has(.modal-destaque:target) {
-    /*  Posicionamento  */
-    overflow: hidden;
 }
 
 /* ===== 7. Rodapé ===== */
@@ -439,7 +381,7 @@ body:has(.modal-destaque:target) {
 .rodape {
     /*  Dimensões  */
     width: 100%;
-    padding: 80px 10% 40px;
+    padding: 40px 5%;
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -506,11 +448,13 @@ body:has(.modal-destaque:target) {
     }
 
     .cabecalho .logo-netflix {
+        order: 1;
         width: 25%;
         height: 60px;
     }
 
     .cabecalho .menu-perfil {
+        order: 2;
         width: auto;
         height: 60px;
         gap: 10px;
@@ -523,9 +467,9 @@ body:has(.modal-destaque:target) {
     }
 
     .cabecalho .menu-de-navegacao {
+        order: 3;
         width: 100%;
         height: auto;
-        order: 3;
         overflow-x: auto;
     }
 
@@ -581,74 +525,33 @@ body:has(.modal-destaque:target) {
         flex-basis: 220px;
     }
 
-    .modal-destaque {
-        /*  Dimensões  */
-        padding: 12px;
-    }
-
     .modal-destaque__conteudo {
         /*  Dimensões  */
-        width: 100%;
-        max-height: 90vh;
-        padding: 56.25% 18px 20px;
-        gap: 20px;
+        width: 95%;
+        height: 300px;
+        padding: 10px;
         /*  Posicionamento  */
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        overflow-y: auto;
+        justify-content: space-around;
+        align-items: start;
         /*  Estilos  */
-        aspect-ratio: auto;
-        background-color: #141414;
-        background-size: 100% auto;
-        background-position: top center;
-        background-repeat: no-repeat;
-        /*  Textos  */
-        text-align: left;
+        overflow: hidden;
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: 10px;
     }
 
-    .modal-destaque__conteudo::before {
-        /*  Estilos  */
-        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
+    .modal-destaque__conteudo .hero-banner__titulo {
+        height: 25%;
     }
 
-    .modal-destaque__conteudo h2 {
-        /*  Dimensões  */
-        margin-top: 5%;
-        /*  Textos  */
-        font-size: 1.8rem;
+    .modal-destaque__conteudo .hero-banner__info {
+        justify-content: left;
     }
 
-    .modal-destaque .hero-banner__info {
-        /*  Dimensões  */
-        width: 100%;
-        padding-left: 22px;
-        /*  Textos  */
-        font-size: 0.9rem;
-        /*  Estilos  */
-        display: block;
-        list-style: disc;
-    }
-
-    .modal-destaque .hero-banner__info li {
-        /*  Dimensões  */
-        margin-top: 6px;
-    }
-
-    .modal-destaque .hero-banner__descricao {
-        /*  Dimensões  */
-        display: block;
-        width: 100%;
-        /*  Textos  */
-        font-size: 0.95rem;
-        line-height: 1.4;
-    }
-
-    .modal-destaque .hero-banner__botoes {
-        /*  Posicionamento  */
-        flex-wrap: wrap;
-        justify-content: flex-start;
+    .modal-destaque__conteudo .hero-banner__botoes {
+        gap: 40px;
     }
 
     .rodape {
@@ -692,17 +595,25 @@ body:has(.modal-destaque:target) {
         background-position: center;
     }
 
+    .modal-destaque__conteudo {
+        justify-content: space-around;
+    }
+    
+
+    .modal-destaque .hero-banner__titulo {
+        /*  Dimensões  */
+        height: auto;
+    }
+
+    .modal-destaque .hero-banner__descricao {
+        display: none;
+    }
+
     .filmes {
         /*  Posicionamento  */
         overflow-x: auto;
     }
 
-    .filmes li {
-        /*  Dimensões  */
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: auto;
-        width: 220px;
-    }
+    
 
 }

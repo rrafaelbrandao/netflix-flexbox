@@ -340,13 +340,13 @@ a {
 
 .modal-destaque {
     /* Dimensões */
-    inset: 0; /* O elemento ocupa o body inteiro */ 
+    inset: 0; /* O elemento ocupa o body inteiro */
 
     /*  Posicionamento  */
     position: fixed; /* O elemento vai ficar fixo na página, em relação ao body */
     z-index: 100; /* O elemento vai se sobrepor aos outros */
     display: none; /* O elemento fica oculto no fluxo normal da página */
-    
+
     /*  Estilos  */
     background-color: rgb(0 0 0 / 90%);
 }
@@ -364,7 +364,7 @@ a {
     max-width: 640px;
     aspect-ratio: 16 / 9;
     padding: 40px;
-    gap: 20px;
+    gap: 10px;
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -374,6 +374,17 @@ a {
     overflow: hidden;
     background-size: cover;
     border-radius: 10px;
+}
+
+.modal-destaque .hero-banner__titulo {
+    /*  Dimensões  */
+    height: auto;
+}
+
+.modal-destaque .hero-banner__info {
+    /*  Posicionamento  */
+    flex-direction: column;
+    gap: 4px;
 }
 
 /* ===== 7. Rodapé ===== */
@@ -528,8 +539,9 @@ a {
     .modal-destaque__conteudo {
         /*  Dimensões  */
         width: 95%;
-        height: 300px;
-        padding: 10px;
+        height: auto;
+        min-height: 280px;
+        padding: 20px;
         /*  Posicionamento  */
         display: flex;
         flex-direction: column;
@@ -542,12 +554,8 @@ a {
         border-radius: 10px;
     }
 
-    .modal-destaque__conteudo .hero-banner__titulo {
-        height: 25%;
-    }
-
     .modal-destaque__conteudo .hero-banner__info {
-        justify-content: left;
+        align-items: flex-start;
     }
 
     .modal-destaque__conteudo .hero-banner__botoes {
@@ -598,7 +606,6 @@ a {
     .modal-destaque__conteudo {
         justify-content: space-around;
     }
-    
 
     .modal-destaque .hero-banner__titulo {
         /*  Dimensões  */
@@ -613,7 +620,5 @@ a {
         /*  Posicionamento  */
         overflow-x: auto;
     }
-
-    
 
 }

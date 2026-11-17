@@ -205,12 +205,10 @@ main {
 .hero-banner__info {
     /*  Dimensões  */
     width: 100%;
-
     /*  Posicionamento  */
     display: flex;
     flex-direction: row;
     gap: 10px;
-    
     /*  Textos  */
     font-size: 1.25em;
     color: #F5F5F5;
@@ -368,9 +366,6 @@ main {
 }
 
 .sugestoes__titulo {
-    /* Dimensões */
-    margin-bottom: 24px;
-
     /*  Textos  */
     font-size: 1.5rem;
     font-weight: 600;
@@ -428,106 +423,51 @@ main {
 /* ===== 7. Modal de Destaque ===== */
 
 .modal-destaque {
+    /* Dimensões */
+    inset: 0; /* O elemento ocupa o body inteiro */
+
     /*  Posicionamento  */
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    /*  Dimensões  */
-    padding: 20px;
+    position: fixed; /* O elemento vai ficar fixo na página, em relação ao body */
+    z-index: 100; /* O elemento vai se sobrepor aos outros */
+    display: none; /* O elemento fica oculto no fluxo normal da página */
+
     /*  Estilos  */
-    background-color: rgb(0 0 0 / 75%);
+    background-color: rgb(0 0 0 / 90%);
 }
 
-.modal-destaque:target {
+.modal-destaque:target { /* Ao clicar no filme, o modal aparece */
     /*  Posicionamento  */
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-destaque__conteudo {
     /*  Dimensões  */
-    width: 90%;
+    height: 95%;
     max-width: 640px;
-    aspect-ratio: 16 / 9;
-    padding: 32px;
-    gap: 16px;
+    aspect-ratio: 2 / 3;
+    padding: 20px 10px;
+    gap: 20px;
     /*  Posicionamento  */
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
     /*  Estilos  */
     overflow: hidden;
-    background-color: #141414;
-    background-size: auto 100%;
-    background-position: right center;
-    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
 }
 
-.modal-destaque__conteudo::before {
-    /*  Conteúdo  */
-    content: "";
-    /*  Posicionamento  */
-    position: absolute;
-    inset: 0;
-    /*  Estilos  */
-    background: linear-gradient(90deg, #141414 28%, rgb(20 20 20 / 85%) 58%, transparent);
+.modal-destaque .hero-banner__titulo {
+    /* Dimensões */
+    height: auto;
 }
 
-.modal-destaque__conteudo > * {
-    /*  Posicionamento  */
-    position: relative;
-    z-index: 1;
-}
-
-.modal-destaque__conteudo h2 {
-    /*  Dimensões  */
-    max-width: 55%;
-    /*  Textos  */
-    font-size: 2rem;
-}
-
-.modal-destaque .hero-banner__info {
-    /*  Dimensões  */
-    max-width: 55%;
-    /*  Posicionamento  */
-    flex-wrap: wrap;
-    /*  Textos  */
-    font-size: 0.95rem;
-    /*  Estilos  */
-    list-style: none;
-}
-
-.modal-destaque .hero-banner__descricao {
-    /*  Dimensões  */
-    max-width: 55%;
-    /*  Textos  */
-    font-size: 0.95rem;
-    line-height: 1.4;
-}
-
-.modal-destaque__fechar {
-    /*  Posicionamento  */
-    position: absolute;
-    top: 10px;
-    right: 14px;
-    z-index: 2;
-    /*  Textos  */
-    color: #fff;
-    font-size: 2rem;
-}
-
-.modal-destaque__conteudo .hero-banner__botoes button {
-    /*  Estilos  */
-    border-radius: 5px;
-}
-
-body:has(.modal-destaque:target) {
-    /*  Posicionamento  */
-    overflow: hidden;
+.modal-destaque__conteudo .hero-banner__info {
+    flex-direction: column;
+    justify-content: left;
 }
 
 /* ===== 8. Rodapé ===== */
@@ -535,7 +475,7 @@ body:has(.modal-destaque:target) {
 .rodape {
     /*  Dimensões  */
     width: 100%;
-    padding: 80px 10% 40px;
+    padding: 40px 5%;
     /*  Posicionamento  */
     display: flex;
     flex-direction: column;
@@ -588,6 +528,12 @@ body:has(.modal-destaque:target) {
 
 @media (max-width: 450px) {
 
+    body {
+        /*  Estilos  */
+        background-image: none;
+        background-color: rgba(20, 20, 20, 1);
+    }
+
     .cabecalho {
         height: auto;
         flex-wrap: wrap;
@@ -612,9 +558,9 @@ body:has(.modal-destaque:target) {
     }
 
     .cabecalho .menu-de-navegacao {
+        order: 3;
         width: 100%;
         height: auto;
-        order: 3;
         overflow-x: auto;
     }
 
@@ -624,56 +570,6 @@ body:has(.modal-destaque:target) {
         height: auto;
         justify-content: flex-start;
         gap: 10px;
-    }
-
-    .modal-destaque {
-        /*  Dimensões  */
-        padding: 12px;
-    }
-
-    .modal-destaque__conteudo {
-        /*  Dimensões  */
-        width: 100%;
-        max-height: 90vh;
-        padding: 32vh 18px 20px;
-        gap: 16px;
-        /*  Posicionamento  */
-        justify-content: flex-start;
-        overflow-y: auto;
-        /*  Estilos  */
-        aspect-ratio: auto;
-        background-size: auto 30vh;
-        background-position: top center;
-    }
-
-    .modal-destaque__conteudo::before {
-        /*  Estilos  */
-        background: linear-gradient(180deg, transparent 0%, rgb(20 20 20 / 25%) 30%, #141414 48%);
-    }
-
-    .modal-destaque__conteudo h2,
-    .modal-destaque .hero-banner__info,
-    .modal-destaque .hero-banner__descricao {
-        /*  Dimensões  */
-        max-width: 100%;
-    }
-
-    .modal-destaque .hero-banner__descricao {
-        /*  Posicionamento  */
-        display: block;
-        /*  Textos  */
-        font-size: 1rem;
-    }
-
-    .modal-destaque .hero-banner__botoes {
-        /*  Posicionamento  */
-        flex-wrap: wrap;
-    }
-
-    body {
-        /*  Estilos  */
-        background-image: none;
-        background-color: rgba(20, 20, 20, 1);
     }
 
     .hero-banner {
@@ -696,16 +592,15 @@ body:has(.modal-destaque:target) {
     .hero-banner__info {
         /*  Dimensões  */
         width: 100%;
-        
         /*  Posicionamento  */
         flex-wrap: wrap;
-    
+        justify-content: center;
         /*  Textos  */
         font-size: 1rem;
     }
 
-    .hero-banner__descricao {
-        /*  Posicionamento  */
+    .hero-banner .hero-banner__descricao {
+        /* Posicionamento */
         display: none;
     }
 
@@ -761,6 +656,36 @@ body:has(.modal-destaque:target) {
     .lista-filmes__filme {
         /*  Dimensões  */
         flex: 0 0 150px;
+    }
+
+    .modal-destaque__conteudo {
+        /*  Dimensões  */
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        /*  Posicionamento  */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        /*  Estilos  */
+        overflow: hidden;
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: 10px;
+    }
+
+    .modal-destaque__conteudo .hero-banner__titulo {
+        height: auto;
+    }
+
+    .modal-destaque__conteudo .hero-banner__info {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .modal-destaque__conteudo .hero-banner__botoes {
+        gap: 40px;
     }
 
     .rodape {
@@ -820,6 +745,20 @@ body:has(.modal-destaque:target) {
     .hero-banner .botao:hover {
         /*  Estilos  */
         background-color: rgba(198, 197, 197, 0.6);
+    }
+
+    .modal-destaque__conteudo {
+        justify-content: space-around;
+    }
+
+    .modal-destaque .hero-banner__titulo {
+        /*  Dimensões  */
+        height: auto;
+    }
+
+    .lista-filmes {
+        /*  Posicionamento  */
+        overflow-x: auto;
     }
 
 }
